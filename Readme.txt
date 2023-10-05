@@ -1,5 +1,5 @@
 TEMA: Guia empreendimentos locais do bairro Novo Mondulim
-Equipe: Eliú, José Muniz, Lucas, Ramon
+Equipe: Eliú, Josué Muniz, Lucas, Ramon
 TELAS:
 1- Início
 2 - Cadastro(form) - junte-se a nós
