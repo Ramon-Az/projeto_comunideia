@@ -1,6 +1,6 @@
 # Site principal
 
-Bem vindo ao nosso site (nome do site)
+Bem vindo ao nosso projeto ComunIdeia!
 
 ### Colaboradores
 
