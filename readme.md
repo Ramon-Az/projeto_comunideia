@@ -6,5 +6,6 @@ Bem vindo ao nosso projeto ComunIdeia!
 
 - @Ramon-Az
 - @JosueJMuniz
-- @lucc-minerva
+- @Lucc-Minerva
 - @Eliú
+
