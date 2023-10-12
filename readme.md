@@ -1,5 +1,8 @@
-# Branch de desenvolvimento da página Empreendimentos
+### Colaboradores
 
-# Colaborador
+- @Ramon-Az
+- @JosueJMuniz
+- @Lucc-Minerva
+- @Eliú
 
-- 
+
