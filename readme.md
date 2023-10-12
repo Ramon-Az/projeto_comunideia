@@ -1,7 +1,7 @@
-# Página Login - Cadastro
 
-Nesta branch ficará o desenvolvimento da página de login e cadastro
+### Colaboradores
 
-### Colaborador
-
+- @Ramon-Az
+- @JosueJMuniz
 - @Lucc-Minerva
+- @Eliú
