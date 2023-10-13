@@ -6,5 +6,5 @@ Projeto de desenvolvimento para um site usando HTML & CSS.
 
 - @Ramon-Az
 - @JosueJMuniz
-- @Lucc-Minerva (https://github.com/Lucc-Minerva)
+- @Lucc-Minerva 
 - @Eliú
