@@ -1,6 +1,6 @@
-# Site principal
+# Nosso projeto: ComunidEia 
 
-Bem vindo ao nosso projeto ComunIdeia!
+Projeto de desenvolvimento para um site usando HTML & CSS.
 
 ### Colaboradores
 
@@ -8,4 +8,3 @@ Bem vindo ao nosso projeto ComunIdeia!
 - @JosueJMuniz
 - @Lucc-Minerva
 - @Eliú
-
