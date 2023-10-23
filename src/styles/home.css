@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+header{
+    /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
+    background: url(./Group\ 2251.svg), rgb(255, 255, 255) 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    width: 1297px;
+    height: 529px;
+    border-radius: 0.75rem;
+    padding-top: 2.5rem;
+}
+
+#nav-bar-01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--nav-text-color);
+    height: 10rem;
+
+    padding: 0 2.9rem;  
+
+
+}
+
+.logo-comunideia{
+    display: flex;
+    justify-content: center;
+    width: 38.1875rem;
+    height: 14.625rem;
+    flex-shrink: 0;
+    margin-top: 1.8%;
+}
+
+/*Estilizando barra de busta e botao buscar*/
+
+.barra-busca{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C6F1FF;
+    border-radius: 1.5rem;
+    outline: 0;
+    height: 4.6rem;
+    width: 50rem;
+    margin-left: -4%;
+}
+
+::-webkit-input-placeholder{
+    font-size: 17px;
+    font-family: 'Roboto';
+    color: #0d00c0;
+}
+
+
+.busca-texto{
+    background: none;
+    border: 1.5rem;
+    outline: 0;
+    font: 20px;
+    width: 59rem;
+}
+
+.barra-busca:hover > .busca-texto{
+    cursor: pointer;
+}
+
+.barra-busca:hover > .busca-btn{
+    background: #C6F1FF;
+}
+
+.barra-busca:hover > .busca-btn .loupe-blue{
+    display: none;
+}
+
+.barra-busca:hover > .busca-btn .loupe-white{
+    display: block;
+}
+
+
+.loupe-blue{
+    width: 4.5rem;
+    height: 2.5rem;
+}
+
+.loupe-white{
+    display: none;
+    width: 4.5rem;
+    height: 2.5rem;
+}
+
+/*Adicionando as tags h1 e h2*/
+
+.text{
+    position: absolute;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.90);
+}
+
+.text-01{
+    font-family: 'Roboto Slab';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%; /* 5.04rem */
+    letter-spacing: 0.08rem;
+    margin-left: 5%;
+    margin-top: 0.4%;
+}
+.text-02{
+    width: 69.25rem;
+    height: 9.125rem;
+    flex-shrink: 0;
+    color: rgba(0, 0, 0, 0.80);
+
+    font-family: 'Roboto Slab';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 2.8125rem */
+    letter-spacing: 0.0375rem;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+ul{
+    display: flex;
+    list-style: none;   
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+
+/*Estilizando botao entrar*/
+.button-login{
+    display: flex;
+    justify-content: center;
+    width: 7.98531rem;
+    height: 4.33025rem;
+    flex-shrink: 0;
+
+    padding: 1rem 1.6rem;
+
+    background-color: var(--button-bg-color);
+    border-radius: 0.8rem;
+    color: var(--button-text-color);
+    border-color: white;
+    margin-left: -30%;
+}
+
+.login-btn:hover > .button-login{
+    cursor: pointer;
+    color: #9494f1;
+}
+/*Estiliza os botões de navegação*/
+.nav-bar-02{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+:root{
+    font-size: 62.5%;
+    --nav-bg-color: #121212;
+    --nav-text-color: white;
+    --button-bg-color: #0052ce;
+    --button-text-color: white;
+}
+
+a{
+    text-decoration: none;
+}
