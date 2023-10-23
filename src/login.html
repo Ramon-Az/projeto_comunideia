@@ -6,84 +6,46 @@
         <title>Faça seu login!</title>
 
         <!-- CSS links -->
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="styles/login.css">
     </head>
     <body>
         <!-- Menu do site -->
 
-        <header>
-            <div id="divBusca">
-                <input type="text" id="TextBusca" placeholder="Pesquise o empreendimento..." size="50px" />
-                <button id="botaoBuscar" type="submit">Buscar</button>
-            </div>
-        
-            <div id="botaoEntrar">
-                <a href="./login.html" title="Clique para fazer o login"><button id="Entrar" type="menu">Entrar</button></a>
-            </div>
-        
-            <div id="imagemPrincipal" title="Imagem de inicio">
-                <img id="imgInicial" src="img/imagens-empreendimentos/imagem_home.jpeg" alt="Imagem da Lagoa do Mandubim"
-                  height="150px" width="450px" />
-            </div>
-        
-            <section>
-                <header>
-                  <h1><strong>Comunideia</strong></h1>
-                </header>
-                <span>Somos uma plataforma online que conecta empreendedores locais com clientes potenciais. Nossa missão é
-                  promover o desenvolvimento econômico e social das comunidades locais, valorizando seus produtos e
-                  serviços.</span>
-            </section>
-        
-            <nav>
-                <ul>
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="./empreendimentos.html">EMPREENDIMENTOS</a></li>
-                    <li><a href="./cadastro.html">CADASTRE-SE</a></li>
-                    <li><a href="./fale_conosco.html">FALE CONOSCO</a></li>
-                    <li><a href="./sobre.html">SOBRE</a></li>
-                </ul>
-            </nav>
-        </header> 
-
         <!-- Área de login -->
 
-        <section class="login">
+        <section class="login-container">
             <form action="cadastro.php">
-                <div class="header_login">
-                    <h2>ENTRAR</h2>
+                <div class="login-title">
+                    <h1>ENTRAR</h1>
                 </div>
 
-                <div class="user">
-                    <label for="iuser">Usuário/E-mail</label>
-                    <input placeholder="Digite aqui seu nome de usuário ou E-mail" id="iuser" type="text" autocomplete="off">
+                <div class="login-user">
+                    <input placeholder="Nome de usuário ou E-mail" id="iuser" type="text" autocomplete="off">
                 </div>
 
-                <div class="password">
-                    <label for="ipassword">Senha</label>
+                <div class="login-password">
                     <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
                 </div>
 
-                <div class="entrar">
+                <div class="login-enter-buttom">
                     <input type="submit" value="ENTRAR" id="submit">
                 </div>
 
-                <div class="primeiroAcesso">
-                    <h3>Ainda não tem cadastro?</h3>
-                    <a href="cadastro.html" class="button_primeiroAcesso">Primeiro acesso</a>
+                <div class="login-socials">
+                    <ul>
+                        <li><a href="#"><img src="./assets/img/facebook-icon.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img id="google" src="./assets/img/google-icon.png" alt="Google"></a></li>
+                        <li><a href="#"><img id="linkedin" src="./assets/img/linkedin-icon.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+
+                <div class="login-buttom-register">
+                    <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
                 </div>
             </form>
         </section>
 
         <!-- Footer -->
 
-        <footer>
-            <ul type="square">
-              <li>Whatsapp</li>
-              <li>Facebook</li>
-              <li>Instagram</li>
-            </ul>
-            <p>© 2023 Empreendimentos Locais, Inc.</p>
-        </footer>
     </body>
 </html>
