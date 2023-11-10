@@ -6,6 +6,7 @@ Nosso projeto tem como foco atender comerciantes locais para agilizar sua presen
 
 - HTML5: [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - CSS3: [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- JavaScript [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ### Colaboradores
 
