@@ -6,84 +6,131 @@
         <title>Faça seu login!</title>
 
         <!-- CSS links -->
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <!-- Menu do site -->
 
-        <header>
-            <div id="divBusca">
-                <input type="text" id="TextBusca" placeholder="Pesquise o empreendimento..." size="50px" />
-                <button id="botaoBuscar" type="submit">Buscar</button>
-            </div>
-        
-            <div id="botaoEntrar">
-                <a href="./login.html" title="Clique para fazer o login"><button id="Entrar" type="menu">Entrar</button></a>
-            </div>
-        
-            <div id="imagemPrincipal" title="Imagem de inicio">
-                <img id="imgInicial" src="img/imagens-empreendimentos/imagem_home.jpeg" alt="Imagem da Lagoa do Mandubim"
-                  height="150px" width="450px" />
-            </div>
-        
-            <section>
-                <header>
-                  <h1><strong>Comunideia</strong></h1>
-                </header>
-                <span>Somos uma plataforma online que conecta empreendedores locais com clientes potenciais. Nossa missão é
-                  promover o desenvolvimento econômico e social das comunidades locais, valorizando seus produtos e
-                  serviços.</span>
-            </section>
-        
-            <nav>
-                <ul>
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="./empreendimentos.html">EMPREENDIMENTOS</a></li>
-                    <li><a href="./cadastro.html">CADASTRE-SE</a></li>
-                    <li><a href="./fale_conosco.html">FALE CONOSCO</a></li>
-                    <li><a href="./sobre.html">SOBRE</a></li>
-                </ul>
-            </nav>
-        </header> 
-
         <!-- Área de login -->
+        <main>
+            <section class="login-container">
+                <form action="cadastro.php">
+                    <div class="login-title">
+                        <h1>ENTRAR</h1>
+                    </div>
 
-        <section class="login">
-            <form action="cadastro.php">
-                <div class="header_login">
-                    <h2>ENTRAR</h2>
-                </div>
+                    <div class="login-user">
+                        <input placeholder="Nome de usuário ou E-mail" id="iuser" type="email" autocomplete="off">
+                    </div>
 
-                <div class="user">
-                    <label for="iuser">Usuário/E-mail</label>
-                    <input placeholder="Digite aqui seu nome de usuário ou E-mail" id="iuser" type="text" autocomplete="off">
-                </div>
+                    <div class="login-password">
+                        <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                    </div>
 
-                <div class="password">
-                    <label for="ipassword">Senha</label>
-                    <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
-                </div>
+                    <div class="login-enter-buttom">
+                        <input type="submit" value="ENTRAR" id="submit">
+                    </div>
 
-                <div class="entrar">
-                    <input type="submit" value="ENTRAR" id="submit">
-                </div>
+                    <div class="login-socials">
+                        <ul>
+                            <li><a href="#"><img src="./assets/img/facebook-icon.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img id="google" src="./assets/img/google-icon.png" alt="Google"></a></li>
+                            <li><a href="#"><img id="linkedin" src="./assets/img/linkedin-icon.png" alt="LinkedIn"></a></li>
+                        </ul>
+                    </div>
 
-                <div class="primeiroAcesso">
-                    <h3>Ainda não tem cadastro?</h3>
-                    <a href="cadastro.html" class="button_primeiroAcesso">Primeiro acesso</a>
-                </div>
-            </form>
-        </section>
+                    <div class="login-buttom-register">
+                        <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <!-- Footer -->
 
         <footer>
-            <ul type="square">
-              <li>Whatsapp</li>
-              <li>Facebook</li>
-              <li>Instagram</li>
-            </ul>
-            <p>© 2023 Empreendimentos Locais, Inc.</p>
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h1>comunIdeia</h1>
+                    <p>It's all about your dreams</p>
+
+                    <div class="footer-social-media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Empreendedorismo</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Guia prático</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Soluções</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Contato</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">(12) 99999 - 9999</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Seja um parceiro</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Sobre a comunIdeia</a>
+                    </li>
+                </ul>
+    
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se!</h3>
+    
+                    <p>
+                        Insira o seu email para receber nossas atualizações!
+                    </p>
+    
+                    <div class="input-group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                &#169
+                2023 comunIdeia - todos os direitos reservados
+            </div>
+
         </footer>
     </body>
 </html>

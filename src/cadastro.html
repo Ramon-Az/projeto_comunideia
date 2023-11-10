@@ -1,134 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+    <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça o seu cadastro!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faça o seu cadastro!</title>
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="#">
-</head>
+        <!-- CSS links -->
+        <link rel="stylesheet" href="css/cadastro.css">
+    </head>
 
-<body>
-    <!-- Menu do site -->
-    <header>
-        <div id="divBusca">
-            <input type="text" id="TextBusca" placeholder="Pesquise o empreendimento..." size="50px" />
-            <button id="botaoBuscar" type="submit">Buscar</button>
-        </div>
-    
-        <div id="botaoEntrar">
-            <a href="./login.html" title="Clique para fazer o login"><button id="Entrar" type="menu">Entrar</button></a>
-        </div>
-    
-        <div id="imagemPrincipal" title="Imagem de inicio">
-            <img id="imgInicial" src="img/imagens-empreendimentos/imagem_home.jpeg" alt="Imagem da Lagoa do Mandubim"
-              height="150px" width="450px" />
-        </div>
-    
-        <section>
-            <header>
-              <h1><strong>Comunideia</strong></h1>
-            </header>
-            <span>Somos uma plataforma online que conecta empreendedores locais com clientes potenciais. Nossa missão é
-              promover o desenvolvimento econômico e social das comunidades locais, valorizando seus produtos e
-              serviços.</span>
+    <body>
+        <!-- Menu do site -->
+        
+        <!-- Área de registro -->
+
+        <section class="registro-container">
+            <form action="cadastro.php">
+                <div class="registro-title">
+                    <h2>CADASTRO</h2>
+                </div>
+
+                <div class="registro-perfil">
+                    <label>
+                        <p>Foto de perfil</p>
+                        <input type="file">
+                    </label>
+                </div>
+
+                <div class="registro-nome">
+                    <input placeholder="Digite aqui seu nome" id="inome" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-sobrenome">
+                    <input placeholder="Digite aqui seu sobrenome" id="isobrenome" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-user">
+                    <input placeholder="Digite aqui o nome de usuário" id="iuser" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-nascimento">
+                    <input placeholder="dd/mm/aaaa" id="idata" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-cpf">
+                    <input placeholder="Digite aqui seu CPF" id="icpf" type="text" autocomplete="off">
+                </div>
+
+
+                <div class="registro-email">
+                    <input placeholder="Digite aqui seu E-mail" id="iemail" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-confirmar-email">
+                    <input placeholder="Digite seu E-mail novamente" id="iemail" type="text" autocomplete="off">
+                </div>
+
+                <div class="registro-password">
+                    <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                </div>
+
+                <div class="registro-confirmar-password">
+                    <input placeholder="Digite aqui sua senha novamente" id="ipassword" type="password" autocomplete="off">
+                </div>
+
+                <div class="registro-buttom-next">
+                    <input type="submit" value="Próximo >" id="submit">
+                </div>
+
+                <div class="registro-buttom-enter">
+                    <h3>Já é cadastrado?<a href="login.html">Entrar com sua conta aqui!</a></h3>
+                    
+                </div>
+            </form>
         </section>
-    
-        <nav>
-            <ul>
-                <li><a href="./index.html">INÍCIO</a></li>
-                <li><a href="./empreendimentos.html">EMPREENDIMENTOS</a></li>
-                <li><a href="./cadastro.html">CADASTRE-SE</a></li>
-                <li><a href="./fale_conosco.html">FALE CONOSCO</a></li>
-                <li><a href="./sobre.html">SOBRE</a></li>
-            </ul>
-        </nav>
-    </header> 
 
+        <!-- Footer -->
 
-    <!-- Área de registro -->
-
-    <section class="register">
-        <form action="cadastro.php">
-            <div class="header_register">
-                <h2>CADASTRO</h2>
-            </div>
-
-            <div class="foto_perfil">
-                <label>
-                    <p>Foto de perfil</p>
-                    <input type="file">
-                </label>
-            </div>
-
-            <div class="nome">
-                <label for="inome">Nome</label>
-                <input placeholder="Digite aqui seu nome" id="inome" type="text" autocomplete="off">
-            </div>
-
-            <div class="sobrenome">
-                <label for="isobrenome">Sobrenome</label>
-                <input placeholder="Digite aqui seu sobrenome" id="isobrenome" type="text" autocomplete="off">
-            </div>
-
-            <div class="user">
-                <label for="iuser">Nome de usuário</label>
-                <input placeholder="Digite aqui o nome de usuário" id="iuser" type="text" autocomplete="off">
-            </div>
-
-            <div class="data_nascimento">
-                <label for="idata">Data de Nascimento</label>
-                <input placeholder="dd/mm/aaaa" id="idata" type="text" autocomplete="off">
-            </div>
-
-            <div class="email">
-                <label for="iemail">E-mail</label>
-                <input placeholder="Digite aqui seu E-mail" id="iemail" type="text" autocomplete="off">
-            </div>
-
-            <div class="confirmar_email">
-                <label for="iemail">Confirme seu E-mail</label>
-                <input placeholder="Digite seu E-mail novamente" id="iemail" type="text" autocomplete="off">
-            </div>
-
-            <div class="cpf">
-                <label for="icpf">CPF</label>
-                <input placeholder="Digite aqui seu CPF" id="icpf" type="text" autocomplete="off">
-            </div>
-
-            <div class="password">
-                <label for="ipassword">Senha</label>
-                <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
-            </div>
-
-            <div class="password">
-                <label for="ipassword">Digite sua senha novamente</label>
-                <input placeholder="Digite aqui sua senha novamente" id="ipassword" type="password" autocomplete="off">
-            </div>
-
-            <div class="proximo">
-                <input type="submit" value="Próximo >" id="submit">
-            </div>
-
-            <div class="entrar">
-                <h3>Já é cadastrado?</h3>
-                <a href="login.html">Entrar com sua conta aqui!</a>
-            </div>
-        </form>
-    </section>
-
-    <!-- Footer -->
-
-    <footer>
-        <ul type="square">
-          <li>Whatsapp</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-        </ul>
-        <p>© 2023 Empreendimentos Locais, Inc.</p>
-    </footer>
-</body>
-
+        
+    </body>
 </html>

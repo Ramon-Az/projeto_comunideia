@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: linear-gradient(45deg, cyan, white);
+}
+
+.registro-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    position: absolute;
+    padding: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+}
+
+.registro-title {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.registro-perfil {
+    text-align: center;
+}
+
+.registro-nome {
+    text-align: center;
+}
+
+.registro-nome > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;display: inline-block;
+}
+
+.registro-sobrenome {
+    text-align: center;
+}
+
+.registro-sobrenome > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-user {
+    text-align: center;
+}
+
+.registro-user > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-nascimento {
+    text-align: center;
+}
+
+.registro-nascimento > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-email {
+    text-align: center;
+}
+
+.registro-email > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-confirmar-email {
+    text-align: center;
+}
+
+.registro-confirmar-email > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-cpf {
+    text-align: center;
+}
+
+.registro-cpf > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-password {
+    text-align: center;
+}
+
+.registro-password > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro-confirmar-password {
+    text-align: center;
+}
+
+.registro-confirmar-password > input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
