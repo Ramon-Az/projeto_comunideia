@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilo-fale-conosco.css">
     <title>Fale conosco</title>
 </head>
 <body>
@@ -41,33 +42,41 @@
         </nav>
     </header> 
     <main>
-        <section>
-            <h2>Contate-nos</h2>
-            <p>Alguma dúvida ou observação? Basta nos escrever uma mensagem!</p>
-            <img src="" alt="Cumprimentando o cliente">
-            <p><strong>Paraíba-PB</strong></p>
-            <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - C</p>
-            
-        </section>
-        <section>
-            <h3>Entre em contato</h3>
-            <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo
-                para entrar em contato conosco.
-            </p>
-            
-            <label for="nome">Nome</label><br>
-            <input type="text" id="nome" name="nome">
-        </section>
-        <section>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email">
-        </section>
-        <section>
-            <label for="mensagem">Deixe seu comentário</label><br>
-            <textarea id="mensagem" name="mensagem"></textarea><br>
+        <div class="div-pai">
+            <div class="div-filha1">
+                <section>
+                    <h1>Contate-nos</h1>
+                    <p>Alguma dúvida ou observação? Basta nos escrever uma mensagem!</p>
+                    <img src="" alt="Cumprimentando o cliente">
+                    <h3>Paraíba-PB</h3>
+                    <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - CE</p>
+                </section>
+            </div>
 
-            <input type="submit" id="" name="botão">
-        </section>        
+            <div class="div-filho2">
+                <div class="fundo-preto">
+                    <section>
+                        <h2>Entre em contato</h2>
+                        <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo
+                            para entrar em contato conosco.</p>
+                    </section>
+                    <section>
+                        <form action="">
+                            <label for="nome">Nome</label><br>
+                            <input type="text" id="nome" name="nome"><br>
+                            
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"><br>
+
+                            <label for="mensagem">Deixe seu comentário</label><br>
+                            <textarea id="mensagem" name="mensagem"></textarea><br>
+
+                            <input type="submit" id="" name="botão">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>        
     </main>
     <footer>
         <ul>
@@ -76,7 +85,7 @@
             <li><a href="">Facebook</a></li>
             <li><a href="">Instagram</a></li>
         </ul>
-        <p center><center>© 2023 ComunidEia, Inc.</center></p>
+        <p>© 2023 ComunidEia, Inc.</p>
     </footer>   
 </body>
 </html>
