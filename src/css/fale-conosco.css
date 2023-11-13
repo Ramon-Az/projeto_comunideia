@@ -50,10 +50,12 @@ main{
     margin-bottom: 1.5em;
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
+
 #contato-empresa{
     font-size: 16px;
     margin: 0px;
 }
+
 #contato-empresa h3{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -106,6 +108,7 @@ main{
     margin-left: 2.5em;
     padding-left: 0.5em;
 }
+
 #mensagem{
     width: 580px;
     height: 200px;
@@ -118,9 +121,7 @@ main{
 .botao{
     background-color: rgb(114, 195, 248);
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
     cursor: pointer;
-    font-size: 1em;
 }
-
