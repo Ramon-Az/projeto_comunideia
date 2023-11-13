@@ -239,7 +239,7 @@ header {
 .bar {
   width: 7rem;
   height: 0.4rem;
-  border: 3px solid #98e3eb;
+  border: 2.6px solid #edf0ff66;
   margin: 6px;
   border-radius: 5px;
   cursor: pointer;
