@@ -14,3 +14,8 @@ Nosso projeto tem como foco atender comerciantes locais para agilizar sua presen
 - Josué Muniz: [JosuéJMuniz](https://github.com/JosueJMuniz)
 - Lucas Gonçalves: [Lucc-Minerva](https://github.com/Lucc-Minerva) 
 - Eliú Gadêlha
+
+### Links Úteis
+
+- Icons: [Font Awesome](https://fontawesome.com/icons)
+- Icon API: [CloudFlare](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
