@@ -119,12 +119,13 @@ footer {
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    color: var(--color-neutral-0);
 }
 
 .input-group button {
     background-color: cyan;
     border: none;
-    color: var(--color-neutral-40);
+    color: var(--color-neutral-0);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
