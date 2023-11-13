@@ -5,6 +5,11 @@
     box-sizing: border-box;
     letter-spacing: 1px;
 }
+
+main {
+    margin-bottom: 20%;
+}
+
 /*Começo de "Quem somos"*/
 #titulo-sobre{
     text-align: center;
