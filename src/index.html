@@ -11,12 +11,13 @@
 <body>
   <main>
     <header>
-      <nav id="nav-bar-01">
+      <nav class="nav-bar-01">
         <a class="logo-comunideia" rel="home" href="./index.html" target="_self">
-          <img src="./assets/img/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg" alt="Logotipo Comunideia">
+          <img class="logo-comunideia" src="./assets/img/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg"
+            alt="Logotipo Comunideia">
         </a>
         <section>
-          <ul>
+          <ul class="navbar1">
             <li>
               <div class="barra-busca">
                 <input type="text" class="busca-texto" placeholder="Pesquisar..." />
@@ -50,67 +51,238 @@
       </section>
 
     </header>
-    <nav class="nav-bar02">
-      <div class="home-btn" style="height: 0px; width: 1297px;">
-        <ul>
+    <nav class="nav-bar2">
+      <ul class="nav-bar2">
+        <div class="inicio">
           <li>
-            <a href="#" title="Vá para a pagina de inicio" target="_self">Inicio</a>
+            <a class="inicio" href="#" title="Vá para a pagina de inicio" target="_self">
+              <img class="nav-icon" src="./assets/img/home-icon-svg.svg" alt="Inicio">
+              Inicio
+            </a>
+
           </li>
+        </div>
+        <div class="btn-store">
           <li>
-            <a href="#" title="Vá para a pagina de empreendimentos" target="_blank">Empreendimentos</a>
+            <a class="btn-store" href="empreendimentos.html" title="Vá para a pagina de empreendimentos" target="_blank">
+              <img class="nav-icon" src="./assets/img/store-icon-svg.svg" alt="">
+              Empreendimentos
+            </a>
           </li>
+        </div>
+        <div class="btn-join">
           <li>
-            <a href="./registro.html" title="Vá para a pagina de cadastro" target="_blank">Cadastre-se</a>
+            <a class="btn-join" href="./cadastro.html" title="Vá para a pagina de cadastro" target="_blank">
+              <img class="nav-icon" src="./assets/img/add-profile-svg.svg" alt="">
+              Cadastre-se
+            </a>
           </li>
+        </div>
+        <div class="btn-fale">
           <li>
-            <a href="#" title="Vá para a pagina fale conosco" target="_blank">Fale conosco</a>
+            <a class="btn-fale" href="fale_conosco.html" title="Vá para a pagina fale conosco" target="_blank">
+              <img class="nav-icon" src="./assets/img/contact-us-svg.svg" alt="">
+              Fale conosco
+            </a>
           </li>
+        </div>
+        <div class="btn-about">
           <li>
-            <a href="#" title="Vá para a pagina sobre" target="_blank">Sobre</a>
+            <a class="btn-about" href="#" title="Vá para a pagina sobre" target="_blank">
+              <img class="nav-icon" src="./assets/img/about-us-svg.svg" alt="">
+              Sobre
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="title-gallery">Como nosso parceiro, ajudamos você empreendedor local a</h2>
+      <h2 class="title-gallery">divulgar seus produtos para milhares de pessoas</h2>
+    </div>
+
+
+    <div class="content">
+      <div class="slides">
+        <input class="input-slide" type="radio" name="slide" id="slide1" checked>
+        <input class="input-slide" type="radio" name="slide" id="slide2">
+        <input class="input-slide" type="radio" name="slide" id="slide3">
+        <input class="input-slide" type="radio" name="slide" id="slide4">
+        <input class="input-slide" type="radio" name="slide" id="slide5">
+
+        <div class="slide s1">
+          <img src="./assets/img/imagens-empreendimentos/Loja Acessorios de Celular Smart Cell.JPG"
+            alt="imagem-loja-de-celular">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Deposito Vasconcelos.JPG" alt="imagem-comercio-deposito">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Colegio Teleyos.JPG" alt="colegio teleyos">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Mercado Central Box.JPG" alt="mercado central">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Auto Peças Wellington.JPG" alt="livraria aires">
+        </div>
+
+
+      </div>
+      <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+      </div>
+
+    </div>
+    <!--Seção com cards-->
+
+    <section class="secao4" id="sobre">
+      <div class="secao4-div-title">
+        <h2>Clientes mais do que satisfeitos!</h2>
+      </div>
+      <div class="secao4-div">
+        <!-- Card 1 -->
+        <div class="secao4-div-card">
+          <img decoding="async" src="./assets/img/imagens-empreendimentos/Pastelaria Mitos.jpeg"
+            alt="imagem do card 1 html e css">
+          <h3>
+            <img src="./assets/img/imagens-interativas/pngwing.com.png" alt="">
+          </h3>
+
+          <div class="comments">
+            <span><i>Leticia P. Souza</i> - Sócia Proprietária na Mit's</span>
+            <p>
+              <br>
+              "Nunca imaginei que anúncios no Google Ads fariam tanta diferença para o meu comércio. Recomendo a todos
+              que entrem
+              nessa comunidade"
+            </p>
+          </div>
+          <div class="comments">
+            <Button class="btn-saibaMais">Saiba Mais</Button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="secao4-div-card">
+          <img decoding="async" src="./assets/img/imagens-empreendimentos/Pizzaria Espaço da Pizza.jpeg"
+            alt="imagem do card 2 html e css">
+          <h3>
+            <img src="./assets/img/imagens-interativas/pngwing.com.png" alt="">
+          </h3>
+          <div class="comments">
+            <span><i>Mauro Correia</i> - Gerente do Espaço da Pizza</span>
+            <p>
+              <br>
+              "Contratei os serviços de social media para minha pizzaria e ví o que uma boa divulgação traz para um
+              negócio. Estou super animado!"
+            </p>
+          </div>
+          <div class="comments">
+            <Button class="btn-saibaMais">Saiba Mais</Button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="secao4-div-card">
+          <img decoding="async" src="./assets/img/imagens-empreendimentos/Ceproce cusrsos Tecnicos.jpeg"
+            alt="imagem do card 3 html e css">
+          <h3>
+            <img src="./assets/img/imagens-interativas/pngwing.com.png" alt="">
+          </h3>
+          <div class="comments">
+            <span><i>Marisa Borges</i> - Administradora Ceproce</span>
+            <p>
+              <br>
+              "Eles conseguem descomplicar de todas as formas para nós pequenos empresários, o impacto positivo de ter
+              seu negócio na web é espantoso.
+            </p>
+          </div>
+          <div class="comments">
+            <Button class="btn-saibaMais">Saiba Mais</Button>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1>comunIdeia</h1>
+          <p>O seu negócio em um só lugar!</p>
+
+          <div class="footer-social-media">
+            <a href="#" class="footer-link" id="linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <h3>Blog</h3>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Empreendedorismo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Guia prático</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Soluções</a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <section id="destaques">
-      <h3>Destaques</h3>
-      <div class="destaques1" alt="Imagens de comércios em destaque">
-        <h4>Restaurante Daito Sushi</h4>
-        <img src="./img/imagens-empreendimentos/Restaurante Comida Japonesa Daito Sushi.JPG" height="250px"
-          width="250px">
-        <br>
-        <img src="./img/imagens-interativas/pngwing.com.png" height="30px" width="60px">
-        <br>
-        <input type="text" name="textoReview" id="review1" placeholder="Deixe aqui o seu comentário">
-        <Button>Saiba Mais</Button>
-      </div>
-      <div class="destaques2" alt="Imagens de comércios em destaque">
-        <h4>Oficina de Motos DG</h4>
-        <img src="./img/imagens-empreendimentos/Oficina de Motos DG.JPG" height="250px" width="250px">
-        <br>
-        <img src="./img/imagens-interativas/pngwing.com.png" height="30px" width="60px">
-        <br>
-        <input type="text" name="textoReview" id="review1" placeholder="Deixe aqui o seu comentário">
-        <Button>Saiba Mais</Button>
-      </div>
-      <div class="destaques3" alt="Imagens de comércios em destaque">
-        <h4>Acessórios de Celular Smart Cell</h4>
-        <img src="./img/imagens-empreendimentos/Loja Acessorios de Celular Smart Cell.JPG" height="250px" width="250px">
-        <br>
-        <img src="./img/imagens-interativas/pngwing.com.png" height="30px" width="60px">
-        <br>
-        <input type="text" name="textoReview" id="review1" placeholder="Deixe aqui o seu comentário">
-        <Button>Saiba Mais</Button>
-      </div>
-    </section>
-    <hr>
-    <footer>
-      <ul type="square">
-        <li>Whatsapp</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
 
-      </ul>
-      © 2023 Empreendimentos Locais, Inc.
+        <ul class="footer-list">
+          <li>
+            <h3>Contato</h3>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">(12) 99999 - 9999</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Seja um parceiro</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre a comunIdeia</a>
+          </li>
+        </ul>
+
+        <div class="footer-subscribe">
+          <h3>Inscreva-se!</h3>
+          <p>Insira o seu email para receber nossas atualizações!</p>
+
+          <div class="input-group">
+            <input type="email" id="email">
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        &#169 2023 comunIdeia - todos os direitos reservados
+      </div>
+
     </footer>
   </main>
 </body>
