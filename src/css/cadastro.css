@@ -39,7 +39,15 @@ body {
 }
 
 .form-container input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     margin: 15px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
 }
 
 .registro-perfil {
@@ -82,107 +90,7 @@ body {
     text-align: center;
 }
 
-.registro-nome > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;display: inline-block;
-}
-
-.registro-sobrenome > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-user > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-nascimento > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-email > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-confirmar-email > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-cpf > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-phone > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
-.registro-password > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
-    text-align: center;
-}
-
 .registro-confirmar-password {
-    text-align: center;
-}
-
-.registro-confirmar-password > input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    outline: none;
-    font-size: 15px;
     text-align: center;
 }
 
