@@ -52,9 +52,12 @@
                     </div>
     
                     <div class="registro-cpf">
-                        <input placeholder="Digite aqui seu CPF" id="icpf" type="text" autocomplete="off">
+                        <input type="text" id="icpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Seu CPF: 000.000.000-00" required>
                     </div>
-    
+                    
+                    <div class="registro-phone">
+                        <input type="tel" id="itelefone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="Seu número: 99-9999-9999" required>
+                    </div>
     
                     <div class="registro-email">
                         <input placeholder="Digite aqui seu E-mail" id="iemail" type="email" autocomplete="off">
