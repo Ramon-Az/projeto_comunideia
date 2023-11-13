@@ -7,84 +7,162 @@
         <title>Faça o seu cadastro!</title>
 
         <!-- CSS links -->
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="css/cadastro.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
         <!-- Menu do site -->
         
         <!-- Área de registro -->
+        <main>
+            <section class="registro-container">
 
-        <section class="registro-container">
-            <form action="cadastro.php">
                 <div class="registro-title">
-                    <h2>CADASTRO</h2>
+                    <h2>cadastro</h2>
                 </div>
 
-                <div class="registro-perfil">
-                    <label>
-                        <p>Foto de perfil</p>
-                        <input type="file">
-                    </label>
-                </div>
+                <form action="cadastro.php" class="form-container">
+    
+                    <!--<div class="registro-perfil">
+                        <label>
+                            <p>Foto de perfil</p>
+                            <input type="file">
+                        </label>
+                    </div>-->
 
-                <div class="registro-nome">
-                    <label for="inome">Nome</label>
-                    <input placeholder="Digite aqui seu nome" id="inome" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-sobrenome">
-                    <label for="isobrenome">Sobrenome</label>
-                    <input placeholder="Digite aqui seu sobrenome" id="isobrenome" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-user">
-                    <label for="iuser">Nome de usuário</label>
-                    <input placeholder="Digite aqui o nome de usuário" id="iuser" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-nascimento">
-                    <label for="idata">Data de Nascimento</label>
-                    <input placeholder="dd/mm/aaaa" id="idata" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-email">
-                    <label for="iemail">E-mail</label>
-                    <input placeholder="Digite aqui seu E-mail" id="iemail" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-confirmar-email">
-                    <label for="iemail">Confirme seu E-mail</label>
-                    <input placeholder="Digite seu E-mail novamente" id="iemail" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-cpf">
-                    <label for="icpf">CPF</label>
-                    <input placeholder="Digite aqui seu CPF" id="icpf" type="text" autocomplete="off">
-                </div>
-
-                <div class="registro-password">
-                    <label for="ipassword">Senha</label>
-                    <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
-                </div>
-
-                <div class="registro-confirmar-password">
-                    <label for="ipassword">Digite sua senha novamente</label>
-                    <input placeholder="Digite aqui sua senha novamente" id="ipassword" type="password" autocomplete="off">
-                </div>
+                    <div class="registro-nome">
+                        <input placeholder="Digite aqui seu nome" id="inome" type="text" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-sobrenome">
+                        <input placeholder="Digite aqui seu sobrenome" id="isobrenome" type="text" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-user">
+                        <input placeholder="Digite aqui o nome de usuário" id="iuser" type="text" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-nascimento">
+                        <input placeholder="dd/mm/aaaa" id="idata" type="date" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-cpf">
+                        <input type="text" id="icpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Seu CPF: 000.000.000-00" required>
+                    </div>
+                    
+                    <div class="registro-phone">
+                        <input type="tel" id="itelefone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="Seu número: 99-9999-9999" required>
+                    </div>
+    
+                    <div class="registro-email">
+                        <input placeholder="Digite aqui seu E-mail" id="iemail" type="email" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-confirmar-email">
+                        <input placeholder="Digite seu E-mail novamente" id="iemail" type="email" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-password">
+                        <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                    </div>
+    
+                    <div class="registro-confirmar-password">
+                        <input placeholder="Digite aqui sua senha novamente" id="ipassword" type="password" autocomplete="off">
+                    </div>
+                </form>
 
                 <div class="registro-buttom-next">
-                    <input type="submit" value="Próximo >" id="submit">
+                    <input type="submit" value="Concluído">
                 </div>
 
                 <div class="registro-buttom-enter">
                     <h3>Já é cadastrado?<a href="login.html">Entrar com sua conta aqui!</a></h3>
-                    
                 </div>
-            </form>
-        </section>
+            </section>
+        </main>
 
         <!-- Footer -->
 
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h1>comunIdeia</h1>
+                    <p>O seu negócio em um só lugar!</p>
+
+                    <div class="footer-social-media">
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Empreendedorismo</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Guia prático</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Soluções</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Contato</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">(12) 99999 - 9999</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Seja um parceiro</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Sobre a comunIdeia</a>
+                    </li>
+                </ul>
+    
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se!</h3>
+                    <p>Insira o seu email para receber nossas atualizações!</p>
+    
+                    <div class="input-group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                &#169 2023 comunIdeia - todos os direitos reservados
+            </div>
+
+        </footer>
+        
     </body>
 </html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;500;700&display=swap');
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+    --color-neutral-50: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(45deg, cyan, white);
+}
+
+.registro-container {
+    background-color: var(--color-neutral-50);
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 80px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.registro-title {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-container input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.registro-perfil {
+    text-align: center;
+}
+
+.registro-nome {
+    text-align: center;
+}
+
+.registro-sobrenome {
+    text-align: center;
+}
+
+.registro-user {
+    text-align: center;
+}
+
+.registro-nascimento {
+    text-align: center;
+}
+
+.registro-email {
+    text-align: center;
+}
+
+.registro-confirmar-email {
+    text-align: center;
+}
+
+.registro-cpf {
+    text-align: center;
+}
+
+.registro-phone {
+    text-align: center;
+}
+
+.registro-password {
+    text-align: center;
+}
+
+.registro-confirmar-password {
+    text-align: center;
+}
+
+.registro-buttom-next {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.registro-buttom-next input {
+    background-color: var(--color-neutral-0);
+    border-radius: 10px;
+    border: none;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 150px;
+    color: var(--color-neutral-40);
+    font-size: 15px;
+    transition: all 0.4s;
+}
+
+.registro-buttom-next > input:hover {
+    background-color: var(--color-neutral-10);
+    cursor: pointer;
+}
+
+.registro-buttom-enter {
+    text-align: center;
+}
+
+.registro-buttom-enter a {
+    text-decoration: none;
+}

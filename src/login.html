@@ -6,46 +6,133 @@
         <title>Faça seu login!</title>
 
         <!-- CSS links -->
-        <link rel="stylesheet" href="styles/login.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <!-- Menu do site -->
 
         <!-- Área de login -->
+        <main>
+            <section class="login-container">
+                <form action="cadastro.php">
+                    <div class="login-title">
+                        <h1>entrar</h1>
+                    </div>
 
-        <section class="login-container">
-            <form action="cadastro.php">
-                <div class="login-title">
-                    <h1>ENTRAR</h1>
-                </div>
+                    <div class="login-user">
+                        <input placeholder="Nome de usuário ou E-mail" id="iuser" type="email" autocomplete="on">
+                    </div>
 
-                <div class="login-user">
-                    <input placeholder="Nome de usuário ou E-mail" id="iuser" type="text" autocomplete="off">
-                </div>
+                    <div class="login-password">
+                        <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                    </div>
 
-                <div class="login-password">
-                    <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
-                </div>
+                    <div class="login-enter-buttom">
+                        <input type="submit" value="ENTRAR" id="submit">
+                    </div>
 
-                <div class="login-enter-buttom">
-                    <input type="submit" value="ENTRAR" id="submit">
-                </div>
+                    <div class="login-socials">
+                        <a href="#" class="socials" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
 
-                <div class="login-socials">
-                    <ul>
-                        <li><a href="#"><img src="./assets/img/facebook-icon.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img id="google" src="./assets/img/google-icon.png" alt="Google"></a></li>
-                        <li><a href="#"><img id="linkedin" src="./assets/img/linkedin-icon.png" alt="LinkedIn"></a></li>
-                    </ul>
-                </div>
+                        <a href="#" class="socials" id="google">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
 
-                <div class="login-buttom-register">
-                    <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
-                </div>
-            </form>
-        </section>
+                        <a href="#" class="socials" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                    <div class="login-buttom-register">
+                        <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <!-- Footer -->
 
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h1>comunIdeia</h1>
+                    <p>O seu negócio em um só lugar!</p>
+
+                    <div class="footer-social-media">
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Empreendedorismo</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Guia prático</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Soluções</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Contato</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">(12) 99999 - 9999</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Seja um parceiro</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Sobre a comunIdeia</a>
+                    </li>
+                </ul>
+    
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se!</h3>
+                    <p>Insira o seu email para receber nossas atualizações!</p>
+    
+                    <div class="input-group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                &#169 2023 comunIdeia - todos os direitos reservados
+            </div>
+
+        </footer>
     </body>
 </html>
