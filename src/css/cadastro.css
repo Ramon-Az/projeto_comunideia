@@ -172,9 +172,31 @@ body {
     text-align: center;
 }
 
-.registro-buttom-enter {
+.registro-buttom-next {
     text-align: center;
     padding-top: 50px;
+}
+
+.registro-buttom-next input {
+    background-color: var(--color-neutral-0);
+    border-radius: 10px;
+    border: none;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 150px;
+    color: var(--color-neutral-40);
+    font-size: 15px;
+    transition: all 0.4s;
+}
+
+.registro-buttom-next > input:hover {
+    background-color: var(--color-neutral-10);
+    cursor: pointer;
+}
+
+.registro-buttom-enter {
+    text-align: center;
 }
 
 .registro-buttom-enter a {
