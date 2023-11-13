@@ -109,11 +109,9 @@ footer {
 }
 
 .input-group {
-
-
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: var(--color-neutral-40);
     border-radius: 4px;
 }
 
