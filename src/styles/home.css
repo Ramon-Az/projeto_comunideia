@@ -12,7 +12,7 @@ body {
 }
 header {
   /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
-  background: url(/src/assets/img/Group\ 2251.svg),
+  background: url(/src/assets/svg/Group\ 2251.svg),
     rgb(255, 255, 255) 50% / cover no-repeat;
   background-repeat: no-repeat;
   width: 1145px;
@@ -364,16 +364,19 @@ img {
 .comments {
   border-radius: 4px;
   font-size: 1.3rem;
-  margin: 0.4rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .btn-saibaMais {
   display: flex;
   align-items: center;
-  height: 2rem;
-  width: 9rem;
+  height: 1rem;
+  width: 14rem;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
+  padding: 0.2rem;
+  margin: 1rem;
   border: 1rem solid black;
   color: white;
   background-color: black;
