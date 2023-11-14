@@ -46,13 +46,14 @@ main {
 }
 
 /*Começo da "Nossa equipe"*/
-h2{
+h2{ /*Esse titulo 2 vale para "A plataforma que conecta a comunidade e Nossa equipe especial"*/
     text-align: left;
     font-size: 1.8em;
     margin-top: 1.2em;
     margin-bottom: 0 em;
     margin-left: 2rem;
     margin-right: 0rem;
+    color: rgb(28, 126, 255);
 }
 
 .div-pai > .alinhado-esquerda{
