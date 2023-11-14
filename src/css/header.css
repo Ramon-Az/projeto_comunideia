@@ -3,6 +3,7 @@
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
+    --color-neutral-50: #ffffff;
 
     --color-blue-0: #00B6EF;
     --color-blue-10: #0d00c0;
@@ -10,7 +11,7 @@
 }
 
 .nav-menu {
-    background-color: var(--color-neutral-40);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 15px 0;
     padding: 1rem;
     width: 100%;
@@ -37,6 +38,20 @@
     text-decoration: none;
     color: var(--color-neutral-0);
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+.nav-menu a:hover {
+    color: var(--color-blue-0);
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}
+
+img.nav-icon {
+    margin-bottom: -5px;
+}
 
