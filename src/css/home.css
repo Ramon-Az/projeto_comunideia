@@ -9,6 +9,11 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+main {
+  margin-bottom: 20%;
+}
+
 header {
   /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
   background: url(./Group\ 2251.svg), rgb(255, 255, 255) 50% / cover no-repeat;

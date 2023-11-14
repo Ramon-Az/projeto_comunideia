@@ -5,7 +5,9 @@
     box-sizing: border-box;
     letter-spacing: 1px;
 }
+
 main{
+    margin-bottom: 20%;
     background-color: rgb(114, 195, 248);
     background: linear-gradient(45deg, #7ac3f8, #fffffd);
 }

@@ -1,12 +1,17 @@
-@import url('roboto slab')
-*{
-    padding: 100;
-    margin: 100;
+@import url('roboto slab');
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: content-box;
 }
 body{
     background-color: #ffe60085;
 }
+main {
+    margin-bottom: 20%;
+}
+
 header{
     height: 250px;
     display: center;
