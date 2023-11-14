@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
+  width: 100%;
 }
 body {
   height: 100vh;
@@ -11,7 +12,7 @@ body {
 }
 header {
   /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
-  background: url(/src/css/Group\ 2251.svg),
+  background: url(/src/assets/img/Group\ 2251.svg),
     rgb(255, 255, 255) 50% / cover no-repeat;
   background-repeat: no-repeat;
   width: 1145px;
@@ -21,7 +22,7 @@ header {
 
 .nav-bar-01 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: var(--nav-text-color);
   height: 10rem;
@@ -33,7 +34,7 @@ header {
   display: flex;
   justify-content: center;
   width: 35.1875rem;
-  height: 24.625rem;
+  height: 27.625rem;
   flex-shrink: 0;
   margin-top: 1%;
 }
@@ -48,8 +49,8 @@ header {
   border-radius: 1.5rem;
   outline: 0;
   height: 4.6rem;
-  width: 50rem;
-  margin-left: -4%;
+  width: 56rem;
+  margin-left: 5rem;
 }
 
 ::-webkit-input-placeholder {
@@ -63,7 +64,7 @@ header {
   border: 1.5rem;
   outline: 0;
   font: 20px;
-  width: 59rem;
+  width: 400rem;
 }
 
 .barra-busca:hover > .busca-texto {
@@ -106,7 +107,7 @@ header {
   font-family: "Roboto Slab", serif;
   font-size: 4rem;
   font-style: normal;
-  font-weight: 800;
+  text-align: justify;
   line-height: 140%; /* 5.04rem */
   letter-spacing: 0.08rem;
   margin-left: 8%;
@@ -134,7 +135,6 @@ header {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 3rem;
 }
 
 /*Estilizando botao entrar*/
@@ -151,7 +151,7 @@ header {
   border-radius: 0.8rem;
   color: var(--button-text-color);
   border-color: var(--button-bg-color);
-  margin-left: -30%;
+  margin-left: -50%;
 }
 
 .login-btn:hover > .button-login {
@@ -163,28 +163,27 @@ header {
 .nav-bar2 {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-
-  width: 1020px;
-  height: 60px;
-  margin: 1rem;
-  margin-left: 1rem;
+  width: 100%;
+  margin-left: 0.3rem;
+  margin-bottom: 1rem;
   margin-top: -1rem;
   padding: 2rem;
 
   font-family: "Roboto Slab", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-bar2:hover {
   column-gap: none;
 }
 .nav-icon {
-  width: 2.4rem;
-  height: 1.6rem;
+  display: inline-flex;
+  width: 3rem;
+  height: 2rem;
 }
 
 .inicio {
@@ -318,8 +317,9 @@ header {
   flex-direction: column;
   align-items: center;
   width: 29rem;
-  height: 45rem;
-  margin: 10px;
+  height: 50rem;
+  margin: 1.9rem;
+  margin-bottom: 3rem;
   padding: 20px;
   box-shadow: 6px 5px 55px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -370,13 +370,14 @@ img {
 .btn-saibaMais {
   display: flex;
   align-items: center;
+  height: 2rem;
+  width: 9rem;
   justify-content: center;
   text-align: justify;
-  margin: 3rem;
-  border: 9px solid black;
+  border: 1rem solid black;
   color: white;
   background-color: black;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 .btn-saibaMais:hover {
   cursor: pointer;
