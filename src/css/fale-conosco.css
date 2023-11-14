@@ -108,8 +108,9 @@ main{
     width: 580px;
     height: 5em;
     border-radius: 10px;
-    margin-left: 2.5em;
-    padding-left: 0.5em;
+    margin-left: 0em;
+    padding-left: 0em;
+    align-self: center;
 }
 
 #mensagem{
@@ -122,9 +123,10 @@ main{
 }
 
 .botao{
-    background-color: rgb(114, 195, 248);
+    background-color: #0052ce;
     border-radius: 10px;
     font-weight: bolder;
     color: white;
     cursor: pointer;
+    font-size: 20px;
 }
