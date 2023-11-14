@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/fale-conosco.css">
+    <link rel="stylesheet" href="./css/fale-conosco.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Fale conosco</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<!--
     <header>
         <div id="divBusca">
             <input type="text" id="TextBusca" placeholder="Pesquise o empreendimento..." size="50px" />
@@ -41,51 +46,130 @@
             </ul>
         </nav>
     </header> 
+-->
     <main>
-        <div class="div-pai">
-            <div class="div-filha1">
-                <section>
+        <section>
+            
+            <div class="div-pai">
+
+                <div class="div-filho1">
                     <h1>Contate-nos</h1>
                     <p>Alguma dúvida ou observação? Basta nos escrever uma mensagem!</p>
-                    <img src="" alt="Cumprimentando o cliente">
-                    <h3>Paraíba-PB</h3>
-                    <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - CE</p>
-                </section>
+                    <img src="./assets/img/imagens-sobre-f-conosco/comprimentando o cliente.png" alt="Cumprimentando o cliente">
+                    
+                    <div id="contato-empresa">
+                        
+                        <h3>Paraíba-PB</h3>
+                        <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - CE</p>
+                                   
+                        <h3>São Paulo - SP</h3>
+                        <p>R. São Lázaro, 361-499 - Velho Mondubim, São Paulo - SP</p>                  
+                    
+                        <h3>Rio de Janeiro - RJ</h3>
+                        <p>R. São Lázaro, 361-499 - Mondubim, Rio de Janeiro - RJ</p>
+                    </div>
+                </div>
+                
+                <div class="div-filho2">
+                    <h1>Entre em contato</h1>
+                    <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo para entrar em contato conosco.
+                    </p>
+                    
+                    <form action="">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+            
+                        <label for="mensagem">Deixe seu comentário:</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+            
+                        <input class="botao" type="submit" id="enviar-contato" name="botão">
+                    </form>                                         
+                </div> 
             </div>
+        </section>   
+                  
+    </main>
+   
+    <!-- Footer -->
 
-            <div class="div-filho2">
-                <div class="fundo-preto">
-                    <section>
-                        <h2>Entre em contato</h2>
-                        <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo
-                            para entrar em contato conosco.</p>
-                    </section>
-                    <section>
-                        <form action="">
-                            <label for="nome">Nome</label><br>
-                            <input type="text" id="nome" name="nome"><br>
-                            
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email"><br>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1>comunIdeia</h1>
+                <p>O seu negócio em um só lugar!</p>
 
-                            <label for="mensagem">Deixe seu comentário</label><br>
-                            <textarea id="mensagem" name="mensagem"></textarea><br>
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
 
-                            <input type="submit" id="" name="botão">
-                        </form>
-                    </section>
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
-        </div>        
-    </main>
-    <footer>
-        <ul>
-            <li><a href="">WhatsApp</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-        </ul>
-        <p>© 2023 ComunidEia, Inc.</p>
-    </footer>   
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Empreendedorismo</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Guia prático</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Soluções</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">(12) 99999 - 9999</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Seja um parceiro</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Sobre a comunIdeia</a>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Inscreva-se!</h3>
+                <p>Insira o seu email para receber nossas atualizações!</p>
+
+                <div class="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            &#169 2023 comunIdeia - todos os direitos reservados
+        </div>
+
+    </footer>
 </body>
 </html>
