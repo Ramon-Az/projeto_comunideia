@@ -10,15 +10,14 @@ body {
   width: 100vw;
 }
 
+
 header {
   /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
-  background: url(/src/assets/svg/Group\ 2251.svg),
-    rgb(255, 255, 255) 50% / cover no-repeat;
   background-repeat: no-repeat;
   width: 120rem;
   height: 50rem;
   padding-top: 2rem;
-  background-image: linear-gradient(99deg, #00B6EF, white);
+  background-image: linear-gradient(45deg, #00B6EF, white);
 }
 
 .nav-bar-01 {
@@ -29,6 +28,7 @@ header {
   height: 10rem;
 
   padding: 0 2.9rem;
+  
 }
 
 .logo-comunideia {
@@ -232,6 +232,7 @@ header {
   position: absolute;
   margin-top: 3rem;
   margin-left: 2.5%;
+  
 }
 
 .navigation {
@@ -307,7 +308,7 @@ header {
 .secao4 {
   margin: 0;
   margin-top: 36rem;
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .secao4-div {
@@ -372,13 +373,14 @@ img {
   font-size: 1.3rem;
   margin: 0.5rem;
   margin-bottom: 2rem;
+  font-family: "Roboto Slab", serif;
 }
 
 .btn-saibaMais {
   display: flex;
   align-items: center;
-  height: 1rem;
-  width: 14rem;
+  height: 4rem;
+  width: 16rem;
   justify-content: center;
   text-align: center;
   padding: 0.2rem;
@@ -387,6 +389,7 @@ img {
   color: white;
   background-color: black;
   border-radius: 1rem;
+  font-size: 1.3rem;
 }
 .btn-saibaMais:hover {
   cursor: pointer;
