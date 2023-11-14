@@ -9,18 +9,15 @@
     --color-blue-20: #4267b3;
 }
 
-.header-container {
+.nav-menu {
     background-color: var(--color-neutral-40);
     padding: 15px 0;
     padding: 1rem;
     width: 100%;
     position: fixed;
-    
-}
-
-.nav-menu {
     display: flex;
     justify-content: center;
+    z-index: 1000;
 }
 
 .nav-menu ul {
@@ -42,7 +39,4 @@
     font-weight: bold;
 }
 
-#navbar {
-    position: relative;
-}
 
