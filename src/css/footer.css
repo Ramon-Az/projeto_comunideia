@@ -5,6 +5,11 @@
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
+
+    --color-blue-0: #00B6EF;
+    --color-blue-10: #0d00c0;
+    --color-blue-20: #4267b3;
+    --color-blue-30: #49CBF3;
 }
 
 * {
@@ -16,7 +21,7 @@
 }
 
 main {
-    height: 130vh;
+    height: 120vh;
 }
 
 footer {
@@ -112,20 +117,20 @@ footer {
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-40);
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .input-group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
-    color: var(--color-neutral-0);
+    color: var(--color-blue-10);
 }
 
 .input-group button {
-    background-color: cyan;
+    background-color: var(--color-blue-10);
     border: none;
-    color: var(--color-neutral-0);
+    color: var(--color-neutral-40);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
