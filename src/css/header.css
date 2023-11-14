@@ -1,10 +1,24 @@
-header {
-    background-color: #333;
-    padding: 15px 0;
-    padding: 5rem;
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+    --color-blue-0: #00B6EF;
+    --color-blue-10: #0d00c0;
+    --color-blue-20: #4267b3;
 }
 
-nav {
+.header-container {
+    background-color: var(--color-neutral-40);
+    padding: 15px 0;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    
+}
+
+.nav-menu {
     display: flex;
     justify-content: center;
 }
@@ -14,37 +28,21 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 .nav-menu li {
     margin: 0 20px;
+    
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-neutral-0);
     font-weight: bold;
 }
 
-/* Estilos adicionais para tornar o menu fixo no topo */
 #navbar {
     position: relative;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    animation: fadeInDown 0.5s;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
