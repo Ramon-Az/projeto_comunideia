@@ -18,7 +18,8 @@ body {
     background-image: linear-gradient(45deg, #00B6EF, white);
 }
 
-main {
+.main-content {
+    height: 200vh;
     margin-bottom: 5rem;
 }
 
@@ -31,6 +32,7 @@ main {
     padding-bottom: 60px;
     top: 50%;
     left: 50%;
+    margin-top: 20rem;
     position: absolute;
     transform: translate(-50%, -50%);
 }
