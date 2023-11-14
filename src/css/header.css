@@ -1,0 +1,56 @@
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+    --color-neutral-50: #ffffff;
+
+    --color-blue-0: #00B6EF;
+    --color-blue-10: #0d00c0;
+    --color-blue-20: #4267b3;
+}
+
+.nav-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-menu li {
+    margin: 0 20px;
+    
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-neutral-0);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--color-blue-0);
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}
+
+img.nav-icon {
+    margin-bottom: -5px;
+}
+

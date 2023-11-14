@@ -8,6 +8,10 @@
         <!-- CSS links -->
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header.css">
+
+        <!-- Js Links -->
+        <script src="js/main.js" defer></script>
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,8 +19,37 @@
     <body>
         <!-- Menu do site -->
 
+        <header class="header-container">
+
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/home-icon-svg.svg" alt="Inicio">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/store-icon-svg.svg" alt="Empreendimentos">
+                        <a href="#empreendimentos">Empreendimentos</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/add-profile-svg.svg" alt="Cadastre-se">
+                        <a href="cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/contact-us-svg.svg" alt="Fale Conosco">
+                        <a href="fale_conosco.html">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
         <!-- Área de login -->
-        <main>
+        <main class="main-content">
             <section class="login-container">
                 <form action="cadastro.php">
                     <div class="login-title">
@@ -24,10 +57,12 @@
                     </div>
 
                     <div class="login-user">
+                        <p>Login</p>
                         <input placeholder="Nome de usuário ou E-mail" id="iuser" type="email" autocomplete="on">
                     </div>
 
                     <div class="login-password">
+                        <p>Senha</p>
                         <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
                     </div>
 
@@ -107,11 +142,11 @@
                     </li>
     
                     <li>
-                        <a href="#" class="footer-link">Seja um parceiro</a>
+                        <a href="fale_conosco.html" class="footer-link">Seja um parceiro</a>
                     </li>
     
                     <li>
-                        <a href="#" class="footer-link">Sobre a comunIdeia</a>
+                        <a href="sobre.html" class="footer-link">Sobre a comunIdeia</a>
                     </li>
                 </ul>
     

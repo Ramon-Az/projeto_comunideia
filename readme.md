@@ -1,6 +1,8 @@
-# Nosso projeto
+# Nosso projeto: ComunIdeia
 
-Nosso projeto tem como foco atender comerciantes locais para agilizar sua presença digital para criar conexões entre estabelecimentos e cliente.
+### A plataforma que conecta a comunidade
+
+Somos uma plataforma online que conecta empreendedores locais com clientes potenciais. Nossa missão é promover o desenvolvimento econômico e social das comunidades locais, valorizando seus produtos e serviços. Aqui você pode encontrar e contratar empreendedores de diversas áreas, como artesanato, gastronomia, beleza, educação, saúde, tecnologia e muito mais. Você também pode se cadastrar como empreendedor local e divulgar seu trabalho para milhares de pessoas. Nós oferecemos ferramentas e recursos para facilitar a comunicação, o pagamento e a avaliação dos serviços. Além disso, nós incentivamos a troca de experiências, conhecimentos e oportunidades entre os empreendedores locais, criando uma rede de apoio e colaboração. Junte-se a nós e faça parte dessa comunidade que valoriza o empreendedorismo local!
 
 ### Tecnologias
 
