@@ -2,113 +2,129 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/empreendimentos.css">
-        <title>Empreendimentos</title> 
+        <title>Empreendimentos</title>
+
+        <!-- CSS links -->
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header.css">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Js Links -->
+        <script src="js/main.js" defer></script>
     </head>
     <body>
-        <header>
-            <div id="divBusca">
-                <input type="text" id="TextBusca" placeholder="Pesquise o empreendimento..." size="50px" />
-                <button id="botaoBuscar" type="submit">Buscar</button>
-            </div>
-        
-            <div id="botaoEntrar">
-                <a href="./login.html" title="Clique para fazer o login"><button id="Entrar" type="menu">Entrar</button></a>
-            </div>
-        
-            <div id="imagemPrincipal" title="Imagem de inicio">
-                <img id="imgInicial" src="img/imagens-empreendimentos/imagem_home.jpeg" alt="Imagem da Lagoa do Mandubim"
-                height="150px" width="450px" />
-            </div>
-        
-            <section>
-                <header>
-                <h1><strong>Comunideia</strong></h1>
-                </header>
-                <span>Somos uma plataforma online que conecta empreendedores locais com clientes potenciais. Nossa missão é
-                promover o desenvolvimento econômico e social das comunidades locais, valorizando seus produtos e
-                serviços.</span>
-            </section>
-        
-            <nav>
+        <!-- Menu do site -->
+
+        <header class="header-container">
+            <nav class="nav-menu">
                 <ul>
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="./empreendimentos.html">EMPREENDIMENTOS</a></li>
-                    <li><a href="./cadastro.html">CADASTRE-SE</a></li>
-                    <li><a href="./fale_conosco.html">FALE CONOSCO</a></li>
-                    <li><a href="./sobre.html">SOBRE</a></li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/home-icon-svg.svg" alt="Inicio">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/store-icon-svg.svg" alt="Empreendimentos">
+                        <a href="#empreendimentos">Empreendimentos</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/add-profile-svg.svg" alt="Cadastre-se">
+                        <a href="cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" src="assets/svg/contact-us-svg.svg" alt="Fale Conosco">
+                        <a href="fale_conosco.html">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-        <div class="gallery-container">
-            <a href="imagens/Colegio Teleyos.JPG" class="gallery-items">
-                <img src="imagens/Colegio Teleyos.JPG" alt="Colegio Teleyos">
-                <h1>Colegio Teleyos</h1>
-            </a>
-            <a href="imagens/Comercio Variedades Polo Variedades.JPG" class="gallery-items">
-                <img src="imagens/Comercio Variedades Polo Variedades.JPG" alt="Comercio Variedades Polo Variedades">
-                <h1>Polo das Variedades</h1>
-            </a>
-            <a href="imagens/Cabeleleiro Edvan Rocha.JPG" class="gallery-items">
-                <img src="imagens/Cabeleleiro Edvan Rocha.JPG" alt="Cabeleireiro Edvan">
-                <h1>Edvan Cabeleireiro</h1>
-            </a>  
-            <a href="imagens/Oficina de Motos DG.JPG" class="gallery-items">
-                <img src="imagens/Oficina de Motos DG.JPG" alt="Oficina DG">
-                <h1>Oficina DG</h1>
-            </a>          
-            <a href="imagens/Açaiteria Ki açai.JPG" class="gallery-items">
-                <img src="imagens/Açaiteria Ki açai.JPG" alt="Açaiteria Ki Açai">
-                <h1>Açaiteria Ki Açai</h1>
-            </a>
-            <a href="imagens/Livraria Aires.JPG" class="gallery-items">
-                <img src="imagens/Livraria Aires.JPG" alt="Livraria Aires">
-                <h1>Livraria Aires</h1>
-            </a>
-            <a href="imagens/Mercado Central Box.JPG" class="gallery-items">
-                <img src="imagens/Mercado Central Box.JPG" alt="Mercado Central Box">
-                <h1>Central Box</h1>
-            </a>
-            <a href="imagens/Supermercado Santa Ana.JPG" class="gallery-items">
-                <img src="imagens/Supermercado Santa Ana.JPG" alt="Supermercado Santa Ana">
-                <h1>Mercantil Santa Ana</h1>
-            </a>
-            <a href="imagens/Lava Jato Autobrilho.JPG" class="gallery-items">
-                <img src="imagens/Lava Jato Autobrilho.JPG" alt="Lava Jato Auto Brilho">
-                <h1>Lava Jato Autobrilho</h1>
-            </a>
-            <a href="imagens/Fabim Acessorios.JPG" class="gallery-items">
-                <img src="imagens/Fabim Acessorios.JPG" alt="Fabim Acessorios">
-                <h1>Fabom Acessorios</h1>
-            </a>
-            <a href="imagens/Farmacia Economia Farma.JPG" class="gallery-items">
-                <img src="imagens/Farmacia Economia Farma.JPG" alt="Farmacia Economia Farma">
-                <h1>Economia Farma</h1>
-            </a>
-            <a href="imagens/Restaurante Comida Japonesa Daito Sushi.JPG" class="gallery-items">
-                <img src="imagens/Restaurante Comida Japonesa Daito Sushi.JPG" alt="Restaurante Daito">
-                <h1>Restaurante Daito</h1>
-            </a>
-            <a href="imagens/Clinica Mondubim.JPG" class="gallery-items">
-                <img src="imagens/Clinica Mondubim.JPG" alt="Clinica">
-                <h1>Clinica Mondubim</h1>
-            </a>            
-            <a href="imagens/Colegio Marina Santos.JPG" class="gallery-items">
-                <img src="imagens/Colegio Marina Santos.JPG" alt="Colegio Marina Santos">
-                <h1>Colegio Marina Santos</h1>
-            </a>
-            <a href="imagens/Supermercado Varejao.JPG" class="gallery-items">
-                <img src="imagens/Supermercado Varejao.JPG" alt="Varejao">
-                <h1>Supermecado Varejao</h1>
-            </a>
-        </div>
-    </main>    
+        <!-- Conteúdo -->
+
+        <main class="main-content"></main>
+        
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h1>ComunIdeia</h1>
+                    <p>O seu negócio em um só lugar!</p>
+
+                    <div class="footer-social-media">
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Empreendedorismo</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Guia prático</a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">Soluções</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Contato</h3>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="footer-link">(12) 99999 - 9999</a>
+                    </li>
+    
+                    <li>
+                        <a href="fale_conosco.html" class="footer-link">Seja um parceiro</a>
+                    </li>
+    
+                    <li>
+                        <a href="sobre.html" class="footer-link">Sobre a ComunIdeia</a>
+                    </li>
+                </ul>
+    
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se!</h3>
+                    <p>Insira o seu email para receber nossas atualizações!</p>
+    
+                    <div class="input-group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                &#169 2023 ComunIdeia - todos os direitos reservados
+            </div>
+        </footer>
     </body>
 </html>
