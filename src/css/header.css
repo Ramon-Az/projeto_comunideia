@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
+
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
@@ -15,7 +16,10 @@
     --button-bg-color: #0052ce;
     --button-text-color: white;
 }
-    
+
+* {
+    font-family: "Roboto Slab", serif;
+}
 
 .header-container{
     /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
@@ -62,9 +66,9 @@
 
 ::-webkit-input-placeholder {
     font-size: 17px;
-    font-family: "Roboto";
-    color: #0d00c0;
+    font-family: "Roboto Slab", serif;
 }
+
 .barra-busca:hover > .busca-texto {
     cursor: pointer;
   }
