@@ -11,16 +11,55 @@
     <link rel="stylesheet" href="css/header.css">
 
     <!-- Js Links -->
-    <script src="js/main.js" defer></script>
+   <!-- <script src="js/main.js" defer></script> -->
+    <script src="./js/testeEfeitomenu.js"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <!-- Menu do site -->
 
      <header class="header-container">
+        <!-- Menu do site - parte da logo, pesquisa e botao entrar-->
+        <nav class="nav-bar-01">
+            <a class="logo-comunideia" rel="home" href="./index.html" target="_self">
+              <img class="logo-comunideia" src="/src/assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg"
+                alt="Logotipo Comunideia">
+            </a>
+            <section>
+              <ul class="navbar1">
+                <li>
+                  <div class="barra-busca">
+                    <input type="text" class="busca-texto" placeholder="Pesquisar..." />
+                    <a class="busca-btn">
+                      <img class="loupe-blue" src="/src/assets/svg/loupe-blue.svg" alt="Clique para fazer a busca">
+                      <img class="loupe-white" src="/src/assets/svg/loupe-white.svg" alt="Clique para fazer a busca">
+                  </div>
+                </li>
+                <li class="login-btn">
+                  <a class="login-btn" href="./login.html" title="Clique para fazer o login">
+                    <button class="button-login" type="menu">ENTRAR</button>
+                  </a>
+                </li>
+              </ul>
+            </section>
+        </nav>
 
+        <!-- Menu do site  - texto sobre oq se trata o site de forma resumida-->
+        <section class="text">
+            <h1 class="text-01">
+              A plataforma online que ajuda
+            </h1>
+            <h1 class="text-01">a inserir o seu negócio na web
+            </h1>
+            <h3 class="text-02">
+              Promovemos o desenvolvimento econômico e social das
+              <br>
+              comunidades locais, valorizando seus produtos e serviços.
+            </h3>
+          </section>
+
+        <!-- Menu do site  fixado-->
         <nav class="nav-menu">
             <ul>
                 <li>
@@ -49,47 +88,44 @@
 
      <!-- Área de fale conosco -->
     <main>
-        <section>
+        <section class="secao">
             
-            <div class="div-pai">
-
-                <div class="div-filho1">
-                    <h1>Contate-nos</h1>
-                    <p>Alguma dúvida ou observação? Basta nos escrever uma mensagem!</p>
-                    <img src="./assets/img/imagens-sobre-f-conosco/comprimentando o cliente.png" alt="Cumprimentando o cliente">
-                    
-                    <div id="contato-empresa">
-                        
-                        <h3>Paraíba-PB</h3>
-                        <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - CE</p>
-                                   
-                        <h3>São Paulo - SP</h3>
-                        <p>R. São Lázaro, 361-499 - Velho Mondubim, São Paulo - SP</p>                  
-                    
-                        <h3>Rio de Janeiro - RJ</h3>
-                        <p>R. São Lázaro, 361-499 - Mondubim, Rio de Janeiro - RJ</p>
-                    </div>
-                </div>
+            <div class="div-filho1">
+                <h1>Contate-nos</h1>
+                <p>Alguma dúvida ou observação? Basta nos escrever uma mensagem!</p>
+                <img src="./assets/img/imagens-sobre-f-conosco/comprimentando o cliente.png" alt="Cumprimentando o cliente">
                 
-                <div class="div-filho2">
-                    <h1>Entre em contato</h1>
-                    <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo para entrar em contato conosco.
-                    </p>
+                <div id="contato-empresa">
                     
-                    <form action="">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome">
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-            
-                        <label for="mensagem">Deixe seu comentário</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
-            
-                        <input type="submit" id="enviar-contato" name="botão" :hover>
-                    </form>                                         
-                </div> 
+                    <h3>Paraíba-PB</h3>
+                    <p>R. São Lázaro, 361-499 - Novo Mondubim, Fortaleza - CE</p>
+                               
+                    <h3>São Paulo - SP</h3>
+                    <p>R. São Lázaro, 361-499 - Velho Mondubim, São Paulo - SP</p>                  
+                
+                    <h3>Rio de Janeiro - RJ</h3>
+                    <p>R. São Lázaro, 361-499 - Mondubim, Rio de Janeiro - RJ</p>
+                </div>
             </div>
+            
+            <div class="div-filho2">
+                <h1>Entre em contato</h1>
+                <p>Tem um inquérito ou algum feedback para nós? Preencha o formulário abaixo para entrar em contato conosco.
+                </p>
+                
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+        
+                    <label for="mensagem">Deixe seu comentário</label>
+                    <textarea id="mensagem" name="mensagem" ></textarea>
+        
+                    <input type="submit" id="enviar-contato" name="botão" :hover>
+                </form>                                         
+            </div> 
         </section>   
                   
     </main>
@@ -98,7 +134,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-contacts">
-                <h1>comunIdeia</h1>
+                <h1>ComunIdeia</h1>
                 <p>O seu negócio em um só lugar!</p>
 
                 <div class="footer-social-media">

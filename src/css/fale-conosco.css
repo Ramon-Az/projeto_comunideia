@@ -7,62 +7,59 @@
     letter-spacing: 1px;
 }
 body{
-    background-color: rgb(114, 195, 248);
-    background: linear-gradient(45deg, #7ac3f8, #fffffd);
-     
-}
-main{
-    margin-bottom: 21%;
-    height: auto;
+    background-image: linear-gradient(45deg, #00b6ef, white); 
     
 }
-.div-pai{
+main{
+    height: 150vh;
+    width: 200vh;
+    margin: auto;  
+}
+
+.secao {
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20%;
     display: flex;
     flex-direction: row-reverse;
-    height: auto;
-    padding-top: 5em;
     justify-content: center;
     align-items: center;
+    padding-top: 30%;
+    padding-bottom: 20%;
 }
 
 /*Inicia o "Contate-nos, figura e endereços"*/
 .div-filho1 {
     text-align: center;
-    margin-right: 2em;
-    padding-top: 2.5em;
-    padding-bottom: 0em;
-      
 }
 
 .div-filho1 > h1{
-    font-size: 1.8em;
-    padding-top: 2em;
-    padding-bottom: 2.5em; 
+    font-size: 1.5em;
+    padding-bottom: 1em; 
     color: rgb(28, 126, 255);
 }
 
 .div-filho1 > p{
-    font-size: 1.4em;
-    text-align: justify;
-    padding-bottom: 1.5em;
+    font-size: 0.9em;
+    text-align: center;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    width: 570px;
-    
+    width: 400px;   
 }
 
 .div-filho1 > img{
-    width: 550px;
-    height: 380px;
+    width: 400px;
+    height: 250px;
     border: solid 2px white;
-    margin-top: 2em;
+    margin-top: 0.9em;
     margin-bottom: 1.5em;
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
      
 }
 
 #contato-empresa{
-    font-size: 16px;
+    font-size: 12px;
     margin: 0px;
 }
 
@@ -73,63 +70,67 @@ main{
 
 /*Inicia o "Entre em contato e formulario"*/
 .div-filho2 {
-    margin-left: 4em;
-    margin-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 2.5em;
-    background-color: black;
+    background-color: #333;
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
-    color: white;  
+    color: white;
+    margin-right: 5%;
+    padding: 2%; 
 }
 
 .div-filho2 > h1{
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     text-align: center;
     
 }
 
 .div-filho2 > p{
-    font-size: 1.4em;
+    font-size: 1em;
     text-align: justify;
     padding-bottom: 1.5em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    width: 570px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 400px;
 }
 
 .div-filho2 > form {
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 .div-filho2 > form > label{
     text-align: left;
-    font-size: 1.3em;
-    padding-bottom: 0.1em;
+    font-size: 1em;
+    padding-bottom: 0.3em;
     padding-top: 0.2em;
-    margin-left: 1.5em;
+    margin-left: 0.5em;
 }
 
 .div-filho2 > form > input{
-    width: 580px;
+    width: 400px;
     height: 5em;
     border-radius: 30px;
     margin-left: 0em;
     padding-left: 0em;
-    align-self: center;
+    margin-right: 0em;
+    margin-left: 0.5em;
+    align-self: flex-start;
     border: none;
 }
 
 #mensagem{
-    width: 580px;
-    height: 200px;
-    margin-left: 2.5em;
-    margin-bottom: 3em;
+    width: 400px;
+    height: 150px;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
     border-radius: 30px;
     resize: none;
     border: none;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1em;
 }
 
 .div-filho2 > form #enviar-contato{
@@ -141,10 +142,10 @@ main{
     cursor: pointer;
     font-size: 20px;
     border-radius: 30px;
-    width: 300px;
+    width: 200px;
     height: 3em;
     align-self:flex-end;
-    margin-right: 1.3em;   
+    margin-right: 0.5em;   
 }
 
 .div-filho2 > form #enviar-contato:hover{
