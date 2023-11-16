@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
+
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
@@ -15,7 +16,10 @@
     --button-bg-color: #0052ce;
     --button-text-color: white;
 }
-    
+
+* {
+    font-family: "Roboto Slab", serif;
+}
 
 .header-container{
     /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
@@ -63,8 +67,7 @@
 
 ::-webkit-input-placeholder {
     font-size: 17px;
-    font-family: "Roboto";
-    color: #0d00c0;
+    font-family: "Roboto Slab", serif;
 }
 
 .barra-busca:hover > .busca-texto {
@@ -254,3 +257,28 @@ a{
 img.nav-icon {
     margin-bottom: -5px;
 }
+
+/* testando um novo input pesquisar 
+
+.search-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.search-container input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    outline: none;
+}*/

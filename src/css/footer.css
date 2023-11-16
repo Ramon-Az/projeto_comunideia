@@ -21,7 +21,9 @@
     letter-spacing: 1px;
 }
 
-
+main {
+    height: 120vh;
+}
 
 footer {
     width: 100%;
@@ -37,7 +39,7 @@ footer {
     padding: 3rem 3.5rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-contacts {
@@ -80,6 +82,13 @@ footer {
 
 #facebook {
     background-color: #4267b3;
+}
+
+#github {
+    color: #ffffff;
+    background-color: #000000;
+    height: 2.6rem;
+    width: 2.6rem;
 }
 
 
