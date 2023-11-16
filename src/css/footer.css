@@ -39,7 +39,7 @@ footer {
     padding: 3rem 3.5rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-contacts {
@@ -82,6 +82,10 @@ footer {
 
 #facebook {
     background-color: #4267b3;
+}
+
+#github {
+    background-color: #ffffff;
 }
 
 
