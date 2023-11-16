@@ -1,0 +1,1 @@
+search icon : https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid

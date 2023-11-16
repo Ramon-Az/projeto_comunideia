@@ -85,7 +85,10 @@ footer {
 }
 
 #github {
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
+    height: 2.6rem;
+    width: 2.6rem;
 }
 
 
