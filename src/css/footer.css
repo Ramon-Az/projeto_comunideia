@@ -21,7 +21,9 @@
     letter-spacing: 1px;
 }
 
-
+main {
+    height: 120vh;
+}
 
 footer {
     width: 100%;
