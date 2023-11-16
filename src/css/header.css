@@ -23,7 +23,7 @@
     width: 100%;
     margin: auto;
     padding-top: 0rem;
-    margin-bottom: 12%;
+    margin-bottom: 0%;
 }
 
 .nav-bar-01{ 
@@ -33,6 +33,7 @@
     color: var(--nav-text-color);
     height: 10rem;
     padding: 0;
+    
 }
 
 .logo-comunideia {
@@ -54,9 +55,9 @@
     background-color: var(--color-neutral-40);
     border-radius: 1.5rem;
     outline: 0;
-    height: 4rem;
-    width: 30rem;
-    margin-left: 5rem;
+    height: 3rem;
+    width: 40rem;
+   
 }
 
 
@@ -65,34 +66,36 @@
     font-family: "Roboto";
     color: #0d00c0;
 }
+
 .barra-busca:hover > .busca-texto {
-    cursor: pointer;
-  }
+    cursor: text;
+}
   
-  .barra-busca:hover > .busca-btn {
+.barra-busca:hover > .busca-btn {
     background-color: #0052ce;
     cursor: pointer;
+    padding-top: 8px;
     border-radius: 15px;
-  }
+}
   
-  .barra-busca:hover > .busca-btn .loupe-blue {
+.barra-busca:hover > .busca-btn .loupe-blue {
     display: none;
-  }
+}
   
-  .barra-busca:hover > .busca-btn .loupe-white {
+.barra-busca:hover > .busca-btn .loupe-white {
     display: block;
-  }
+}
   
-  .loupe-blue {
+.loupe-blue {
     width: 4.5rem;
     height: 2.5rem;
-  }
+ }
   
-  .loupe-white {
+.loupe-white {
     display: none;
     width: 4.5rem;
     height: 2.5rem;
-  }
+ }
 
 .busca-texto {
     background: none;
@@ -107,12 +110,12 @@
 
 /*Estilizando Título e Subtitulo*/
 .text {
-    position: absolute;
+    margin-top: 5.9%;
     width: 100%;
-    margin: auto;
     justify-content: space-between;
     text-align: center;
     color: rgba(0, 0, 0, 0.9);
+    
 }
   
 .text-01 {
@@ -123,12 +126,11 @@
     line-height: 100%; /* 5.04rem */
     letter-spacing: 0.08rem;
     margin-left: 2.5%;
-    margin-top: 0;
 }
 
 .text-02 {
     width: 69.25rem;
-    height: 9.125rem;
+    height: 7rem;
     flex-shrink: 0;
     color: rgba(0, 0, 0, 80%);
     text-align: justify;
@@ -142,7 +144,7 @@
     margin-top: 1%;
     margin-left: 3.5%;
 }
-  
+
 .navbar1 {
     display: flex;
     list-style: none;
@@ -166,7 +168,7 @@
     border-radius: 0.8rem;
     color: var(--button-text-color);
     border-color: var(--button-bg-color);
-    margin-left: -50%;
+    margin-left: -10%;
 }
   
 .login-btn:hover > .button-login {
@@ -179,27 +181,44 @@ a{
 
 /*Menu fixado quando der scroll na página */
 .nav-menu {
-    margin-top: 12%;
+    margin-top: -1%;
     display: flex;
     width: 100%;
-    position: fixed;
     background-color: var(--color-neutral-50);
     padding: 1rem;
     justify-content: center;
-    z-index: 1;
-    transition: .5s;
-    padding: 15px 4%;
+    
+    padding: 20px 4%;
+    position: fixed;
 }
 
 .nav-menu.rolagem{ /*Efeito de deixar o fundo do meu fixado preto fosco*/
-    background-color:var(--color-neutral-10);
-    padding: 15px 4%;
+    background: #333;
+    padding: 30px 4%;
     top: 0;
     margin: 0;
+    margin-bottom: 5%;
+    z-index: 1;
+    top: 12%;
+    transition: 1s ease-in-ou;
+    
 }
 
 .nav-menu.rolagem ul li a{ /*Mudando a cor dos links quando a cor de fundo do menu muda*/
-    color: white;
+    color:white;
+}
+
+.nav-bar-01{
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    background: color #00000050;
+    backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
+    width: 100%;
+    height: 90px;
 }
 
 .nav-menu ul {
