@@ -7,30 +7,27 @@
     letter-spacing: 1px;
 }
 body{
-    background-image: linear-gradient(45deg, #00b6ef, white); 
+    background-image: linear-gradient(45deg, #00b6ef, white);
     
 }
 main{
-    height: 150vh;
-    width: 200vh;
-    margin: auto;  
+    display: flex;
+    align-items: center; 
 }
-
 .secao {
-    max-width: 1000px;
-    height: 100vh;
+    width: auto;
+    height: auto;
     margin: auto;
-    margin-top: 15%;
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding-top: 0;
-    padding-bottom: 20%;
 }
 
 /*Inicia o "Contate-nos, figura e endereços"*/
 .div-filho1 {
+    width: 50%;
     text-align: center;
 }
 
@@ -72,13 +69,14 @@ main{
 .div-filho2 {
     background-color: #333;
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
-    color: white;
-    margin-right: 5%;
-    padding: 2%; 
+    color: white; 
+    width: 70%;
+    height: 570px;
+    margin-right: 2%;
 }
 
 .div-filho2 > h1{
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-top: 2em;
     padding-bottom: 1em;
     text-align: center;
@@ -86,7 +84,7 @@ main{
 }
 
 .div-filho2 > p{
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: justify;
     padding-bottom: 1.5em;
     margin-left: 0.5em;
@@ -102,7 +100,7 @@ main{
 
 .div-filho2 > form > label{
     text-align: left;
-    font-size: 1em;
+    font-size: .9em;
     padding-bottom: 0.3em;
     padding-top: 0.2em;
     margin-left: 0.5em;
@@ -110,7 +108,7 @@ main{
 
 .div-filho2 > form > input{
     width: 400px;
-    height: 5em;
+    height: 3.5em;
     border-radius: 30px;
     margin-left: 0em;
     padding-left: 0em;
@@ -140,7 +138,7 @@ main{
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 30px;
     width: 200px;
     height: 3em;
