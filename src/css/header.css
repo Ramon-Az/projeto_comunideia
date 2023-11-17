@@ -192,20 +192,22 @@ a{
     background-color: var(--color-neutral-50);
     padding: 1rem;
     justify-content: center;
-    
+    align-items: center;
     padding: 20px 4%;
     position: fixed;
     transition: .8s;
 }
 
 .nav-menu.rolagem{ /*Efeito de deixar o fundo do meu fixado preto fosco*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
     background: #333;
     padding: 10px 4%;
-    top: 0;
-    margin: 0;
     margin-bottom: 5%;
-    z-index: 1;
-    top: 12%;    
+    z-index: 1; 
+    top: 13%;
 }
 
 .nav-menu.rolagem ul li a{ /*Mudando a cor dos links quando a cor de fundo do menu muda*/
