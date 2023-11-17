@@ -32,6 +32,7 @@
 
 .nav-bar-01{ 
     display: flex;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
     color: var(--nav-text-color);
@@ -113,6 +114,7 @@
 
 /*Estilizando Título e Subtitulo*/
 .text {
+    position: relative;
     margin-top: 5.9%;
     width: 100%;
     justify-content: space-between;
@@ -193,18 +195,17 @@ a{
     
     padding: 20px 4%;
     position: fixed;
+    transition: .8s;
 }
 
 .nav-menu.rolagem{ /*Efeito de deixar o fundo do meu fixado preto fosco*/
     background: #333;
-    padding: 30px 4%;
+    padding: 10px 4%;
     top: 0;
     margin: 0;
     margin-bottom: 5%;
     z-index: 1;
-    top: 12%;
-    transition: 1s ease-in-ou;
-    
+    top: 12%;    
 }
 
 .nav-menu.rolagem ul li a{ /*Mudando a cor dos links quando a cor de fundo do menu muda*/

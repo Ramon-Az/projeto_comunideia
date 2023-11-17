@@ -1,18 +1,13 @@
 window.addEventListener("scroll", function(){
-    let header = document.querySelector('.nav-menu')
-    header.classList.toggle('rolagem', window.scrollY > 0)
-    /*if(window.scrollY > 0){
-        const text = document.querySelector('.text').remove();
-    }*/
+    let header = document.querySelector('.nav-menu');
+
+    if (window.scrollY > 0) {
+        console.log("executando scroll")
+        header.classList.add('rolagem');
+        document.querySelector('.text').style.display = "none";
+    } else {
+        console.log("Início do scroll");
+        header.classList.remove('rolagem');
+        document.querySelector('.text').style.display = 'block';
+    }
 });
-
-/*
-document.getElementById('mensagem').onfocus = function() {
-    this.setAttribute('placeholder', '');
-}
-
-document.getElementById('mensagem').onblur = function() {
-    if(this.value == '')
-        this.setAttribute('placeholder', 'Digite sua mensagem aqui...');
-}
-*/
