@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/header.css">
 
         <!-- Js Links -->
-        <script src="js/main.js" defer></script>
+        <script src="js/validationLogin.js" defer></script>
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,13 +20,6 @@
         <!-- Menu do site -->
 
         <header class="header-container">
-
-            <div class="search-container">
-                <input type="text" placeholder="Pesquisar">
-                <button type="button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
 
             <nav class="nav-menu">
                 <ul>
@@ -56,21 +49,22 @@
         </header>
 
         <!-- Área de login -->
+
         <main class="main-content">
             <section class="login-container">
-                <form action="cadastro.php">
+                <form action="login.php">
                     <div class="login-title">
                         <h1>entrar</h1>
                     </div>
 
                     <div class="login-user">
-                        <p>Login</p>
-                        <input placeholder="Nome de usuário ou E-mail" id="iuser" type="email" autocomplete="on">
+                        <label for="user">Login</label>
+                        <input placeholder="Nome de usuário ou E-mail" id="user" type="email" autocomplete="on">
                     </div>
 
                     <div class="login-password">
-                        <p>Senha</p>
-                        <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                        <label for="password">Senha</label>
+                        <input placeholder="Digite aqui sua senha" id="password" type="password" autocomplete="off">
                     </div>
 
                     <div class="login-enter-buttom">
@@ -91,7 +85,7 @@
                         </a>
                     </div>
 
-                    <div class="login-buttom-register">
+                    <div class="login-button-register">
                         <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
                     </div>
                 </form>

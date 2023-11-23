@@ -77,15 +77,18 @@ main {
     text-align: center;
 }
 
-.login-user p {
-    text-align: center;
+.login-user,
+.login-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-user label,
+.login-password label {
     margin-bottom: 5px;
 }
 
-.login-password p {
-    text-align: center;
-    margin-bottom: 5px;
-}
 
 .login-enter-buttom > input {
     background-color: var(--color-blue-10);
@@ -150,6 +153,35 @@ main {
     background-color: #4267b3;
 }
 
-.login-buttom-register a {
+.login-button-register a {
     text-decoration: none;
 }
+
+/*.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }*/

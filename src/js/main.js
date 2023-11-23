@@ -1,4 +1,4 @@
-var header = document.querySelector('.header');
+/*var header = document.querySelector('.header');
 var logo = document.querySelector('.logo');
 var searchBar = document.querySelector('.search-bar');
 var loginButton = document.querySelector('.login-button');
@@ -12,4 +12,4 @@ window.addEventListener('scroll', function() {
     } else {
         header.classList.remove('hidden');
     }
-});
+});*/
