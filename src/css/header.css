@@ -32,14 +32,22 @@
 
 .nav-bar-01{ 
     display: flex;
-    margin: auto;
     justify-content: space-between;
     align-items: center;
     color: var(--nav-text-color);
-    height: 10rem;
-    padding: 0;
+
+    position: fixed;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    background: color #00000050;
+    backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
     
+    width: 100%;
+    height: 90px;  
 }
+
 
 .logo-comunideia {
     display: flex;
@@ -115,7 +123,7 @@
 /*Estilizando Título e Subtitulo*/
 .text {
     position: relative;
-    margin-top: 5.9%;
+    margin: 0;
     width: 100%;
     justify-content: space-between;
     text-align: center;
@@ -208,24 +216,14 @@ a{
     margin-bottom: 5%;
     z-index: 1; 
     top: 13%;
+    margin: 0;
 }
 
 .nav-menu.rolagem ul li a{ /*Mudando a cor dos links quando a cor de fundo do menu muda*/
     color:white;
 }
 
-.nav-bar-01{
-    position: fixed;
-    z-index: 1;
-    margin: 0;
-    top: 0;
-    position: fixed;
-    background: color #00000050;
-    backdrop-filter: blur(20px);
-    --webkit-backdrop-filter: blur(20px);
-    width: 100%;
-    height: 90px;
-}
+
 
 .nav-menu ul {
     list-style: none;

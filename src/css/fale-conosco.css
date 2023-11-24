@@ -71,7 +71,7 @@ main{
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
     color: white; 
     width: 70%;
-    height: 570px;
+    height: 600px;
     margin-right: 2%;
 }
 
@@ -117,18 +117,21 @@ main{
     align-self: flex-start;
     border: none;
 }
+/* campos do formulário - inputs, mensagem e botão*/
+#nome, #email{
+    padding: 1em;
+    font-size: 0.8em;
+}
 
 #mensagem{
     width: 400px;
     height: 150px;
     margin-left: 0.5em;
-    margin-bottom: 1em;
     border-radius: 30px;
     resize: none;
-    border: none;
-    padding-top: 1em;
-    padding-left: 1em;
-    font-size: 1em;
+    padding: 1em;
+    font-size: 0.8em;
+    text-align: justify;
 }
 
 .div-filho2 > form #enviar-contato{
@@ -143,9 +146,79 @@ main{
     width: 200px;
     height: 3em;
     align-self:flex-end;
-    margin-right: 0.5em;   
+    margin-right: 0.5em;
+    margin-top: 0.6em;   
 }
 
 .div-filho2 > form #enviar-contato:hover{
     background-color: #4267b3;
+}
+
+/*estilização dinamica com js*/
+#visivel{
+    display: block;
+    font-size: 0.6em;
+    align-self: end;
+    margin-top: 0.2em;
+    margin-right: 3em;
+    background-color: whitesmoke;
+    color: red;
+}
+
+#invisivel{
+    display: none;
+}
+
+#nome.error{
+    border: solid 2px red;
+    border-left: solid 6px red;
+    color: red;
+}
+
+#nome.msg-correto{
+    display: block;
+    font-size: 0.8em;
+    align-self: end;
+    margin-top: 0.2em;
+    margin-right: 2.6em;
+    background-color: whitesmoke;
+    color: green;
+    border: solid 2px green;
+    border-left: solid 6px green;
+}
+
+#email.error{
+    border: solid 2px red;
+    border-left: solid 6px red;
+    color: red;
+}
+
+#email.msg-correto{
+    display: block;
+    font-size: 0.8em;
+    align-self: end;
+    margin-top: 0.2em;
+    margin-right: 2.6em;
+    background-color: whitesmoke;
+    color: green;
+    border: solid 2px green;
+    border-left: solid 6px green;
+}
+
+#mensagem.error{
+    border: solid 2px red;
+    border-left: solid 6px red;
+    color: red;
+}
+
+#mensagem.msg-correto{
+    display: block;
+    font-size: 0.8em;
+    align-self: end;
+    margin-top: 0.2em;
+    margin-right: 2.6em;
+    background-color: whitesmoke;
+    color: green;
+    border: solid 2px green;
+    border-left: solid 6px green;
 }
