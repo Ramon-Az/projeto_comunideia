@@ -18,22 +18,58 @@ body {
 }
 
 .main-content {
-    margin-bottom: 5rem;
+    margin-bottom: 30%;
 }
 
-.icons-content {
-    margin-top: 10rem;
+/* Carrossel */
 
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+
+
+/* cards destaques */
+
+.cards-container {
+    border: 1px solid red; /* somente para visualização do container*/
+    
+    padding: 1.5rem 7rem 1.5rem;
+    width: 100%;
+    height: 440px;
+    gap: 2rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-contents {
+    border: 1px solid red; /* somente para visualização do container*/
+
+    background-color: var(--color-neutral-40);
+    height: 400px;
+    width: 300px;
+}
+
+.card-image img{
+    width: 300px;
+}
+
+.card-info p {
+    color: var(--color-neutral-10);
+}
+
+/* 3 icones */
+
+.icons-content ul {
+    padding: 5rem;
+    margin: 2rem;
+    margin-left: -0.5rem;
+    text-align: center;
 }
 
 .icons-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .icons-list li {
@@ -47,11 +83,11 @@ body {
     margin-top: -2rem;
 }
 
-.fa-solid {
+.icons-list i {
     background-color: var(--color-blue-20);
     color: #fff; /* Cor do ícone */
     border-radius: 50%;
     padding: 3rem; /* Espaçamento interno */
-    font-size: 3rem; /* Tamanho do ícone */
+    font-size: 3.2rem; /* Tamanho do ícone */
     margin: 3rem;
 }
