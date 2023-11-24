@@ -49,8 +49,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.form-container p {
-    margin-top: 10px;
+label {
+    text-align: left;
 }
 
 .form-container input {

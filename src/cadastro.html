@@ -50,66 +50,59 @@
             <section class="registro-container">
 
                 <div class="registro-title">
-                    <h2>cadastro</h2>
+                    <h2>Cadastro</h2>
                 </div>
 
                 <form action="cadastro.php" class="form-container">
     
-                    <!--<div class="registro-perfil">
-                        <label>
-                            <p>Foto de perfil</p>
-                            <input type="file">
-                        </label>
-                    </div>-->
-
                     <div class="registro-nome">
-                        <p>Nome</p>
-                        <input placeholder="Digite aqui seu nome" id="inome" type="text" autocomplete="off">
+                        <label for="first-name">Nome</label>
+                        <input placeholder="Digite aqui seu nome" id="first-name" type="text" autocomplete="off">
                     </div>
     
                     <div class="registro-sobrenome">
-                        <p>Sobrenome</p>
-                        <input placeholder="Digite aqui seu sobrenome" id="isobrenome" type="text" autocomplete="off">
+                        <label for="last-name">Sobrenome</label>
+                        <input placeholder="Digite aqui seu sobrenome" id="last-name" type="text" autocomplete="off">
                     </div>
     
                     <div class="registro-user">
-                        <p>Nome de usuário</p>
-                        <input placeholder="Digite aqui o nome de usuário" id="iuser" type="text" autocomplete="off">
+                        <label for="user">Nome de usuário</label>
+                        <input placeholder="Digite aqui o nome de usuário" id="user" type="text" autocomplete="off">
                     </div>
     
                     <div class="registro-nascimento">
-                        <p>Data de Nascimento</p>
-                        <input placeholder="dd/mm/aaaa" id="idata" type="date" autocomplete="off">
+                        <label for="date">Data de Nascimento</label>
+                        <input placeholder="dd/mm/aaaa" id="date" type="date" autocomplete="off">
                     </div>
     
                     <div class="registro-cpf">
-                        <p>CPF</p>
-                        <input type="text" id="icpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
                     </div>
                     
                     <div class="registro-phone">
-                        <p>Telefone</p>
-                        <input type="tel" id="itelefone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="99-9999-9999" required>
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="99-9999-9999" required>
                     </div>
     
                     <div class="registro-email">
-                        <p>E-mail</p>
-                        <input placeholder="Digite aqui seu E-mail" id="iemail" type="email" autocomplete="off">
+                        <label for="email">E-mail</label>
+                        <input placeholder="Digite aqui seu E-mail" id="email" type="email" autocomplete="off">
                     </div>
     
                     <div class="registro-confirmar-email">
-                        <p>Confirme o E-mail</p>
-                        <input placeholder="Digite seu E-mail novamente" id="iemail" type="email" autocomplete="off">
+                        <label for="email">Confirme o E-mail</label>
+                        <input placeholder="Digite seu E-mail novamente" id="email" type="email" autocomplete="off">
                     </div>
     
                     <div class="registro-password">
-                        <p>Senha</p>
-                        <input placeholder="Digite aqui sua senha" id="ipassword" type="password" autocomplete="off">
+                        <label for="password">Senha</label>
+                        <input placeholder="Digite aqui sua senha" id="password" type="password" autocomplete="off">
                     </div>
     
                     <div class="registro-confirmar-password">
-                        <p>Confirma a senha</p>
-                        <input placeholder="Digite aqui sua senha novamente" id="ipassword" type="password" autocomplete="off">
+                        <label for="password">Confirma a senha</label>
+                        <input placeholder="Digite aqui sua senha novamente" id="password" type="password" autocomplete="off">
                     </div>
                 </form>
 
@@ -160,11 +153,7 @@
                     </li>
     
                     <li>
-                        <a href="fale_conosco.html" class="footer-link">Seja um parceiro</a>
-                    </li>
-    
-                    <li>
-                        <a href="sobre.html" class="footer-link">Sobre a ComunIdeia</a>
+                        <a href="mailto:nossoemail123@gmail.com" class="footer-link">nossoemail123@gmail.com</a>
                     </li>
                 </ul>
     

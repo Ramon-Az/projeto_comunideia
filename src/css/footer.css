@@ -36,7 +36,7 @@ footer {
 
 .footer-content {
     background-color: var(--color-neutral-10);
-    padding: 3rem 3.5rem;
+    padding: 1.5rem 7rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
