@@ -93,24 +93,63 @@ function validaNomeusuario() {
 inputNomeusuario.addEventListener('blur', validaNomeusuario);
 
 function validaDatanasc() {
-    if (inputDatanasc.value.length < 10 || inputDatanasc.value == "dd/mm/aaaa") {
+    if (inputDatanasc.value.length < 10 || inputDatanasc.value == "dd/mm/aaaa" || inputDatanasc == "") {
         inputDatanasc.classList.remove('msg-correto');
         inputDatanasc.classList.add('error');
 
-        msgError4.innerText = '*Data de nascimento inválida';
+        msgError4.innerText = '*Data de nascimento não válido';
         msgError4.id= 'visivel';
         
-        inputCorretos.user = false;
+        inputCorretos.date = false;
     } else {
         inputDatanasc.classList.remove('error');
         inputDatanasc.classList.toggle('msg-correto');
 
         msgError4.id= 'invisivel';
         
-        inputCorretos.user = true;
+        inputCorretos.date = true;
     }
 }
 inputDatanasc.addEventListener('blur', validaDatanasc);
+
+function validaCpf() {
+    if (inputCpf.value.length < 11 || inputCpf.value == "") {
+        inputCpf.classList.remove('msg-correto');
+        inputCpf.classList.add('error');
+        
+        msgError5.innerText = '*CPF inválido';
+        msgError5.id= 'visivel';
+        
+        inputCorretos.cpf = false;
+    } else {
+        inputCpf.classList.remove('error');
+        inputCpf.classList.toggle('msg-correto');
+
+        msgError5.id= 'invisivel';
+        
+        inputCorretos.cpf = true;
+    }
+}
+inputCpf.addEventListener('blur', validaCpf);
+
+// interação com o mouse e o input label do cpf para mostrar mensagem de direcionamento
+function mensagemLabelcpf() {
+    let mensagem = document.querySelector('label[for = "mensagem-cpf"]');
+    if(inputCpf.value == ""){
+        mensagem.innerText = '*Apenas os números';
+        mensagem.id= 'mensagem';
+    }else{
+        mensagem.id= 'invisivel';
+        console.log("inv")
+    }    
+}
+inputCpf.addEventListener('mouseover', mensagemLabelcpf);
+
+function ocultarMensagemLabelcpf() {
+    let oculta = document.querySelector('label[for = "mensagem-cpf"]');
+    oculta.id= 'invisivel';
+}
+inputCpf.addEventListener('mouseout', ocultarMensagemLabelcpf);
 
 // validação de envio (botão) do formulário
 let btnSumit = document.querySelector('input[type="submit"]');

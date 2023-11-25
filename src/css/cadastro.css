@@ -38,7 +38,7 @@ body {
 }
 
 .registro-title {
-    font-size: 25px;
+    font-size: 1.2em;
     color: black;
     text-align: center;
     margin-bottom: 50px;
@@ -49,65 +49,29 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-label {
-    text-align: left;
-}
-
 .form-container input {
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 15px;
+    margin-right: 30px;
     padding: 15px;
-    width: 300px;
+    width: 350px;
+    height: 3.5em;
     outline: none;
-    font-size: 15px;
-    text-align: center;
+    font-size: 0.8em;
+    text-align: start;
     display: inline-block;
 }
 
-.registro-perfil {
-    text-align: center;
+.registro-nome,  .registro-sobrenome{
+    text-align: start;
+    font-size: .9em;
 }
 
-.registro-nome {
-    text-align: center;
-}
-
-.registro-sobrenome {
-    text-align: center;
-}
-
-.registro-user {
-    text-align: center;
-}
-
-.registro-nascimento {
-    text-align: center;
-}
-
-.registro-email {
-    text-align: center;
-}
-
-.registro-confirmar-email {
-    text-align: center;
-}
-
-.registro-cpf {
-    text-align: center;
-}
-
-.registro-phone {
-    text-align: center;
-}
-
-.registro-password {
-    text-align: center;
-}
-
-.registro-confirmar-password {
-    text-align: center;
+.registro-user, .registro-nascimento,  .registro-email, .registro-confirmar-email, .registro-cpf, .registro-phone, .registro-password, .registro-confirmar-password {
+    text-align: start;
+    margin-top: 15px;
+    font-size: .9em;
 }
 
 .registro-buttom-next {
@@ -144,28 +108,50 @@ label {
 /*estilização dinamica com js*/
 #visivel{
     display: block;
-    font-size: 0.6em;
+    font-size: 0.7em;
     align-self: end;
     margin-top: 0.2em;
     margin-right: 2em;
-    background-color: whitesmoke;
     color: red;
+    font-style: italic;
 }
 
 #invisivel{
     display: none;
 }
 
-#first-name.error, #last-name.error, #user.error, #date.error{
+#first-name.error, #last-name.error, #user.error, #date.error, #cpf.error{
     border: solid 2px red;
     border-left: solid 6px red;
     color: red;
 }
 
-#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto{
+/* adiciona uma figurinha de decepcionado quando tem error no campo input*/
+#date.error::before {
+    content: "\1F61E"; /* código unicode do ícone*/
+    font-size: 20px; /* tamanho do ícone conforme necessário */
+    margin-right: 10px; /* opcional: espaçamento à direita do ícone */
+}
+
+#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto, #cpf.msg-correto{
     display: block;
     background-color: whitesmoke;
     color: green;
     border: solid 2px green;
     border-left: solid 6px green;
+}
+
+/* adiciona uma figurinha sorridente quando estiver correto o campo input */
+#date.msg-correto::before {
+    content: "\1F60A"; /* código unicode do ícone*/
+    font-size: 20px; /* tamanho do ícone conforme necessário */
+    margin-right: 10px; /* opcional: espaçamento à direita do ícone */
+}
+
+label[for="mensagem-cpf"] {
+    display: inline-block;
+    font-size: 0.7em;
+    color: black; 
+    text-align: right;
+    margin-left: 19em;
 }

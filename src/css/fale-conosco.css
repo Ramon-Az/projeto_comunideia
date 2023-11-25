@@ -158,66 +158,28 @@ main{
 /*estilização dinamica com js*/
 #visivel{
     display: block;
-    font-size: 0.6em;
+    font-size: 0.7em;
     align-self: end;
     margin-top: 0.2em;
     margin-right: 2em;
     background-color: whitesmoke;
     color: red;
+    font-style: italic;
 }
 
 #invisivel{
     display: none;
 }
 
-#nome.error{
+#nome.error, #email.error, #mensagem.error{
     border: solid 2px red;
     border-left: solid 6px red;
     color: red;
 }
 
-#nome.msg-correto{
+#nome.msg-correto, #email.msg-correto, #mensagem.msg-correto{
     display: block;
     font-size: 0.8em;
-    align-self: end;
-    margin-top: 0.2em;
-    margin-right: 2.6em;
-    background-color: whitesmoke;
-    color: green;
-    border: solid 2px green;
-    border-left: solid 6px green;
-}
-
-#email.error{
-    border: solid 2px red;
-    border-left: solid 6px red;
-    color: red;
-}
-
-#email.msg-correto{
-    display: block;
-    font-size: 0.8em;
-    align-self: end;
-    margin-top: 0.2em;
-    margin-right: 2.6em;
-    background-color: whitesmoke;
-    color: green;
-    border: solid 2px green;
-    border-left: solid 6px green;
-}
-
-#mensagem.error{
-    border: solid 2px red;
-    border-left: solid 6px red;
-    color: red;
-}
-
-#mensagem.msg-correto{
-    display: block;
-    font-size: 0.8em;
-    align-self: end;
-    margin-top: 0.2em;
-    margin-right: 2.6em;
     background-color: whitesmoke;
     color: green;
     border: solid 2px green;
