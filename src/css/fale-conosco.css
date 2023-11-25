@@ -14,6 +14,7 @@ main{
     display: flex;
     align-items: center; 
 }
+
 .secao {
     width: auto;
     height: auto;
@@ -160,7 +161,7 @@ main{
     font-size: 0.6em;
     align-self: end;
     margin-top: 0.2em;
-    margin-right: 3em;
+    margin-right: 2em;
     background-color: whitesmoke;
     color: red;
 }

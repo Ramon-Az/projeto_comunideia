@@ -140,3 +140,32 @@ label {
 .registro-buttom-enter a {
     text-decoration: none;
 }
+
+/*estilização dinamica com js*/
+#visivel{
+    display: block;
+    font-size: 0.6em;
+    align-self: end;
+    margin-top: 0.2em;
+    margin-right: 2em;
+    background-color: whitesmoke;
+    color: red;
+}
+
+#invisivel{
+    display: none;
+}
+
+#first-name.error, #last-name.error, #user.error, #date.error{
+    border: solid 2px red;
+    border-left: solid 6px red;
+    color: red;
+}
+
+#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto{
+    display: block;
+    background-color: whitesmoke;
+    color: green;
+    border: solid 2px green;
+    border-left: solid 6px green;
+}

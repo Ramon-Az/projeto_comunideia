@@ -15,7 +15,7 @@ function validaNome() {
         inputNome.classList.remove('msg-correto');
         inputNome.classList.add('error');
 
-        msgError1.innerText = 'Nome inválido';
+        msgError1.innerText = '*Nome inválido';
         msgError1.id= 'visivel';
         
         inputCorretos.nome = false;
@@ -35,7 +35,7 @@ function validaEmail() {
         inputEmail.classList.remove('msg-correto');
         inputEmail.classList.add('error');
 
-        msgError2.innerText = 'Email inválido';
+        msgError2.innerText = '*Email inválido';
         msgError2.id = 'visivel';
         
         inputCorretos.email = false;
@@ -54,7 +54,7 @@ function validaTextarea() {
     if (textArea.value.length < 10 || textArea.value == "") {
         textArea.classList.remove('msg-correto');
         textArea.classList.add('error');
-        msgError3.innerText = 'Mensagem curta, mínimo de 5 palavras';
+        msgError3.innerText = '*Mensagem curta, mínimo de 5 palavras';
         msgError3.id='visivel';
         
         inputCorretos.mensagem = false;
@@ -82,6 +82,6 @@ btnSumit.addEventListener('click', (e)=>{
         e.preventDefault()
         alert('Preencha todos os campos corretamente');
     }else{
-        alert('Cadastro realizado com sucesso');
+        alert('Enviado com sucesso!');
     }
 });
