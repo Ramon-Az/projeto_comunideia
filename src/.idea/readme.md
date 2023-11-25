@@ -1,1 +1,3 @@
-search icon : https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid
+### Links Úteis
+
+Icons: [Font Awesome](https://fontawesome.com/icons)

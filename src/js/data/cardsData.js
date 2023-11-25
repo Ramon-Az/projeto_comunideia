@@ -1,38 +1,28 @@
 export const cardsData = [
     {
-        "id": "1",
+        "photoCard": "",
         "title": "",
-        "description": "",
-        "photoCover": ""
+        "description": ""
+        
     },
     {
-        "id": "2",
+        "photoCard": "",
         "title": "",
-        "description": "",
-        "photoCover": ""
+        "description": ""
     },
     {
-        "id": "3",
+        "photoCard": "",
         "title": "",
-        "description": "",
-        "photoCover": ""
+        "description": ""
     },
     {
-        "id": "4",
+        "photoCard": "",
         "title": "",
-        "description": "",
-        "photoCover": ""
+        "description": ""
     },
     {
-        "id": "5",
+        "photoCard": "",
         "title": "",
-        "description": "",
-        "photoCover": ""
-    },
-    {
-        "id": "6",
-        "title": "",
-        "description": "",
-        "photoCover": ""
+        "description": ""
     }
 ]
