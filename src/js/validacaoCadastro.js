@@ -136,7 +136,7 @@ inputCpf.addEventListener('blur', validaCpf);
 function mensagemLabelcpf() {
     let mensagem = document.querySelector('label[for = "mensagem-cpf"]');
     if(inputCpf.value == ""){
-        mensagem.innerText = '*Apenas os números';
+        mensagem.innerText = '*Apenas números';
         mensagem.id= 'mensagem';
     }else{
         mensagem.id= 'invisivel';
@@ -150,6 +150,116 @@ function ocultarMensagemLabelcpf() {
     oculta.id= 'invisivel';
 }
 inputCpf.addEventListener('mouseout', ocultarMensagemLabelcpf);
+
+function validaTelefone() {
+    if (inputTelefone.value.length < 10 || inputTelefone.value == "") {
+        inputTelefone.classList.remove('msg-correto');
+        inputTelefone.classList.add('error');
+        
+        msgError6.innerText = '*Número inválido';
+        msgError6.id= 'visivel';
+        
+        inputCorretos.phone = false;
+    } else {
+        inputTelefone.classList.remove('error');
+        inputTelefone.classList.toggle('msg-correto');
+
+        msgError6.id= 'invisivel';
+        
+        inputCorretos.phone = true;
+    }
+}
+inputTelefone.addEventListener('blur', validaTelefone);
+
+// Função de validação do email e na sequência outros tratamentos na parte do domínio do email
+function validaEmail() {
+    if (inputEmail.value.indexOf('@') == -1 || inputEmail.value == "") {    
+        inputEmail.classList.remove('msg-correto');
+        inputEmail.classList.add('error');
+
+        msgError7.innerText = '*Email inválido';
+        msgError7.id = 'visivel';
+        
+        inputCorretos.email = false;
+    } else if (!verificaDominioEmail(inputEmail.value) ) {
+        inputEmail.classList.remove('msg-correto');
+        inputEmail.classList.add('error');
+
+        msgError7.innerText = '*Domínio de email inválido';
+        msgError7.id = 'visivel';
+        
+        inputCorretos.email = false;
+    } else {
+        inputEmail.classList.remove('error');
+        inputEmail.classList.toggle('msg-correto');
+
+        msgError7.id= 'invisivel';
+        inputCorretos.email = true;
+    }
+}
+inputEmail.addEventListener('input', validaEmail);
+
+// Verifica se o domínio do email é válido
+function verificaDominioEmail(email) {
+    // Expressão regular para verificar o domínio do email
+    const dominioEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+
+    return dominioEmail.test(email);
+}
+
+// Limita a quantidade de caracteres no domínio do email para 10
+inputEmail.addEventListener('input', function() {
+    const dominio = inputEmail.value.split('@')[1];
+    if (dominio && dominio.length > 10) {
+        inputEmail.value = inputEmail.value.slice(0, inputEmail.value.length - (dominio.length - 10));
+    }
+});  //termino dos tratamentos sobre o email
+
+// Função de validação de confirmação do email e na sequência outros tratamentos na parte do domínio do email
+function validaConfirmemail() {
+    if(inputConfirmemail.value != inputEmail.value || inputConfirmemail.value.indexOf('@') == -1 || inputConfirmemail.value == ""){
+        inputConfirmemail.classList.remove('msg-correto');
+        inputConfirmemail.classList.add('error');
+
+        msgError8.innerText = '*Email não confere';
+        msgError8.id= 'visivel';
+        
+        inputCorretos.confirmEmail = false;
+    } else if (!verificaDominioconfirmemail(inputConfirmemail.value) ) {
+        inputConfirmemail.classList.remove('msg-correto');
+        inputConfirmemail.classList.add('error');
+
+        msgError8.innerText = '*Domínio de email inválido';
+        msgError8.id = 'visivel';
+        
+        inputCorretos.email = false;
+    }else {
+        console.log("email confere")
+        inputConfirmemail.classList.remove('error');
+        inputConfirmemail.classList.toggle('msg-correto');
+
+        msgError8.id= 'invisivel';
+        
+        inputCorretos.confirmEmail = true;
+    }
+}
+inputConfirmemail.addEventListener('input', validaConfirmemail);
+
+// Verifica se o domínio do confirma email é válido
+function verificaDominioconfirmemail(confirmEmail) {
+    // Expressão regular para verificar o domínio do email
+    const dominioConfirmemail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+
+    return dominioConfirmemail.test(confirmEmail);
+}
+
+// Limita a quantidade de caracteres no domínio do do confirma email para 10
+inputConfirmemail.addEventListener('input', function() {
+    const dominio = inputConfirmemail.value.split('@')[1];
+    if (dominio && dominio.length > 10) {
+        inputConfirmemail.value = inputConfirmemail.value.slice(0, inputConfirmemail.value.length - (dominio.length - 10));
+    }
+});  //termino dos tratamentos sobre o Confirmemail
 
 // validação de envio (botão) do formulário
 let btnSumit = document.querySelector('input[type="submit"]');

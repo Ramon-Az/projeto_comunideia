@@ -120,7 +120,7 @@ body {
     display: none;
 }
 
-#first-name.error, #last-name.error, #user.error, #date.error, #cpf.error{
+#first-name.error, #last-name.error, #user.error, #date.error, #cpf.error, #phone.error, #email.error, #confirm-email.error, #password.error, #confirm-password.error{
     border: solid 2px red;
     border-left: solid 6px red;
     color: red;
@@ -133,7 +133,7 @@ body {
     margin-right: 10px; /* opcional: espaçamento à direita do ícone */
 }
 
-#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto, #cpf.msg-correto{
+#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto, #cpf.msg-correto, #phone.msg-correto, #email.msg-correto, #confirm-email.msg-correto, #password.msg-correto, #confirm-password.msg-correto{
     display: block;
     background-color: whitesmoke;
     color: green;
@@ -148,10 +148,10 @@ body {
     margin-right: 10px; /* opcional: espaçamento à direita do ícone */
 }
 
-label[for="mensagem-cpf"] {
+label[for="mensagem-cpf"],  label[for="mensagem-senha"] {
     display: inline-block;
     font-size: 0.7em;
     color: black; 
     text-align: right;
-    margin-left: 19em;
+    margin-left: 20em;
 }
