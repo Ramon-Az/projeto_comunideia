@@ -1,10 +1,12 @@
 import { cardsData } from "./cardsData.js";
 
-const cardsSection = document.querySelector('#more-cards');
-const moreCards = document.querySelector('#more-cards-contents');
+const moreCardsContainer = document.querySelector('#more-cards-contents');
 
 cardsData.forEach(cards => {
-    moreCards.innerHTML = `
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('more-card-contents');
+
+    cardContainer.innerHTML = `
         <div class="more-card-image">
             <img 
                 src="${cards.photoCard}" 
@@ -18,7 +20,7 @@ cardsData.forEach(cards => {
         </div>
     `;
 
-    moreCards.appendChild(cardsSection);
+    moreCardsContainer.appendChild(cardContainer);
 }); 
 
 console.log("ta funcionando patrão");
