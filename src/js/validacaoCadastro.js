@@ -134,20 +134,22 @@ inputCpf.addEventListener('blur', validaCpf);
 
 // interação com o mouse e o input label do cpf para mostrar mensagem de direcionamento
 function mensagemLabelcpf() {
-    let mensagem = document.querySelector('label[for = "mensagem-cpf"]');
+    let mensagemCpf = document.querySelector('label[for = "mensagem-cpf"]');
+    console.log('mouse sobre o input cpf');
     if(inputCpf.value == ""){
-        mensagem.innerText = '*Apenas números';
-        mensagem.id= 'mensagem';
+        mensagemCpf.innerText = '*Apenas os números';
+        mensagemCpf.id= 'mensagem';
     }else{
-        mensagem.id= 'invisivel';
+        mensagemCpf.id= 'invisivel';
         console.log("inv")
     }    
 }
 inputCpf.addEventListener('mouseover', mensagemLabelcpf);
+// fim da interação com o mouse e o input label do cpf para mostrar mensagem de direcionamento
 
 function ocultarMensagemLabelcpf() {
-    let oculta = document.querySelector('label[for = "mensagem-cpf"]');
-    oculta.id= 'invisivel';
+    let ocultaCpf = document.querySelector('label[for = "mensagem-cpf"]');
+    ocultaCpf.id= 'invisivel';
 }
 inputCpf.addEventListener('mouseout', ocultarMensagemLabelcpf);
 
@@ -243,7 +245,7 @@ function validaConfirmemail() {
         inputCorretos.confirmEmail = true;
     }
 }
-inputConfirmemail.addEventListener('input', validaConfirmemail);
+inputConfirmemail.addEventListener('blur', validaConfirmemail);
 
 // Verifica se o domínio do confirma email é válido
 function verificaDominioconfirmemail(confirmEmail) {
@@ -260,6 +262,88 @@ inputConfirmemail.addEventListener('input', function() {
         inputConfirmemail.value = inputConfirmemail.value.slice(0, inputConfirmemail.value.length - (dominio.length - 10));
     }
 });  //termino dos tratamentos sobre o Confirmemail
+
+function validaSenha(){
+    if(inputSenha.value.length < 6 || inputSenha.value == ""){
+        inputSenha.classList.remove('msg-correto');
+        inputSenha.classList.add('error');
+
+        msgError9.innerText = '*Senha inválida';
+        msgError9.id= 'visivel';
+        
+        inputCorretos.password = false;
+    }else{
+        inputSenha.classList.remove('error');
+        inputSenha.classList.toggle('msg-correto');
+
+        msgError9.id= 'invisivel';
+        
+        inputCorretos.password = true;
+    }
+
+}
+inputSenha.addEventListener('blur', validaSenha);
+
+// interação com o mouse e o input label do Senha para mostrar mensagem de
+function mensagemLabelsenha() {
+    let mensagemSenha = document.querySelector('label[for = "mensagem-senha"]')
+    if(inputSenha.value == ""){
+        mensagemSenha.innerText = '*Mínimo 6 caracteres';
+        mensagemSenha.id= 'mensagem';
+    }else{
+        mensagemSenha.id= 'invisivel';
+        console.log("inv")
+    }    
+}
+inputSenha.addEventListener('mouseover', mensagemLabelsenha);
+
+function ocultarMensagemLabelsenha() {
+    let ocultaSenha = document.querySelector('label[for = "mensagem-senha"]');
+    ocultaSenha.id= 'invisivel';
+}
+inputSenha.addEventListener('mouseout', ocultarMensagemLabelsenha);
+// final do tratamento do input senha
+
+function validaConfirmsenha(){
+    if(inputConfirmsenha.value != inputSenha.value || inputConfirmsenha.value.length < 6 || inputSenha.value == ""){
+        inputConfirmsenha.classList.remove('msg-correto');
+        inputConfirmsenha.classList.add('error');
+
+        msgError10.innerText = '*Senha não confere';
+        msgError10.id= 'visivel';
+        
+        inputCorretos.confirmPassword = false;
+    }else{
+        inputConfirmsenha.classList.remove('error');
+        inputConfirmsenha.classList.toggle('msg-correto');
+
+        msgError10.id= 'invisivel';
+        
+        inputCorretos.confirmPassword = true;
+    }
+
+}
+inputConfirmsenha.addEventListener('blur', validaConfirmsenha);
+
+// interação com o mouse e o input label do Confirma Senha para mostrar mensagem de
+function mensagemLabelconfirmsenha() {
+    let mensagemConfirmsenha = document.querySelector('label[for = "mensagem-confirmsenha"]')
+    if(inputSenha.value == ""){
+        mensagemConfirmsenha.innerText = '*Mínimo 6 caracteres';
+        mensagemConfirmsenha.id= 'mensagem';
+    }else{
+        mensagemConfirmsenha.id= 'invisivel';
+        console.log("inv")
+    }    
+}
+inputConfirmsenha.addEventListener('mouseover', mensagemLabelconfirmsenha);
+
+function ocultarMensagemLabelconfirmsenha() {
+    let ocultaConfirmsenha = document.querySelector('label[for = "mensagem-confirmsenha"]');
+    ocultaConfirmsenha.id= 'invisivel';
+}
+inputConfirmsenha.addEventListener('mouseout', ocultarMensagemLabelconfirmsenha);
+// final do tratamento do input Confirma senha
 
 // validação de envio (botão) do formulário
 let btnSumit = document.querySelector('input[type="submit"]');

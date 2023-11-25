@@ -27,7 +27,7 @@ body {
     background-color: var(--color-neutral-50);
     box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    padding: 80px;
+    padding: 50px;
     padding-top: 50px;
     padding-bottom: 60px;
     top: 50%;
@@ -148,10 +148,26 @@ body {
     margin-right: 10px; /* opcional: espaçamento à direita do ícone */
 }
 
-label[for="mensagem-cpf"],  label[for="mensagem-senha"] {
+label[for="mensagem-cpf"]{
     display: inline-block;
     font-size: 0.7em;
     color: black; 
     text-align: right;
-    margin-left: 20em;
+    margin-left: 18em;
+}
+
+label[for="mensagem-senha"] {
+    display: inline-block;
+    font-size: 0.7em;
+    color: black; 
+    text-align: right;
+    margin-left: 15em;
+}
+
+label[for="mensagem-confirmsenha"] {
+    display: inline-block;
+    font-size: 0.7em;
+    color: black; 
+    text-align: right;
+    margin-left: 6em;
 }

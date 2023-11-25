@@ -54,7 +54,7 @@ function validaTextarea() {
     if (textArea.value.length < 10 || textArea.value == "") {
         textArea.classList.remove('msg-correto');
         textArea.classList.add('error');
-        msgError3.innerText = '*Mensagem curta, mínimo de 5 palavras';
+        msgError3.innerText = '*Mensagem curta, mínimo 5 palavras';
         msgError3.id='visivel';
         
         inputCorretos.mensagem = false;
