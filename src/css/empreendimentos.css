@@ -16,6 +16,11 @@ body {
     background-image: linear-gradient(45deg, #00B6EF, white);
 }
 
+.footer-content {
+    margin-top: 40rem;
+}
+
+
 .main-content {
     width: 80%;
     margin: 0 auto;
@@ -50,7 +55,7 @@ body {
 }
 
 .card-image img{
-    width: 300px;
+    width: 100%;
 }
 
 .card-info p {
@@ -101,5 +106,38 @@ body {
 
 .more-cards-container {
     border: 1px solid red;
+
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    gap: 1rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     
 }
+
+.more-cards-title {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.more-cards-contents {
+    border: 1px solid red;
+    background-color: var(--color-neutral-40);
+
+    width: 350px;
+
+}
+
+.more-card-image img{
+    width: 100%;
+}
+
+.more-card-info p {
+    color: var(--color-neutral-10);
+    padding: 1rem;
+}
+
