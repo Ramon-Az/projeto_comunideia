@@ -7,16 +7,22 @@ cardsData.forEach(cards => {
     cardContainer.classList.add('more-card-contents');
 
     cardContainer.innerHTML = `
-        <div class="more-card-image">
-            <img 
-                src="${cards.photoCard}" 
-                alt="Default Image"    
-            >
-        </div>
+        <div class="foreach-cards">
+            <div class="more-card-image">
+                <img 
+                    src="${cards.photoCard}" 
+                    alt="Default Image"    
+                >
+            </div>
 
-        <div class="more-card-info">
-            <h3>${cards.title}</h3>
-            <p>${cards.description}</p>
+            <div class="more-card-info">
+                <h3>${cards.title}</h3>
+                <p>${cards.description}</p>
+            </div>
+
+            <div class="card-button">
+                <input type="submit" value="Sobre a empresa">
+            </div>
         </div>
     `;
 
