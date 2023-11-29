@@ -1,6 +1,8 @@
-import { cardsData } from "./cardsData.js";
+import { cardsData } from "./data/cardsData.js";
 
 const moreCardsContainer = document.querySelector('#more-cards-contents');
+const modal = document.querySelector('#card-modal');
+const inputBtn = document.querySelector('.card-button');
 
 cardsData.forEach(cards => {
     const cardContainer = document.createElement('div');
@@ -20,7 +22,7 @@ cardsData.forEach(cards => {
                 <p>${cards.description}</p>
             </div>
 
-            <div class="card-button">
+            <div  class="card-button" id="card-button">
                 <input type="submit" value="Sobre a empresa">
             </div>
         </div>
@@ -30,3 +32,9 @@ cardsData.forEach(cards => {
 }); 
 
 console.log("ta funcionando patrão");
+
+function openModal() {
+    
+}
+
+
