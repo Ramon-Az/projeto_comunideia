@@ -131,9 +131,12 @@ body {
 /* More Cards */
 
 .more-cards-title {
+    background-color: #E8F0FE;
+    border-radius: 0.7rem;
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: -5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     font-size: 35px;
 }
 
@@ -202,7 +205,7 @@ body {
 
 .saq-button {
     background-color: var(--color-blue-10);
-    border-radius: 1.1rem;
+    border-radius: 0.7rem;
     margin: 1rem;
     padding: 1rem;
     width: 200px;
