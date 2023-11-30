@@ -22,8 +22,8 @@ cardsData.forEach(cards => {
                 <p>${cards.description}</p>
             </div>
 
-            <div  class="card-button" id="card-button">
-                <input type="submit" value="Sobre a empresa">
+            <div class="card-button">
+                <a href="">Sobre a empresa</a>
             </div>
         </div>
     `;

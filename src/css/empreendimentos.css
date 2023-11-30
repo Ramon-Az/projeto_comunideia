@@ -9,6 +9,7 @@
     --color-blue-0: #00B6EF;
     --color-blue-10: #0d00c0;
     --color-blue-20: #4267b3;
+    --color-blue-30: #E8F0FE;
 }
 
 body {
@@ -32,9 +33,11 @@ body {
 /* cards destaques */
 
 .cards-container {
-    margin-top: 10%;
+    background-color: #E8F0FE;
+    padding: 3rem;
+    border-radius: 0.7rem;
+    margin: 0 auto;
     width: 100%;
-    height: 440px;
     gap: 2rem;
     text-align: center;
 
@@ -43,9 +46,10 @@ body {
 }
 
 .cards-contents {
-   
     background-color: var(--color-neutral-40);
-    height: 400px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem;
+    height: 470px;
     width: 300px;
     margin: 0 auto;
     
@@ -53,11 +57,34 @@ body {
 }
 
 .card-image img{
+    border-radius: 0.7rem;
     width: 100%;
 }
 
 .card-info p {
     color: var(--color-neutral-10);
+}
+
+.cards-contents .card-button {
+    margin-top: 1.5rem;
+}
+
+.card-button {
+    background-color: var(--color-blue-10);
+    border-radius: 0.7rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.card-button > a {
+    color: var(--color-neutral-50);
+}
+
+.card-button:hover {
+    opacity: 0.6;
 }
 
 /* 3 icones */
@@ -111,8 +138,9 @@ body {
 }
 
 .more-cards-contents {
-    border: 1px solid red;
-    padding: 1rem;
+    background-color: #E8F0FE;
+    padding: 4rem 3rem 4rem;
+    border-radius: 0.7rem;
     gap: 2rem;
     text-align: center;
 
@@ -121,15 +149,21 @@ body {
 }
 
 .foreach-cards {
-    border: 1px solid red;
     background-color: var(--color-neutral-40);
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem;
     width: 100%;
     height: 500px;
     margin: 0 auto;
 }
 
+.foreach-cards .card-button {
+    color: var(--color-neutral-40);
+}
+
 .more-card-image img{
     width: 100%;
+    border-radius: 1rem;
 }
 
 .more-card-info p {
@@ -141,9 +175,9 @@ body {
 /* SAQ */
 
 .saq-container {
-    background-color: var(--color-neutral-50);
-    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
+    background-color: #E8F0FE;
+    padding: 3rem;
+    border-radius: 0.7rem;
     width: 100%;
     height: 300px;
     text-align: center;
@@ -167,7 +201,7 @@ body {
 }
 
 .saq-button {
-    background-color: var(--color-blue-20);
+    background-color: var(--color-blue-10);
     border-radius: 1.1rem;
     margin: 1rem;
     padding: 1rem;
@@ -197,7 +231,23 @@ body {
     }
 }
 
+@media screen and (max-width: 1366px){
+    .more-cards-contents {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-content {
+        margin-top: 550vh;
+    }
+}
+
 @media screen and (max-width: 768px){
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
     .more-cards-contents {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
