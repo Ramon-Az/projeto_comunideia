@@ -175,7 +175,18 @@ header {
 }
 
 /*Estiliza os botões de navegação*/
-
+main {
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32 10%;
+}
+main footer {
+  margin-top: 53rem;
+}
 .nav-bar2 {
   display: flex;
   list-style: none;
@@ -223,6 +234,113 @@ header {
   cursor: pointer;
 }
 
+/* Estilizando o novo carousel */
+
+/* .content-case {
+  background-image: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
+  background-color: #c3edfa75;
+  width: 100%;
+} */
+
+.slider {
+  display: flex;
+  margin: 0 auto;
+  width: 80rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  width: auto;
+  height: 46rem;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 40rem;
+  margin-top: 37rem;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.9s;
+  margin: 10px;
+}
+
+.manual-btn:not(:last-child){
+  margin: 1rem;
+}
+
+.manual-btn:hover {
+  background-color: #ffff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -15%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -30%;
+}
+
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  cursor: pointer;
+  width: 40rem;
+  margin-top: 38rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 2rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #ffff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #ffff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #ffff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #ffff;
+}
 
 a {
   text-decoration: none;
