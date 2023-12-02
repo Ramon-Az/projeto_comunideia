@@ -87,14 +87,24 @@
                 <div class="registro-cpf">
                     <label for="cpf">CPF</label>
                     <label for="mensagem-cpf"></label>
-                    <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                    <input 
+                        type="text" 
+                        id="cpf"
+                        inputmode="number"
+                        minlength="14"
+                        maxlength="14" 
+                        pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" 
+                        placeholder="000.000.000-00" 
+                        required
+                        autocomplete="off"/>
+                    
                     <p id="msg-error5"></p>
                 </div>
                 
                 <div class="registro-phone">
                     <label for="phone">Telefone</label>
                     <label for="mensagem-telefone"></label>
-                    <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="99-9999-9999" required>
+                    <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="(99) 9999-9999" required>
                     <p id="msg-error6"></p>
                 </div>
 
