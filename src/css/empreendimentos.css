@@ -18,7 +18,7 @@ body {
 }
 
 .footer-content {
-    margin-top: 250vh;
+    margin-top: 420vh;
 }
 
 
@@ -27,8 +27,6 @@ body {
     margin: 0 auto;
 
 }
-
-/* Carrossel */
 
 /* cards destaques */
 
@@ -259,7 +257,7 @@ body {
     }
 
     .footer-content {
-        margin-top: 350vh;
+        margin-top: 500vh;
     }
 }
 
@@ -286,7 +284,7 @@ body {
     }
 
     .footer-content {
-        margin-top: 1000vh;
+        margin-top: 1100vh;
     }
 }
 

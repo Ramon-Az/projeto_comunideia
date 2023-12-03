@@ -1,0 +1,55 @@
+/* Carrossel */
+
+section.carousel-container {
+    margin: 4rem auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel-contents {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.carousel-contents > input {
+    display: none;
+}
+
+.carousel-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-box > img {
+    width: 100%;
+}
+
+.carousel-nav-manual, .carousel-nav-auto {
+    position: absolute;
+    width: 80%;
+    margin-top: 61%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-nav-manual .manual-button, .carousel-nav-auto div {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.carousel-nav-manual .manual-button:not(:last-child), 
+    .carousel-nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.carousel-nav-manual .manual-button:hover {
+    background-color: black;
+}
