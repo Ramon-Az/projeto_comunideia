@@ -19,8 +19,7 @@ body {
 }
 
 .main-content {
-    height: 170vh;
-    margin-bottom: 5rem;
+    height: 150vh;
 }
 
 .registro-container {
@@ -32,7 +31,7 @@ body {
     padding-bottom: 60px;
     top: 50%;
     left: 50%;
-    margin-top: 20rem;
+    margin-top: 10rem;
     position: absolute;
     transform: translate(-50%, -50%);
 }
