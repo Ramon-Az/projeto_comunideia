@@ -21,9 +21,14 @@ cardsData.forEach(cards => {
                 <h3>${cards.title}</h3>
                 <p>${cards.description}</p>
             </div>
-
-            <div class="card-button">
-                <a href="">Sobre a empresa</a>
+            <div class="more-card-details">
+                <h4>
+                    <i class="fa-solid fa-location-dot"></i>
+                    ${cards.localityRoad}
+                </h4>
+                <p>
+                    ${cards.localityDistrict}
+                </p>
             </div>
         </div>
     `;
