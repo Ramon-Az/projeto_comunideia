@@ -22,7 +22,6 @@
 }
 
 .header-container{
-    /* background: url(./Rectangle\ 2.svg), rgb(255, 255, 255) 50% / cover no-repeat; */
     background-repeat: no-repeat;
     width: 100%;
     margin: auto;
@@ -39,7 +38,6 @@
     position: fixed;
     margin: 0;
     top: 0;
-    position: fixed;
     background: color #00000050;
     backdrop-filter: blur(20px);
     --webkit-backdrop-filter: blur(20px);

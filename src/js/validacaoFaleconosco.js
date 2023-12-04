@@ -30,6 +30,7 @@ function validaNome() {
 }
 inputNome.addEventListener('blur', validaNome);
 
+// Função de validação do email e na sequência outros tratamentos na parte do domínio do email
 function validaEmail() {
     if (inputEmail.value.indexOf('@') == -1 || inputEmail.value == "") {    
         inputEmail.classList.remove('msg-correto');
@@ -39,16 +40,39 @@ function validaEmail() {
         msgError2.id = 'visivel';
         
         inputCorretos.email = false;
+    } else if (!verificaDominioEmail(inputEmail.value) ) {
+        inputEmail.classList.remove('msg-correto');
+        inputEmail.classList.add('error');
+
+        msgError2.innerText = '*Domínio de email inválido';
+        msgError2.id = 'visivel';
+        
+        inputCorretos.email = false;
     } else {
         inputEmail.classList.remove('error');
         inputEmail.classList.toggle('msg-correto');
 
         msgError2.id= 'invisivel';
-                
         inputCorretos.email = true;
     }
 }
 inputEmail.addEventListener('blur', validaEmail);
+
+// Verifica se o domínio do email é válido
+function verificaDominioEmail(email) {
+    // Expressão regular para verificar o domínio do email
+    const dominioEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+
+    return dominioEmail.test(email);
+}
+
+// Limita a quantidade de caracteres no domínio do email para 10
+inputEmail.addEventListener('input', function() {
+    const dominio = inputEmail.value.split('@')[1];
+    if (dominio && dominio.length > 10) {
+        inputEmail.value = inputEmail.value.slice(0, inputEmail.value.length - (dominio.length - 10));
+    }
+});  //termino dos tratamentos sobre o email
 
 function validaTextarea() {
     if (textArea.value.length < 10 || textArea.value == "") {

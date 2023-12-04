@@ -19,8 +19,7 @@ body {
 }
 
 .main-content {
-    height: 170vh;
-    margin-bottom: 5rem;
+    height: 150vh;
 }
 
 .registro-container {
@@ -32,7 +31,7 @@ body {
     padding-bottom: 60px;
     top: 50%;
     left: 50%;
-    margin-top: 20rem;
+    margin-top: 10rem;
     position: absolute;
     transform: translate(-50%, -50%);
 }
@@ -42,11 +41,17 @@ body {
     color: black;
     text-align: center;
     margin-bottom: 50px;
+    background-color:#0d00c0a3;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
 }
 
 .form-container input {
@@ -154,6 +159,14 @@ label[for="mensagem-cpf"]{
     color: black; 
     text-align: right;
     margin-left: 18em;
+}
+
+label[for="mensagem-telefone"] {
+    display: inline-block;
+    font-size: 0.7em;
+    color: black; 
+    text-align: right;
+    margin-left: 13em;
 }
 
 label[for="mensagem-senha"] {

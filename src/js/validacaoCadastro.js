@@ -113,7 +113,7 @@ function validaDatanasc() {
 inputDatanasc.addEventListener('blur', validaDatanasc);
 
 function validaCpf() {
-    if (inputCpf.value.length < 11 || inputCpf.value == "") {
+    if (inputCpf.value.length < 14 || inputCpf.value == "") {
         inputCpf.classList.remove('msg-correto');
         inputCpf.classList.add('error');
         
@@ -131,6 +131,17 @@ function validaCpf() {
     }
 }
 inputCpf.addEventListener('blur', validaCpf);
+
+function formatarCpf(cpf) {
+    cpf = cpf.replace(/\D/g, ""); // Remove caracteres não numéricos
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona ponto após o terceiro dígito
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona ponto após o sexto dígito
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Adiciona traço antes dos últimos dois dígitos
+    return cpf;
+}
+inputCpf.addEventListener("input", function () {
+    inputCpf.value = formatarCpf(inputCpf.value);
+});
 
 // interação com o mouse e o input label do cpf para mostrar mensagem de direcionamento
 function mensagemLabelcpf() {
@@ -154,7 +165,7 @@ function ocultarMensagemLabelcpf() {
 inputCpf.addEventListener('mouseout', ocultarMensagemLabelcpf);
 
 function validaTelefone() {
-    if (inputTelefone.value.length < 10 || inputTelefone.value == "") {
+    if (inputTelefone.value.length < 11 || inputTelefone.value == "") {
         inputTelefone.classList.remove('msg-correto');
         inputTelefone.classList.add('error');
         
@@ -171,7 +182,39 @@ function validaTelefone() {
         inputCorretos.phone = true;
     }
 }
+inputTelefone.maxLength = 15;// Define o limite de 10 caracteres para o campo de telefone
 inputTelefone.addEventListener('blur', validaTelefone);
+
+function formatarTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, ""); // Remove caracteres não numéricos
+    telefone = telefone.replace(/(\d{2})(\d)/, "($1) $2"); // Adiciona parênteses após o segundo dígito
+    telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2"); // Adiciona traço após o quinto dígito
+    return telefone;
+}
+inputTelefone.addEventListener("input", function () {
+    inputTelefone.value = formatarTelefone(inputTelefone.value);
+});
+
+// interação com o mouse e o input label do telefone para mostrar mensagem de direcionamento
+function mensagemLabeltelefone() {
+    let mensagemTelefone = document.querySelector('label[for = "mensagem-telefone"]');
+    console.log('mouse sobre o input cpf');
+    if(inputTelefone.value == ""){
+        mensagemTelefone.innerText = '*Apenas os números';
+        mensagemTelefone.id= 'mensagem';
+    }else{
+        mensagemTelefone.id= 'invisivel';
+        console.log("inv")
+    }    
+}
+inputTelefone.addEventListener('mouseover', mensagemLabeltelefone);
+// fim da interação com o mouse e o input label do telefone para mostrar mensagem de direcionamento
+
+function ocultarMensagemLabeltelefone() {
+    let ocultaTelefone = document.querySelector('label[for = "mensagem-telefone"]');
+    ocultaTelefone.id= 'invisivel';
+}
+inputTelefone.addEventListener('mouseout', ocultarMensagemLabeltelefone);
 
 // Função de validação do email e na sequência outros tratamentos na parte do domínio do email
 function validaEmail() {
@@ -199,7 +242,7 @@ function validaEmail() {
         inputCorretos.email = true;
     }
 }
-inputEmail.addEventListener('input', validaEmail);
+inputEmail.addEventListener('blur', validaEmail);
 
 // Verifica se o domínio do email é válido
 function verificaDominioEmail(email) {
