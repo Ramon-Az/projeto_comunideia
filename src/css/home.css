@@ -39,10 +39,11 @@ a:hover {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: c ;
   font-family: "Roboto Slab";
   background: linear-gradient(445deg, white, #00b6ef);
-  height: 58vh;
+  height: 20vh;
+  max-height: 20vh;
   font-size: 1.6rem;
 }
 
@@ -133,7 +134,7 @@ main {
 .text {
   font-family: "Roboto Slab", serif;
   color: rgba(0, 0, 0, 0.9);
-  margin-top: -19rem;
+  margin-top: 19rem;
   margin-right: 56rem;
   padding: 3rem;
 }
