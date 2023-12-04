@@ -31,7 +31,7 @@ a:hover {
 }
 
 .logo {
-  margin-top: -17.7rem;
+  margin-top: -18.7rem;
   margin-left: -13rem;
   margin-right: -17rem;
 }
@@ -39,10 +39,10 @@ a:hover {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: c ;
+  align-items: c;
   font-family: "Roboto Slab";
-  background: linear-gradient(445deg, white, #00b6ef);
-  height: 20vh;
+  background: linear-gradient(445deg, white, #55cdf1);
+  height: 15vh;
   max-height: 20vh;
   font-size: 1.6rem;
 }
@@ -108,39 +108,69 @@ main {
 }
 
 /*Estilizando botao entrar*/
-.button-login {
+.btn41-43 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: -0.4rem;
-  width: 7.9rem;
-  height: 3.5rem;
-  flex-shrink: 1;
-  font-size: 1.5rem;
-
-  padding: 0.8rem 1.6rem;
-
-  background-color: #00b6ef;
-  border-radius: 0.8rem;
-  color: var(--button-text-color);
-  border-color: #00b6ef;
-}
-
-.login-btn:hover > .button-login {
+  padding: 4px 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  background: transparent;
+  outline: none !important;
   cursor: pointer;
-  color: rgb(13, 0, 255);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.9rem;
 }
+
+.btn-41 {
+  border: 1px solid rgb(255, 255, 255);
+  border-width: 2px;
+  z-index: 1;
+  color: white;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+  border-radius: 0.9rem;
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+
 
 .text {
   font-family: "Roboto Slab", serif;
   color: rgba(0, 0, 0, 0.9);
-  margin-top: 19rem;
+  margin-top: 1rem;
   margin-right: 56rem;
   padding: 3rem;
 }
 
 .text-01 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   line-height: 140%; /* 5.04rem */
   letter-spacing: 0.4rem;
   margin-left: 2%;
@@ -159,21 +189,30 @@ main {
 
 /* Estilizando o novo carousel */
 
-
 .slider {
   display: flex;
-  margin: 0 auto;
+  margin: 5rem;
   border-radius: 8px;
-  background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
-  width: 90rem;
-  height: 40rem;
-  margin-top: 3rem;
+  width: 100rem;
+  height: 52rem;
+  margin-top: 6rem;
   overflow: hidden;
 }
 
+/* Configurando estilos da nova home */
+.background {
+  background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
+}
+.background h2{
+  display: flex;
+  justify-content: center;
+  margin-bottom:5rem;
+  font-size: 2.6rem;
+  box-sizing: border-box;
+}
 .slides {
-  width: 400%;
-  height: 400%;
+  width: 260%;
+  height: 200%;
   display: flex;
 }
 
@@ -182,22 +221,22 @@ main {
 }
 
 .slide {
-  width: 60%;
+  width: 40%;
   position: relative;
   transition: 0.9s;
 }
 
 .slide img {
-  width: 90rem;
-  height: 40rem;
+  width: 100rem;
+  height: 50rem;
   border-radius: 8px;
 }
 
 .manual-navigation {
   position: absolute;
   width: 40rem;
-  margin: 29rem;
-  margin-top: 49rem;
+  margin: 29rem 35rem;
+  margin-top: 51rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,11 +264,11 @@ main {
 }
 
 #radio2:checked ~ .first {
-  margin-left: -35%;
+  margin-left: -40%;
 }
 
 #radio3:checked ~ .first {
-  margin-left: -70%;
+  margin-left: -80%;
 }
 
 .navigation-auto div {
@@ -244,8 +283,8 @@ main {
   position: absolute;
   cursor: pointer;
   width: 40rem;
-  margin: 29rem;
-  margin-top: 50rem;
+  margin: 29rem 35rem;
+  margin-top: 52rem;
   display: flex;
   justify-content: center;
 }
