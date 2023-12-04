@@ -1,17 +1,37 @@
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+    --color-neutral-50: #fff;
+    --color-blue-0: #000040;
+    --color-blue-10: #3e20dc;
+    --color-blue-20: #4267b3;
+    --color-blue-30: #E8F0FE;
+}
+
 /* Carrossel */
 
 section.carousel-container {
-    margin: 4rem auto;
+    margin: 5rem auto;
     width: 100%;
-    height: auto;
+    height: 700px;
     padding: 0;
     overflow: hidden;
+}
+
+.carousel-title {
+    border-bottom: 1px solid var(--color-neutral-10);
+    text-align: center;
+    font-size: 35px;
+    margin: 2rem 7rem;
 }
 
 .carousel-contents {
     width: 400%;
     height: auto;
     display: flex;
+    transition: transform 1s;
 }
 
 .carousel-contents > input {
@@ -23,6 +43,8 @@ section.carousel-container {
     height: auto;
     position: relative;
     text-align: center;
+    transition: 3s;
+    
 }
 
 .carousel-box > img {
@@ -31,14 +53,14 @@ section.carousel-container {
 
 .carousel-nav-manual, .carousel-nav-auto {
     position: absolute;
-    width: 80%;
-    margin-top: 61%;
+    width: 90%;
+    margin-top: 39%;
     display: flex;
     justify-content: center;
 }
 
 .carousel-nav-manual .manual-button, .carousel-nav-auto div {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -51,5 +73,41 @@ section.carousel-container {
 }
 
 .carousel-nav-manual .manual-button:hover {
-    background-color: black;
+    background-color: white;
+}
+
+#button-1:checked ~ .carousel-nav-auto .auto-01, #button-2:checked ~ .carousel-nav-auto .auto-02, #button-3:checked ~ .carousel-nav-auto .auto-03 {
+    background-color: white;
+}
+
+#button-1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#button-2:checked ~ .second {
+    margin-left: -25%;
+}
+
+#button-3:checked ~ .third {
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 1920px) {
+    .carousel-nav-manual,
+        .carousel-nav-auto {
+            width: 75%;
+            margin-top: 32%;
+        }
+}
+
+@media screen and (max-width: 1440px) {
+    .carousel-nav-manual,
+        .carousel-nav-auto {
+            width: 95%;
+            margin-top: 42%;
+        }
 }
