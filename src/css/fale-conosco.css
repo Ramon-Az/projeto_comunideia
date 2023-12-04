@@ -1,187 +1,190 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
 * {
-    font-family: "Roboto Slab", serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
 }
-body{
-    background-image: linear-gradient(45deg, #00b6ef, white);
-    
+body {
+  background-image: linear-gradient(45deg, #00b6ef, white);
 }
-main{
-    display: flex;
-    align-items: center; 
+main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .secao {
-    width: auto;
-    height: auto;
-    margin: auto;
+  width: auto;
+  height: auto;
+  margin: auto;
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Inicia o "Contate-nos, figura e endereços"*/
 .div-filho1 {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
-.div-filho1 > h1{
-    font-size: 1.5em;
-    padding-bottom: 1em; 
-    color: rgb(28, 126, 255);
+.div-filho1 > h1 {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  color: rgb(28, 126, 255);
 }
 
-.div-filho1 > p{
-    font-size: 0.9em;
-    text-align: center;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    width: 400px;   
+.div-filho1 > p {
+  font-size: 0.9em;
+  text-align: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  width: 400px;
 }
 
-.div-filho1 > img{
-    width: 400px;
-    height: 250px;
-    border: solid 2px white;
-    margin-top: 0.9em;
-    margin-bottom: 1.5em;
-    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
-     
+.div-filho1 > img {
+  width: 400px;
+  height: 250px;
+  border: solid 2px white;
+  margin-top: 0.9em;
+  margin-bottom: 1.5em;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-#contato-empresa{
-    font-size: 12px;
-    margin: 0px;
+#contato-empresa {
+  font-size: 12px;
+  margin: 0px;
 }
 
-#contato-empresa h3{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+#contato-empresa h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /*Inicia o "Entre em contato e formulario"*/
 .div-filho2 {
-    background-color: #333;
-    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
-    color: white; 
-    width: 70%;
-    height: 600px;
-    margin-right: 2%;
+  background-color: #333;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 70%;
+  height: 600px;
+  margin-right: 2%;
 }
 
-.div-filho2 > h1{
-    font-size: 1.3em;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    text-align: center;
-    
+.div-filho2 > h1 {
+  font-size: 1.3em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
 }
 
-.div-filho2 > p{
-    font-size: 0.9em;
-    text-align: justify;
-    padding-bottom: 1.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    width: 400px;
+.div-filho2 > p {
+  font-size: 0.9em;
+  text-align: justify;
+  padding-bottom: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 400px;
 }
 
 .div-filho2 > form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.div-filho2 > form > label{
-    text-align: left;
-    font-size: .9em;
-    padding-bottom: 0.3em;
-    padding-top: 0.2em;
-    margin-left: 0.5em;
+.div-filho2 > form > label {
+  text-align: left;
+  font-size: 0.9em;
+  padding-bottom: 0.3em;
+  padding-top: 0.2em;
+  margin-left: 0.5em;
 }
 
-.div-filho2 > form > input{
-    width: 400px;
-    height: 3.5em;
-    border-radius: 30px;
-    margin-left: 0em;
-    padding-left: 0em;
-    margin-right: 0em;
-    margin-left: 0.5em;
-    align-self: flex-start;
-    border: none;
+.div-filho2 > form > input {
+  width: 400px;
+  height: 3.5em;
+  border-radius: 30px;
+  margin-left: 0em;
+  padding-left: 0em;
+  margin-right: 0em;
+  margin-left: 0.5em;
+  align-self: flex-start;
+  border: none;
 }
 /* campos do formulário - inputs, mensagem e botão*/
-#nome, #email{
-    padding: 1em;
-    font-size: 0.8em;
+#nome,
+#email {
+  padding: 1em;
+  font-size: 0.8em;
 }
 
-#mensagem{
-    width: 400px;
-    height: 150px;
-    margin-left: 0.5em;
-    border-radius: 30px;
-    resize: none;
-    padding: 1em;
-    font-size: 0.8em;
-    text-align: justify;
+#mensagem {
+  width: 400px;
+  height: 150px;
+  margin-left: 0.5em;
+  border-radius: 30px;
+  resize: none;
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: justify;
 }
 
-.div-filho2 > form #enviar-contato{
-    background-color: #0052ce;
-    font-weight: bolder;
-    box-shadow: 1px 2px 2px 1px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    border-radius: 30px;
-    width: 200px;
-    height: 3em;
-    align-self:flex-end;
-    margin-right: 0.5em;
-    margin-top: 0.6em;   
+.div-filho2 > form #enviar-contato {
+  background-color: #0052ce;
+  font-weight: bolder;
+  box-shadow: 1px 2px 2px 1px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 30px;
+  width: 200px;
+  height: 3em;
+  align-self: flex-end;
+  margin-right: 0.5em;
+  margin-top: 0.6em;
 }
 
-.div-filho2 > form #enviar-contato:hover{
-    background-color: #4267b3;
+.div-filho2 > form #enviar-contato:hover {
+  background-color: #4267b3;
 }
 
 /*estilização dinamica com js*/
-#visivel{
-    display: block;
-    font-size: 0.7em;
-    align-self: end;
-    margin-top: 0.2em;
-    margin-right: 2em;
-    background-color: whitesmoke;
-    color: red;
-    font-style: italic;
+#visivel {
+  display: block;
+  font-size: 0.7em;
+  align-self: end;
+  margin-top: 0.2em;
+  margin-right: 2em;
+  background-color: whitesmoke;
+  color: red;
+  font-style: italic;
 }
 
-#invisivel{
-    display: none;
+#invisivel {
+  display: none;
 }
 
-#nome.error, #email.error, #mensagem.error{
-    border: solid 2px red;
-    border-left: solid 6px red;
-    color: red;
+#nome.error,
+#email.error,
+#mensagem.error {
+  border: solid 2px red;
+  border-left: solid 6px red;
+  color: red;
 }
 
-#nome.msg-correto, #email.msg-correto, #mensagem.msg-correto{
-    display: block;
-    font-size: 0.8em;
-    background-color: whitesmoke;
-    color: green;
-    border: solid 2px green;
-    border-left: solid 6px green;
+#nome.msg-correto,
+#email.msg-correto,
+#mensagem.msg-correto {
+  display: block;
+  font-size: 0.8em;
+  background-color: whitesmoke;
+  color: green;
+  border: solid 2px green;
+  border-left: solid 6px green;
 }

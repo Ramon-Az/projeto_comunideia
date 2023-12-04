@@ -1,187 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
 
 :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-    --color-neutral-50: #ffffff;
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+  --color-neutral-50: #ffffff;
 
-    --color-blue-0: #00B6EF;
-    --color-blue-10: #0d00c0;
-    --color-blue-20: #4267b3;
+  --color-blue-0: #00b6ef;
+  --color-blue-10: #0d00c0;
+  --color-blue-20: #4267b3;
 }
 
 body {
-    font-family: "Roboto Slab", serif;
-    background-image: linear-gradient(45deg, #00B6EF, white);
+  font-family: "Roboto Slab", serif;
+  background-image: linear-gradient(45deg, #00b6ef, white);
 }
 
 .main-content {
-    height: 170vh;
-    margin-bottom: 5rem;
+  height: 170vh;
+  margin-bottom: 5rem;
+  display: flex;
 }
 
 .registro-container {
-    background-color: var(--color-neutral-50);
-    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    padding: 50px;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    top: 50%;
-    left: 50%;
-    margin-top: 20rem;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  background-color: var(--color-neutral-50);
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  top: 50%;
+  left: 50%;
+  margin-top: 25rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-direction: column;
+  max-width: 900px;
+  min-width: 20vh;
+  z-index: -1;
 }
 
 .registro-title {
-    font-size: 1.2em;
-    color: black;
-    text-align: center;
-    margin-bottom: 50px;
-    background-color:#0d00c0a3;
-    border-radius: 30px;
-    color: white;
-    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #0d00c0a3;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .form-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
 }
 
 .form-container input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-right: 30px;
-    padding: 15px;
-    width: 350px;
-    height: 3.5em;
-    outline: none;
-    font-size: 0.8em;
-    text-align: start;
-    display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 30px;
+  padding: 15px;
+  width: 350px;
+  height: 3.5em;
+  outline: none;
+  font-size: 0.8em;
+  text-align: start;
+  display: inline-block;
 }
 
-.registro-nome,  .registro-sobrenome{
-    text-align: start;
-    font-size: .9em;
+.registro-nome,
+.registro-sobrenome {
+  text-align: start;
+  font-size: 0.9em;
 }
 
-.registro-user, .registro-nascimento,  .registro-email, .registro-confirmar-email, .registro-cpf, .registro-phone, .registro-password, .registro-confirmar-password {
-    text-align: start;
-    margin-top: 15px;
-    font-size: .9em;
+.registro-user,
+.registro-nascimento,
+.registro-email,
+.registro-confirmar-email,
+.registro-cpf,
+.registro-phone,
+.registro-password,
+.registro-confirmar-password {
+  text-align: start;
+  margin-top: 15px;
+  font-size: 0.9em;
 }
 
 .registro-buttom-next {
-    text-align: center;
-    padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .registro-buttom-next input {
-    background-color: var(--color-blue-10);
-    border-radius: 10px;
-    border: none;
-    margin-top: -20px;
-    margin-bottom: 30px;
-    padding: 15px;
-    width: 150px;
-    color: var(--color-neutral-40);
-    font-size: 15px;
-    transition: all 0.4s;
+  background-color: var(--color-blue-10);
+  border-radius: 10px;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 150px;
+  color: var(--color-neutral-40);
+  font-size: 15px;
+  transition: all 0.4s;
 }
 
 .registro-buttom-next > input:hover {
-    background-color: var(--color-blue-20);
-    cursor: pointer;
+  background-color: var(--color-blue-20);
+  cursor: pointer;
 }
 
 .registro-buttom-enter {
-    text-align: center;
+  text-align: center;
 }
 
 .registro-buttom-enter a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*estilização dinamica com js*/
-#visivel{
-    display: block;
-    font-size: 0.7em;
-    align-self: end;
-    margin-top: 0.2em;
-    margin-right: 2em;
-    color: red;
-    font-style: italic;
+#visivel {
+  display: block;
+  font-size: 0.7em;
+  align-self: end;
+  margin-top: 0.2em;
+  margin-right: 2em;
+  color: red;
+  font-style: italic;
 }
 
-#invisivel{
-    display: none;
+#invisivel {
+  display: none;
 }
 
-#first-name.error, #last-name.error, #user.error, #date.error, #cpf.error, #phone.error, #email.error, #confirm-email.error, #password.error, #confirm-password.error{
-    border: solid 2px red;
-    border-left: solid 6px red;
-    color: red;
+#first-name.error,
+#last-name.error,
+#user.error,
+#date.error,
+#cpf.error,
+#phone.error,
+#email.error,
+#confirm-email.error,
+#password.error,
+#confirm-password.error {
+  border: solid 2px red;
+  border-left: solid 6px red;
+  color: red;
 }
 
 /* adiciona uma figurinha de decepcionado quando tem error no campo input*/
 #date.error::before {
-    content: "\1F61E"; /* código unicode do ícone*/
-    font-size: 20px; /* tamanho do ícone conforme necessário */
-    margin-right: 10px; /* opcional: espaçamento à direita do ícone */
+  content: "\1F61E"; /* código unicode do ícone*/
+  font-size: 20px; /* tamanho do ícone conforme necessário */
+  margin-right: 10px; /* opcional: espaçamento à direita do ícone */
 }
 
-#first-name.msg-correto, #last-name.msg-correto, #user.msg-correto, #date.msg-correto, #cpf.msg-correto, #phone.msg-correto, #email.msg-correto, #confirm-email.msg-correto, #password.msg-correto, #confirm-password.msg-correto{
-    display: block;
-    background-color: whitesmoke;
-    color: green;
-    border: solid 2px green;
-    border-left: solid 6px green;
+#first-name.msg-correto,
+#last-name.msg-correto,
+#user.msg-correto,
+#date.msg-correto,
+#cpf.msg-correto,
+#phone.msg-correto,
+#email.msg-correto,
+#confirm-email.msg-correto,
+#password.msg-correto,
+#confirm-password.msg-correto {
+  display: block;
+  background-color: whitesmoke;
+  color: green;
+  border: solid 2px green;
+  border-left: solid 6px green;
 }
 
 /* adiciona uma figurinha sorridente quando estiver correto o campo input */
 #date.msg-correto::before {
-    content: "\1F60A"; /* código unicode do ícone*/
-    font-size: 20px; /* tamanho do ícone conforme necessário */
-    margin-right: 10px; /* opcional: espaçamento à direita do ícone */
+  content: "\1F60A"; /* código unicode do ícone*/
+  font-size: 20px; /* tamanho do ícone conforme necessário */
+  margin-right: 10px; /* opcional: espaçamento à direita do ícone */
 }
 
-label[for="mensagem-cpf"]{
-    display: inline-block;
-    font-size: 0.7em;
-    color: black; 
-    text-align: right;
-    margin-left: 18em;
+label[for="mensagem-cpf"] {
+  display: inline-block;
+  font-size: 0.7em;
+  color: black;
+  text-align: right;
+  margin-left: 18em;
 }
 
 label[for="mensagem-telefone"] {
-    display: inline-block;
-    font-size: 0.7em;
-    color: black; 
-    text-align: right;
-    margin-left: 13em;
+  display: inline-block;
+  font-size: 0.7em;
+  color: black;
+  text-align: right;
+  margin-left: 13em;
 }
 
 label[for="mensagem-senha"] {
-    display: inline-block;
-    font-size: 0.7em;
-    color: black; 
-    text-align: right;
-    margin-left: 15em;
+  display: inline-block;
+  font-size: 0.7em;
+  color: black;
+  text-align: right;
+  margin-left: 15em;
 }
 
 label[for="mensagem-confirmsenha"] {
-    display: inline-block;
-    font-size: 0.7em;
-    color: black; 
-    text-align: right;
-    margin-left: 6em;
+  display: inline-block;
+  font-size: 0.7em;
+  color: black;
+  text-align: right;
+  margin-left: 6em;
 }

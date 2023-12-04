@@ -10,20 +10,63 @@
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    
+
     <!-- Js Links -->
     <!-- <script src="js/main.js" defer></script> -->
-    <!-- <script src="./js/efeitoMenufixado.js" defer></script> -->
+    <script src="./js/efeitoMenufixado.js" defer></script>
     <script src="./js/validacaoCadastro.js" defer></script>
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Menu do site -->
-    
+
     <header class="header-container">
+        <!--  Menu do site - parte da logo, pesquisa e botao entrar -->
+        <nav class="nav-bar-01">
+            <a class="logo-comunideia" rel="home" href="./index.html" target="_self">
+                <img class="logo-comunideia"
+                    src="/src/assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg"
+                    alt="Logotipo Comunideia">
+            </a>
+            <section>
+                <ul class="navbar1">
+                    <li>
+                        <div class="barra-busca">
+                            <input type="text" class="busca-texto" placeholder="Pesquisar..." />
+                            <a class="busca-btn">
+                                <img class="loupe-blue" src="/src/assets/svg/loupe-blue.svg"
+                                    alt="Clique para fazer a busca">
+                                <img class="loupe-white" src="/src/assets/svg/loupe-white.svg"
+                                    alt="Clique para fazer a busca">
+                        </div>
+                    </li>
+                    <li class="login-btn">
+                        <a class="login-btn" href="./login.html" title="Clique para fazer o login">
+                            <button class="button-login" type="menu">ENTRAR</button>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <!-- Menu do site  - texto sobre oq se trata o site de forma resumida -->
+        <section class="text">
+            <h1 class="text-01">
+                A plataforma online que ajuda
+            </h1>
+            <h1 class="text-01-1">a inserir o seu negócio na web
+            </h1>
+            <h3 class="text-02">
+                Promovemos o desenvolvimento econômico e social das
+                <br>
+                comunidades locais, valorizando seus produtos e serviços.
+            </h3>
+        </section>
+        <!-- Menu do site  fixado-->
         <nav class="nav-menu">
             <ul>
                 <li>
@@ -43,7 +86,7 @@
                     <a href="fale_conosco.html">Fale Conosco</a>
                 </li>
                 <li>
-                    <img class="nav-icon" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
+                    <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
                     <a href="sobre.html">Sobre</a>
                 </li>
             </ul>
@@ -87,24 +130,18 @@
                 <div class="registro-cpf">
                     <label for="cpf">CPF</label>
                     <label for="mensagem-cpf"></label>
-                    <input 
-                        type="text" 
-                        id="cpf"
-                        inputmode="number"
-                        minlength="14"
-                        maxlength="14" 
-                        pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" 
-                        placeholder="000.000.000-00" 
-                        required
-                        autocomplete="off"/>
-                    
+                    <input type="text" id="cpf" inputmode="number" minlength="14" maxlength="14"
+                        pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" placeholder="000.000.000-00" required
+                        autocomplete="off" />
+
                     <p id="msg-error5"></p>
                 </div>
-                
+
                 <div class="registro-phone">
                     <label for="phone">Telefone</label>
                     <label for="mensagem-telefone"></label>
-                    <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="(99) 9999-9999" required>
+                    <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="(99) 9999-9999"
+                        required>
                     <p id="msg-error6"></p>
                 </div>
 
@@ -130,7 +167,8 @@
                 <div class="registro-confirmar-password">
                     <label for="confirm-password">Confirma a senha</label>
                     <label for="mensagem-confirmsenha"></label>
-                    <input placeholder="Digite aqui sua senha novamente" id="confirm-password" type="password" autocomplete="off">
+                    <input placeholder="Digite aqui sua senha novamente" id="confirm-password" type="password"
+                        autocomplete="off">
                     <p id="msg-error10"></p>
                 </div>
             </form>
@@ -205,6 +243,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>
