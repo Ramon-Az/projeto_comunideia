@@ -19,30 +19,22 @@ body {
 }
 
 .main-content {
-  height: 170vh;
-  margin-bottom: 5rem;
-  display: flex;
+    height: 170vh;
+    margin-bottom: 5rem;
 }
 
 .registro-container {
-  background-color: var(--color-neutral-50);
-  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  padding: 50px;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  top: 50%;
-  left: 50%;
-  margin-top: 25rem;
-  position: absolute;
-  transform: translate(-50%, -50%);
-
-  flex-wrap: wrap;
-  gap: 2rem;
-  flex-direction: column;
-  max-width: 900px;
-  min-width: 20vh;
-  z-index: -1;
+    background-color: var(--color-neutral-50);
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    top: 50%;
+    left: 50%;
+    margin-top: 20rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .registro-title {

@@ -11,158 +11,94 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="./js/navbar-home.js" defer></script>
 </head>
 
 <body>
   <header>
-    <nav class="nav-bar-01">
-      <a class="logo-comunideia" rel="home" href="./index.html" target="_self">
-        <img class="logo-comunideia" src="/src/assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg"
-          alt="Logotipo Comunideia">
+    <nav>
+      <a class="logo" href="./index.html">
+        <img src="./assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg" width="300px" height="500px">
       </a>
-      <section>
-        <ul class="navbar1">
-          <li>
-            <div class="barra-busca">
-              <input type="text" class="busca-texto" placeholder="Pesquisar..." />
-              <a class="busca-btn">
-                <img class="loupe-blue" src="/src/assets/svg/loupe-blue.svg" alt="Clique para fazer a busca">
-                <img class="loupe-white" src="/src/assets/svg/loupe-white.svg" alt="Clique para fazer a busca">
-            </div>
-          </li>
-          <li class="login-btn">
-            <a class="login-btn" href="./login.html" title="Clique para fazer o login">
-              <button class="button-login" type="menu">ENTRAR</button>
-            </a>
-          </li>
-        </ul>
-
-
-      </section>
-
-    </nav>
-    <section class="text">
-      <h1 class="text-01">
-        A plataforma online que ajuda a inserir o seu negócio na web
-      </h1>
-      <h3 class="text-02">
-        Promovemos o desenvolvimento econômico e social das
-        <br>
-        comunidades locais, valorizando seus produtos e serviços.
-      </h3>
-    </section>
-
-  </header>
-  <main>
-    <nav class="nav-bar2">
-      <ul class="nav-bar2">
-        <div class="inicio">
-          <li>
-            <a class="inicio" href="#" title="Vá para a pagina de inicio" target="_self">
-              <img class="nav-icon" src="./assets/svg/home-icon-svg.svg" alt="Inicio">
-              Inicio
-            </a>
-
-          </li>
-        </div>
-        <div class="btn-store">
-          <li>
-            <a class="btn-store" href="empreendimentos.html" title="Vá para a pagina de empreendimentos" target="_self">
-              <img class="nav-icon" src="./assets/svg/store-icon-svg.svg" alt="Empreendimentos">
-              Empreendimentos
-            </a>
-          </li>
-        </div>
-        <div class="btn-join">
-          <li>
-            <a class="btn-join" href="./cadastro.html" title="Vá para a pagina de cadastro" target="_self">
-              <img class="nav-icon" src="./assets/svg/add-profile-svg.svg" alt="">
-              Cadastre-se
-            </a>
-          </li>
-        </div>
-        <div class="btn-fale">
-          <li>
-            <a class="btn-fale" href="fale_conosco.html" title="Vá para a pagina fale conosco" target="_self">
-              <img class="nav-icon" src="./assets/svg/contact-us-svg.svg" alt="">
-              Fale conosco
-            </a>
-          </li>
-        </div>
-        <div class="btn-about">
-          <li>
-            <a class="btn-about" href="./sobre.html" title="Vá para a pagina sobre" target="_self">
-              <img class="nav-icon" src="./assets/svg/about-us-svg.svg" alt="">
-              Sobre
-            </a>
-          </li>
-        </div>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./cadastro.html">Cadastro</a></li>
+        <li><a href="./empreendimentos.html">Projetos</a></li>
+        <li><a href="./fale_conosco.html">Fale Conosco</a></li>
+        <li class="login-btn">
+          <a class="login-btn" href="./login.html" title="Clique para fazer o login">
+            <button class="button-login" type="menu">ENTRAR</button>
+          </a>
+        </li>
       </ul>
+
     </nav>
+  </header>
 
+  <section class="text">
+    <h1 class="text-01">
+      A plataforma online que ajuda a inserir o seu negócio na web
+    </h1>
+    <h3 class="text-02">
+      Promovemos o desenvolvimento econômico e social das
+      <br>
+      comunidades locais, valorizando seus produtos e serviços.
+    </h3>
+  </section>
 
-    <section class="content-case">
-      <div>
-        <h2 class="title-gallery">Como nosso parceiro, ajudamos você empreendedor local a</h2>
-        <h2 class="title-gallery">divulgar seus produtos para milhares de pessoas</h2>
-      </div>
-      <div class="slider">
-        <div class="slides">
-          <!--Radio Buttons-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--Fim radio buttons-->
+  <div class="background">
+    <h2>O que é ter sucesso</h2>
+    <div class="slider">
+      <div class="slides">
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--Fim radio buttons-->
 
-          <!--Slide Imagens-->
-          <div class="slide first">
-            <img src="./assets/img/imagens-empreendimentos/Pizzaria Espaço da Pizza.jpg" alt="Imagem 1">
-          </div>
-          <div class="headline">
-            <h3 class="headline-text">
-              <span>
-                "Nunca imaginei que anúncios no Google Ads fariam tanta diferença para o meu comércio. Recomendo a todos que entrem nessa comunidade"
-              </span>
-            </h3>
-          </div>
-          <div class="slide">
-            <img src="./assets/img/imagens-empreendimentos/Livraria Aires.jpg" alt="Imagem 2">
-          </div>
-          <div class="slide">
-            <img src="./assets/img/imagens-empreendimentos/Restaurante Comida Japonesa Daito Sushi.JPG" alt="Imagem 3">
-          </div>
-          <div class="slide">
-            <img src="./assets/img/imagens-empreendimentos/Loja Acessorios de Celular Smart Cell.JPG" alt="Imagem 4">
-          </div>
-          <!--Fim Slide Imagens-->
-
-          <!--Navigation auto-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
+        <!--Slide Imagens-->
+        <div class="slide first">
+          <img src="./assets/img/imagens-empreendimentos/Pizzaria Espaço da Pizza.jpg" alt="Imagem 1">
 
         </div>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Livraria Aires.jpg" alt="Imagem 2">
+        </div>
 
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+        <div class="slide">
+          <img src="./assets/img/imagens-empreendimentos/Restaurante Comida Japonesa Daito Sushi.JPG" alt="Imagem 3">
+        </div>
+        <!--Fim Slide Imagens-->
+
+        <!--Navigation auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
         </div>
 
       </div>
-    </section>
 
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
 
+    </div>
+    <main>
 
-
-
-
-
+    </main>
     <footer>
       <div class="footer-content">
         <div class="footer-contacts">
