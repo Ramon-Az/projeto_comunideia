@@ -21,7 +21,6 @@ body {
 .main-content {
   height: 170vh;
   margin-bottom: 5rem;
-  display: flex;
 }
 
 .registro-container {
@@ -37,12 +36,12 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
 
+  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   flex-direction: column;
   max-width: 900px;
   min-width: 20vh;
-  z-index: -1;
 }
 
 .registro-title {
