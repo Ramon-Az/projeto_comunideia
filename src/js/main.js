@@ -1,8 +1,8 @@
 import { cardsData } from "./data/cardsData.js";
 
 const moreCardsContainer = document.querySelector('#more-cards-contents');
-const modal = document.querySelector('#card-modal');
-const inputBtn = document.querySelector('.card-button');
+const radio = document.querySelector('.manual-button');
+let i = 1;
 
 cardsData.forEach(cards => {
     const cardContainer = document.createElement('div');
@@ -33,8 +33,37 @@ cardsData.forEach(cards => {
 
 console.log("ta funcionando patrão");
 
-function openModal() {
-    
+/* Carousel Contents */
+
+document.getElementById('button-1').checked = true
+
+setInterval(() => {
+    nextImg()
+}, 5000)
+
+function nextImg() {
+    i++
+
+    if (i > 3) {
+        i = 1
+    }
+
+    document.getElementById('radio'+i).checked = true
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 1;
+    const totalSlides = 3;
 
+    function showSlide(index) {
+        document.getElementById(`button-${currentIndex}`).checked = false;
+        currentIndex = (index + totalSlides) % totalSlides + 1;
+        document.getElementById(`button-${currentIndex}`).checked = true;
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 10000); 
+});
