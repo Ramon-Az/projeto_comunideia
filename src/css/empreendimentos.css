@@ -12,12 +12,25 @@
   --color-blue-10: #3e20dc;
   --color-blue-20: #4267b3;
   --color-blue-30: #e8f0fe;
+  --color-blue-35: #daf7ff;
   --color-blue-40: #4296ff;
 }
 
 body {
   font-family: "Roboto Slab", serif;
-  background: linear-gradient(435deg, white, #55cdf1);
+  background: white;
+}
+
+/* HEADER */
+
+.header-container {
+  background: linear-gradient(50deg, white, #55cdf1);
+  
+}
+
+.header-container nav {
+  height: 14vh;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer-content {
@@ -47,9 +60,9 @@ body {
 }
 
 .cards-container {
-  background-color: var(--color-neutral-50);
+  background: linear-gradient(45deg, #b8f0ff, rgb(138, 231, 243));
   padding: 3rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   margin: 0 auto;
   width: 100%;
   gap: 2rem;
@@ -110,7 +123,7 @@ body {
 }
 
 .card-button {
-  background-color: var(--color-neutral-50);
+  background-color: white;
   border-radius: 0.7rem;
   border: none;
   color: var(--color-neutral-10);
@@ -173,19 +186,16 @@ body {
 /* More Cards */
 
 .more-cards-title {
-  background-color: var(--color-neutral-50);
-  border-radius: 0.7rem;
+  border-bottom: 1px solid black;
+  margin: 2rem 10rem;
   text-align: center;
-  margin-bottom: -5rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
   font-size: 35px;
 }
 
 .more-cards-contents {
-  background-color: var(--color-neutral-50);
+  background: linear-gradient(45deg, #b8f0ff, rgb(138, 231, 243));
   padding: 4rem 3rem 4rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   gap: 2rem;
   text-align: center;
 
@@ -252,9 +262,9 @@ body {
 /* SAQ */
 
 .saq-container {
-  background-color: var(--color-neutral-50);
+  background: linear-gradient(45deg, #b8f0ff, rgb(138, 231, 243));
   padding: 3rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   width: 100%;
   height: 300px;
   text-align: center;
@@ -331,7 +341,7 @@ body {
   }
 
   .footer-content {
-    margin-top: 500vh;
+    margin-top: 720vh;
   }
 }
 
@@ -352,7 +362,7 @@ body {
   }
 
   .footer-content {
-    margin-top: 500vh;
+    margin-top: 600vh;
   }
 }
 

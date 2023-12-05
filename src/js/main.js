@@ -1,6 +1,7 @@
 import { cardsData } from "./data/cardsData.js";
 
 const moreCardsContainer = document.querySelector('#more-cards-contents');
+const loadCard = document.querySelector('#load-cards');
 const radio = document.querySelector('.manual-button');
 let i = 1;
 
@@ -37,6 +38,15 @@ cardsData.forEach(cards => {
 }); 
 
 console.log("ta funcionando patrão");
+
+
+/* Button ver mais */
+
+loadCard.addEventListener('click', () => {
+    if (cardsData) {
+
+    }
+});
 
 /* Carousel Contents */
 
