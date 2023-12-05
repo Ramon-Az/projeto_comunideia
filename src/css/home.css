@@ -201,6 +201,9 @@ img.nav-icon {
   background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .background h2 {
   display: flex;
@@ -208,7 +211,6 @@ img.nav-icon {
   align-items: center;
   margin-bottom: 5rem;
   font-size: 2.6rem;
-  margin-left: 6rem;
 }
 .slides {
   width: 300%;
