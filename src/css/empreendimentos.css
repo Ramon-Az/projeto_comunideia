@@ -29,7 +29,7 @@ body {
 }
 
 .header-container nav {
-  height: 14vh;
+  height: 11vh;
   box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,7 +56,7 @@ body {
   border-bottom: 1px solid var(--color-neutral-10);
   text-align: center;
   font-size: 35px;
-  margin: 2rem 15rem;
+  margin: 5rem 15rem;
 }
 
 .cards-container {
@@ -123,13 +123,13 @@ body {
 }
 
 .card-button {
-  background-color: white;
+  background-color: #b8f0ff;
   border-radius: 0.7rem;
   border: none;
-  color: var(--color-neutral-10);
+  color: var(--color-neutral-05);
   font-weight: bold;
   margin: 2rem auto;
-  padding: 0.6rem;
+  padding: 0.7rem;
   width: 100px;
   cursor: pointer;
   transition: all 0.4s;
@@ -317,17 +317,6 @@ body {
   }
 }
 
-@media screen and (max-width: 1660px) {
-  .more-cards-contents {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .footer-content {
-    margin-top: 500vh;
-  }
-}
-
 @media screen and (max-width: 1440px) {
   .main-content {
     width: 95%;
@@ -341,7 +330,7 @@ body {
   }
 
   .footer-content {
-    margin-top: 720vh;
+    margin-top: 520vh;
   }
 }
 
@@ -362,7 +351,7 @@ body {
   }
 
   .footer-content {
-    margin-top: 600vh;
+    margin-top: 550vh;
   }
 }
 

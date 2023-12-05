@@ -33,12 +33,14 @@ a:hover {
 }
 
 nav {
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   margin: 0 auto;
+  margin-bottom: 3rem;
   justify-content: space-around;
   font-family: "Roboto Slab";
   /* background: linear-gradient(445deg, white, #55cdf1); */
-  height: 17vh;
+  height: 11vh;
   max-height: 20vh;
   font-size: 0.9rem;
 }
