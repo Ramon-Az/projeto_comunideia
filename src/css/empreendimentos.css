@@ -75,6 +75,7 @@ body {
 .cards-contents:hover {
     box-shadow: 10px 25px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid var(--color-blue-0);
+    cursor: pointer;
     transition: all 200ms ease-in;
     transform: scale(1.03);
 }
@@ -101,6 +102,7 @@ body {
 }
 
 .card-details {
+    color: var(--color-neutral-05);
     margin: 0 auto;
 }
 
@@ -325,6 +327,27 @@ body {
             padding-top: 20px;
         }
     
+    .more-cards-contents {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-content {
+        margin-top: 500vh;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .main-content {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .cards-contents {
+        width: 360px;
+    }
+
     .more-cards-contents {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
