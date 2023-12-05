@@ -53,7 +53,8 @@ nav.rolagem{
   transition: 0.5s;
   z-index: 1;
 }
-.nav-list.rolagem li a{
+
+nav.rolagem ul li a{
   color: white;
 }
 

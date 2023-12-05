@@ -48,7 +48,7 @@ body {
 /* !fim texto inicial*/
 
 .main-content {
-  height: 130vh;
+  height: 145vh;
   margin-bottom: 5rem;
 }
 
@@ -61,7 +61,7 @@ body {
   padding-bottom: 60px;
   top: 50%;
   left: 50%;
-  margin-top: 20rem;
+  margin-top: 22rem;
   position: absolute;
   transform: translate(-50%, -50%);
 
