@@ -39,7 +39,6 @@ a:hover {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: c;
   font-family: "Roboto Slab";
   background: linear-gradient(445deg, white, #55cdf1);
   height: 15vh;
@@ -50,7 +49,6 @@ nav {
 main {
   background: url("bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 92vh;
 }
 
 .nav-list {
@@ -126,7 +124,7 @@ main {
 
 .btn-41 {
   width: 8rem;
-  border: 1px  solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   z-index: 1;
   color: white;
 }
@@ -203,10 +201,10 @@ main {
 .background {
   background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
 }
-.background h2{
+.background h2 {
   display: flex;
   justify-content: center;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
   font-size: 2.6rem;
   box-sizing: border-box;
 }
