@@ -1,6 +1,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
 
 :root {
+  --nav-bg-color: #121212;
+  --nav-text-color: white;
+  --button-bg-color: #0052ce;
+  --button-text-color: white;
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(8, 0, 255);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: rgb(1, 76, 250);
+  opacity: 0.6;
+}
+
+.logo {
+  margin-top: -12.4rem;
+  width: 290px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto Slab";
+  /* background: linear-gradient(445deg, white, #55cdf1); */
+  height: 17vh;
+  max-height: 20vh;
+  font-size: 0.9rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #ffffff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+.nav-icon {
+  width: 23px;
+  height: 25px;
+  align-items: center;
+}
+
+img.nav-icon {
+  margin-bottom: -5px;
+}
+
+/*Estilizando botao entrar*/
+.btn41-43 {
+  display: flex;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.99rem;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.9rem;
+  margin: 3px;
+}
+
+.btn-41 {
+  width: 5rem;
+  border: 1px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  border-radius: 0.9rem;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+  border-radius: 0.9rem;
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+
+/* 
+:root {
   --color-neutral-0: #0e0c0c;
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
@@ -56,8 +216,6 @@
   margin-top: 1%;
   padding-right: 110px;
 }
-
-/*Estilizando barra de busca e botao buscar*/
 
 .barra-busca {
   display: flex;
@@ -126,7 +284,7 @@
   margin-right: 1rem;
 }
 
-/*Estilizando Título e Subtitulo*/
+
 .text {
   position: relative;
   color: rgba(0, 0, 0, 0.9);
@@ -137,7 +295,7 @@
   font-size: 1.5rem;
   font-style: normal;
   text-align: justify;
-  line-height: 100%; /* 5.04rem */
+  line-height: 100%; 
   letter-spacing: 0.08rem;
   margin-left: 2.5%;
   margin-top: 6%;
@@ -148,7 +306,7 @@
   font-size: 1.5rem;
   font-style: normal;
   text-align: justify;
-  line-height: 100%; /* 5.04rem */
+  line-height: 100%; 
   letter-spacing: 0.08rem;
   margin-left: 2.5%;
 }
@@ -157,7 +315,6 @@
   width: 69.25rem;
   height: 7rem;
   flex-shrink: 0;
-  /* color: rgba(0, 0, 0, 80%); */
   color: tomato;
   text-align: justify;
 
@@ -165,7 +322,7 @@
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 2.8125rem */
+  line-height: 150%; 
   letter-spacing: 0.0375rem;
   margin-top: 1%;
   margin-left: 3.5%;
@@ -181,7 +338,7 @@
   padding-top: 0rem;
 }
 
-/*Estilizando botao entrar*/
+
 .button-login {
   display: flex;
   justify-content: center;
@@ -205,7 +362,7 @@ a {
   text-decoration: none;
 }
 
-/*Menu fixado quando der scroll na página */
+
 .nav-menu {
   margin-top: -1%;
   display: flex;
@@ -220,7 +377,7 @@ a {
 }
 
 .nav-menu.rolagem {
-  /*Efeito de deixar o fundo do meu fixado preto fosco*/
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -234,7 +391,7 @@ a {
 }
 
 .nav-menu.rolagem ul li a {
-  /*Mudando a cor dos links quando a cor de fundo do menu muda*/
+ 
   color: white;
 }
 
@@ -268,7 +425,7 @@ a {
 
 img.nav-icon {
   margin-bottom: -5px;
-}
+} */
 
 /* testando um novo input pesquisar 
 
