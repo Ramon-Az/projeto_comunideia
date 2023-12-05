@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
 
 :root {
-  font-size: 62.5%;
   --nav-bg-color: #121212;
   --nav-text-color: white;
   --button-bg-color: #0052ce;

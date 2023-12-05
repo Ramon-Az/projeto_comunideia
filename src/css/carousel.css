@@ -60,7 +60,7 @@ section.carousel-container {
 }
 
 .carousel-nav-manual .manual-button, .carousel-nav-auto div {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -73,11 +73,11 @@ section.carousel-container {
 }
 
 .carousel-nav-manual .manual-button:hover {
-    background-color: white;
+    background-color: black;
 }
 
 #button-1:checked ~ .carousel-nav-auto .auto-01, #button-2:checked ~ .carousel-nav-auto .auto-02, #button-3:checked ~ .carousel-nav-auto .auto-03 {
-    background-color: white;
+    background-color: black;
 }
 
 #button-1:checked ~ .first {
@@ -110,4 +110,21 @@ section.carousel-container {
             width: 95%;
             margin-top: 42%;
         }
+}
+
+@media screen and (max-width: 412px) {
+    .carousel-title {
+        margin: 20px 0;
+    }
+
+    section.carousel-container {
+        margin: 0;
+        margin-top: 6rem;
+    }
+
+    .carousel-nav-manual,
+    .carousel-nav-auto {
+        width: 95%;
+        margin-top: 88%;
+    }
 }
