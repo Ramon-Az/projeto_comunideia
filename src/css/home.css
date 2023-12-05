@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: rgb(8, 0, 255)242), 0, 0);
+  color: rgb(8, 0, 255);
   text-decoration: none;
   transition: 0.9s;
 }
@@ -43,7 +43,6 @@ nav {
   max-height: 20vh;
   font-size: 1.6rem;
 }
-
 
 .nav-list {
   list-style: none;
