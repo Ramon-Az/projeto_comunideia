@@ -1,267 +1,119 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&family=Roboto+Slab:wght@800&display=swap");
 
 :root {
-  --color-neutral-0: #0e0c0c;
-  --color-neutral-10: #171717;
-  --color-neutral-30: #a8a29e;
-  --color-neutral-40: #f5f5f5;
-  --color-neutral-50: #ffffff;
-
-  --color-blue-0: #00b6ef;
-  --color-blue-10: #0d00c0;
-  --color-blue-20: #4267b3;
-
   --nav-bg-color: #121212;
   --nav-text-color: white;
   --button-bg-color: #0052ce;
   --button-text-color: white;
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
 }
 
-* {
-  font-family: "Roboto Slab", serif;
-}
-
-.header-container {
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: auto;
-  padding-top: 0rem;
-  margin-bottom: 0%;
-}
-
-.nav-bar-01 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--nav-text-color);
-
-  position: fixed;
-  margin: auto;
-  top: 0;
-  position: fixed;
-  background: color #00000050;
-  backdrop-filter: blur(20px);
-  --webkit-backdrop-filter: blur(20px);
-
-  width: 100%;
-  height: 98px;
-}
-
-.logo-comunideia {
-  display: flex;
-  justify-content: center;
-  width: 35.1875rem;
-  height: 8.7rem;
-  flex-shrink: 0;
-  margin-top: 1%;
-  padding-right: 110px;
-}
-
-/*Estilizando barra de busca e botao buscar*/
-
-.barra-busca {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-neutral-40);
-  border-radius: 1.5rem;
-  outline: 0;
-  height: 3rem;
-  width: 30rem;
-}
-
-::-webkit-input-placeholder {
-  font-size: 17px;
-  font-family: "Roboto Slab", serif;
-}
-
-.busca-texto {
-  margin-left: 2rem;
-  font-size: 1rem;
-}
-
-.barra-busca:hover > .busca-texto {
-  cursor: text;
-}
-
-.barra-busca:hover > .busca-btn {
-  cursor: pointer;
-  border-radius: 15px;
-}
-
-.header-container {
-  animation: rainbow 5s linear infinite;
-}
-
-.barra-busca:hover > .busca-btn .loupe-blue {
-  display: none;
-}
-
-.barra-busca:hover > .busca-btn .loupe-white {
-  display: block;
-}
-
-.loupe-blue {
-  width: 2rem;
-  height: 2.5rem;
-  margin: 1rem;
-}
-
-.loupe-white {
-  display: none;
-  width: 2rem;
-  height: 2.5rem;
-  margin: 1rem;
-}
-
-.busca-texto {
-  background: none;
-  border: 1.5rem;
-  outline: 0;
-}
-
-.login-btn {
-  display: flex;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-/*Estilizando Título e Subtitulo*/
-.text {
-  position: relative;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.text-01 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  text-align: justify;
-  line-height: 100%; /* 5.04rem */
-  letter-spacing: 0.08rem;
-  margin-left: 2.5%;
-  margin-top: 6%;
-}
-
-.text-01-1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  text-align: justify;
-  line-height: 100%; /* 5.04rem */
-  letter-spacing: 0.08rem;
-  margin-left: 2.5%;
-}
-
-.text-02 {
-  width: 69.25rem;
-  height: 7rem;
-  flex-shrink: 0;
-  /* color: rgba(0, 0, 0, 80%); */
-  color: tomato;
-  text-align: justify;
-
-  font-family: "Roboto Slab";
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 2.8125rem */
-  letter-spacing: 0.0375rem;
-  margin-top: 1%;
-  margin-left: 3.5%;
-}
-
-.navbar1 {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  width: 100%;
-  padding-top: 0rem;
-}
-
-/*Estilizando botao entrar*/
-.button-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 7.9rem;
-  height: 3rem;
-  flex-shrink: 0;
-
-  background-color: var(--button-bg-color);
-  border-radius: 0.8rem;
-  color: var(--button-text-color);
-  border-color: var(--button-bg-color);
-  margin-left: -10%;
-}
-
-.login-btn:hover > .button-login {
-  cursor: pointer;
-  color: #9494f1;
-}
-a {
-  text-decoration: none;
-}
-
-/*Menu fixado quando der scroll na página */
-.nav-menu {
-  margin-top: -1%;
-  display: flex;
-  width: 100%;
-  background-color: var(--color-neutral-50);
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 4%;
-  position: fixed;
-  transition: 0.8s;
-}
-
-.nav-menu.rolagem {
-  /*Efeito de deixar o fundo do meu fixado preto fosco*/
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  background: #333;
-  padding: 10px 4%;
-  margin-bottom: 5%;
-  z-index: 1;
-  top: 13%;
+body {
   margin: 0;
+  padding: 0;
 }
 
-.nav-menu.rolagem ul li a {
-  /*Mudando a cor dos links quando a cor de fundo do menu muda*/
+a {
+  color: rgb(8, 0, 255);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: rgb(1, 76, 250);
+  opacity: 0.6;
+}
+
+.logo {
+  margin-top: -12.4rem;
+  width: 290px;
+}
+
+nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  font-family: "Roboto Slab";
+  /* background: linear-gradient(445deg, white, #55cdf1); */
+  height: 17vh;
+  max-height: 20vh;
+  font-size: 0.9rem;
+}
+
+nav.rolagem{
+  background-color: #171717;
+  position: fixed;
+  margin-bottom: 0;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+nav.rolagem ul li a{
   color: white;
 }
 
-.nav-menu ul {
+.nav-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
-.nav-menu li {
-  margin: 0 20px;
+.nav-list li {
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  margin-left: 32px;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: var(--color-neutral-0);
-  font-weight: bold;
-  transition: color 0.3s ease;
+.mobile-menu {
+  display: none;
+  cursor: pointer;
 }
 
-.nav-menu a:hover {
-  color: var(--color-blue-0);
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #ffffff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
 }
 
 .nav-icon {
-  width: 25px;
+  width: 23px;
   height: 25px;
   align-items: center;
 }
@@ -270,27 +122,55 @@ img.nav-icon {
   margin-bottom: -5px;
 }
 
-/* testando um novo input pesquisar 
-
-.search-container {
-    display: flex;
-    justify-content: center;
-
+/*Estilizando botao entrar*/
+.btn41-43 {
+  display: flex;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.99rem;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.9rem;
+  margin: 3px;
 }
 
-.search-container input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 3px 0 0 3px;
-    outline: none;
+.btn-41 {
+  width: 5rem;
+  border: 1px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
 }
 
-.search-container button {
-    padding: 0.5rem 1rem;
-    background-color: #007BFF;
-    color: #fff;
-    border: 1px solid #007BFF;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    outline: none;
-}*/
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  border-radius: 0.9rem;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+  border-radius: 0.9rem;
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}

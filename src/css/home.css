@@ -19,18 +19,17 @@ body {
 a {
   color: rgb(8, 0, 255);
   text-decoration: none;
-  transition: 0.9s;
+  transition: 0.4s;
 }
 
 a:hover {
-  color: rgb(0, 13, 255);
+  color: rgb(1, 76, 250);
   opacity: 0.6;
 }
 
 .logo {
-  margin-top: -18.7rem;
-  margin-left: -13rem;
-  margin-right: -17rem;
+  margin-top: -12.4rem;
+  width: 290px;
 }
 
 nav {
@@ -38,9 +37,9 @@ nav {
   justify-content: space-around;
   font-family: "Roboto Slab";
   background: linear-gradient(445deg, white, #55cdf1);
-  height: 15vh;
+  height: 17vh;
   max-height: 20vh;
-  font-size: 1.6rem;
+  font-size: 0.9rem;
 }
 
 .nav-list {
@@ -50,7 +49,7 @@ nav {
 
 .nav-list li {
   letter-spacing: 3px;
-  margin-top: 4.7rem;
+  margin-top: 2rem;
   margin-left: 32px;
 }
 
@@ -97,14 +96,23 @@ nav {
   transform: translateX(0);
 }
 
+.nav-icon {
+  width: 23px;
+  height: 25px;
+  align-items: center;
+}
+
+img.nav-icon {
+  margin-bottom: -5px;
+}
+
 /*Estilizando botao entrar*/
 .btn41-43 {
   display: flex;
-  align-items: center;
-  padding: 6px 5px 6px;
+  padding: 0 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 0.99rem;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -112,10 +120,11 @@ nav {
   position: relative;
   display: inline-block;
   border-radius: 0.9rem;
+  margin: 3px;
 }
 
 .btn-41 {
-  width: 8rem;
+  width: 5rem;
   border: 1px solid rgb(255, 255, 255);
   z-index: 1;
   color: white;
@@ -132,7 +141,7 @@ nav {
   z-index: -1;
   background: rgb(255, 255, 255);
   transition: all 0.3s ease;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
 }
 
 .btn-41:hover {
@@ -152,25 +161,23 @@ nav {
 
 /* Textos da home */
 .text {
+  display: block;
   font-family: "Roboto Slab", serif;
   color: rgba(0, 0, 0, 0.9);
-  margin-top: 1rem;
-  margin-right: 56rem;
-  padding: 3rem;
+  margin: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 auto;
+  text-align: justify;
 }
 
 .text-01 {
-  font-size: 2.6rem;
-  line-height: 140%; /* 5.04rem */
-  letter-spacing: 0.4rem;
-  margin-left: 2%;
-  margin-right: 17%;
-  margin-top: -4%;
+  font-size: 2rem;
+  line-height: 190%; /* 5.04rem */
+  letter-spacing: 0.06rem;
 }
 .text-02 {
   color: rgba(0, 0, 0, 80%);
-  font-size: 1.5rem;
-  font-style: normal;
+  font-size: 1rem;
   line-height: 150%; /* 2.8125rem */
   letter-spacing: 0.0375rem;
   margin-top: 7%;
@@ -181,10 +188,10 @@ nav {
 
 .slider {
   display: flex;
-  margin: 8rem;
+  width: 50rem;
+  height: 44rem;
+  margin: 14rem;
   border-radius: 8px;
-  width: 100rem;
-  height: 52rem;
   margin-top: 6rem;
   overflow: hidden;
 }
@@ -192,17 +199,20 @@ nav {
 /* Configurando estilos da nova home */
 .background {
   background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
+  width: 100%;
+  height: 100vh;
 }
 .background h2 {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5rem;
   font-size: 2.6rem;
-  box-sizing: border-box;
+  margin-left: 6rem;
 }
 .slides {
-  width: 260%;
-  height: 200%;
+  width: 300%;
+  height: 300%;
   display: flex;
 }
 
@@ -211,22 +221,22 @@ nav {
 }
 
 .slide {
-  width: 40%;
+  width: 39%;
   position: relative;
   transition: 0.9s;
 }
 
 .slide img {
-  width: 100rem;
-  height: 50rem;
+  width: 48rem;
+  height: 24rem;
+  margin-right: 6rem;
   border-radius: 8px;
 }
 
 .manual-navigation {
   position: absolute;
-  width: 40rem;
-  margin: 29rem 35rem;
-  margin-top: 51rem;
+  width: 24.7rem;
+  margin: 26rem 13rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +248,7 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.9s;
-  margin: 10px;
+  margin: 1px;
 }
 
 .manual-btn:not(:last-child) {
@@ -254,11 +264,11 @@ nav {
 }
 
 #radio2:checked ~ .first {
-  margin-left: -40%;
+  margin-left: -37%;
 }
 
 #radio3:checked ~ .first {
-  margin-left: -80%;
+  margin-left: -75%;
 }
 
 .navigation-auto div {
@@ -272,15 +282,16 @@ nav {
 .navigation-auto {
   position: absolute;
   cursor: pointer;
-  width: 40rem;
-  margin: 29rem 35rem;
-  margin-top: 52rem;
+  width: 24.7rem;
+  margin: 26rem 13rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .navigation-auto div:not(:last-child) {
-  margin-right: 2rem;
+  margin: 1rem;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
@@ -295,13 +306,6 @@ nav {
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background-color: #000000;
-}
-
-/* Estilo do texto Headline que acompanha cada imagem */
-.headline-text {
-  font-size: 2.2rem;
-  line-height: 1.5;
-  letter-spacing: normal;
 }
 
 @keyframes navLinkFade {
@@ -325,4 +329,55 @@ nav {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* SAQ */
+
+.rodape{
+  margin: 40% 0 0 0;
+}
+.saq-container {
+  background-color: var(--color-neutral-50);
+  padding: 3rem;
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.saq-container > h1 {
+  margin-top: 2rem;
+  font-size: 35px;
+}
+
+.saq-container > p {
+  color: var(--color-neutral-20);
+  margin: 1rem;
+  font-size: 15px;
+}
+
+.saq-button {
+  background-color: var(--color-blue-40);
+  border-radius: 0.7rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.saq-button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.saq-button:hover {
+  opacity: 0.6;
 }
