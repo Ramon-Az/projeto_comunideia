@@ -111,10 +111,10 @@ main {
 .btn41-43 {
   display: flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 6px 5px 6px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -125,8 +125,8 @@ main {
 }
 
 .btn-41 {
-  border: 1px solid rgb(255, 255, 255);
-  border-width: 2px;
+  width: 8rem;
+  border: 1px  solid rgb(255, 255, 255);
   z-index: 1;
   color: white;
 }
@@ -160,7 +160,7 @@ main {
   top: 2px;
 }
 
-
+/* Textos da home */
 .text {
   font-family: "Roboto Slab", serif;
   color: rgba(0, 0, 0, 0.9);
