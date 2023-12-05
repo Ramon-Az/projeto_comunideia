@@ -1,156 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Faça seu login!</title>
 
-        <!-- CSS links -->
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/headerBackup.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login!</title>
 
-        <!-- Js Links -->
-        <script src="js/validationLogin.js" defer></script>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/headerBackup.css"> -->
 
-        <!-- Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <!-- Menu do site -->
+    <!-- Js Links -->
+    <script src="js/validationLogin.js" defer></script>
 
-        <header class="header-container">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-            <nav class="nav-menu">
-                <ul>
-                    <li>
-                        <img class="nav-icon" src="assets/svg/home-icon-svg.svg" alt="Inicio">
-                        <a href="index.html">Início</a>
-                    </li>
-                    <li>
-                        <img class="nav-icon" src="assets/svg/store-icon-svg.svg" alt="Empreendimentos">
-                        <a href="empreendimentos.html">Empreendimentos</a>
-                    </li>
-                    <li>
-                        <img class="nav-icon" src="assets/svg/add-profile-svg.svg" alt="Cadastre-se">
-                        <a href="cadastro.html">Cadastre-se</a>
-                    </li>
-                    <li>
-                        <img class="nav-icon" src="assets/svg/contact-us-svg.svg" alt="Fale Conosco">
-                        <a href="fale_conosco.html">Fale Conosco</a>
-                    </li>
-                    <li>
-                        <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                </ul>
-            </nav>
+<body>
+    <!-- Menu do site -->
 
-        </header>
+    <header class="header-container">
+        <nav>
+            <a class="logo" href="./index.html">
+                <img src="./assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg" width="300px"
+                    height="500px">
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <img class="nav-icon" src="assets/svg/home-icon-svg.svg" alt="Inicio">
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
+                    <a href="./sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <img class="nav-icon" src="assets/svg/add-profile-svg.svg" alt="Cadastre-se">
+                    <a href="./cadastro.html">Cadastro</a>
+                </li>
+                <li> <img class="nav-icon" src="assets/svg/store-icon-svg.svg">
+                    <a href="./empreendimentos.html">Empreendedores</a>
+                </li>
+                <li>
+                    <img class="nav-icon" src="assets/svg/contact-us-svg.svg" alt="Fale Conosco">
+                    <a href="./fale_conosco.html">Fale Conosco
 
-        <!-- Área de login -->
+                    </a>
+                </li>
+                <li>
+                    <!--           <a class="login-btn" href="./login.html" title="Clique para fazer o login">
+                                        <button class="button-login" type="menu">ENTRAR</button>
+                                      </a> -->
+                    <a href="login.html" class="btn41-43 btn-41">
+                        Entrar
+                    </a>
+                </li>
+            </ul>
 
-        <main class="main-content">
-            <section class="login-container">
-                <form action="login.php">
-                    <div class="login-title">
-                        <h1>Entrar</h1>
-                    </div>
+        </nav>
+    </header>
 
-                    <div class="login-user">
-                        <label for="user">Login</label>
-                        <input placeholder="Nome de usuário ou E-mail" id="user" type="email" autocomplete="on">
-                    </div>
+    <!-- Área de login -->
 
-                    <div class="login-password">
-                        <label for="password">Senha</label>
-                        <input placeholder="Digite aqui sua senha" id="password" type="password" autocomplete="off">
-                    </div>
-
-                    <div class="login-enter-buttom">
-                        <input type="submit" value="entrar" id="submit">
-                    </div>
-
-                    <div class="login-socials">
-                        <a href="#" class="socials" id="linkedin">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="#" class="socials" id="google">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
-
-                        <a href="#" class="socials" id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-
-                    <div class="login-button-register">
-                        <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
-                    </div>
-                </form>
-            </section>
-        </main>
-
-        <!-- Footer -->
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-contacts">
-                    <h1>ComunIdeia</h1>
-                    <p>O seu negócio em um só lugar!</p>
-
-                    <div class="footer-social-media">
-                        <a href="#" class="footer-link" id="linkedin">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="#" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                        <a href="#" class="footer-link" id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-
-                        <a href="https://github.com/Ramon-Az/projeto_comunideia" class="footer-link" id="github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-    
-                <ul class="footer-list">
-                    <li>
-                        <h3>Contato</h3>
-                    </li>
-    
-                    <li>
-                        <a href="tel:+5512999999999" class="footer-link">(12) 99999 - 9999</a>
-                    </li>
-    
-                    <li>
-                        <a href="mailto:nossoemail123@gmail.com" class="footer-link">nossoemail123@gmail.com</a>
-                    </li>
-                </ul>
-    
-                <div class="footer-subscribe">
-                    <h3>Inscreva-se!</h3>
-                    <p>Insira o seu email para receber nossas atualizações!</p>
-    
-                    <div class="input-group">
-                        <input type="email" id="email">
-                        <button>
-                            <i class="fa-regular fa-envelope"></i>
-                        </button>
-                    </div>
+    <main class="main-content">
+        <section class="login-container">
+            <form action="login.php">
+                <div class="login-title">
+                    <h1>Entrar</h1>
                 </div>
 
+                <div class="login-user">
+                    <label for="user">Login</label>
+                    <input placeholder="Nome de usuário ou E-mail" id="user" type="email" autocomplete="on">
+                </div>
+
+                <div class="login-password">
+                    <label for="password">Senha</label>
+                    <input placeholder="Digite aqui sua senha" id="password" type="password" autocomplete="off">
+                </div>
+
+                <div class="login-enter-buttom">
+                    <input type="submit" value="entrar" id="submit">
+                </div>
+
+                <div class="login-socials">
+                    <a href="#" class="socials" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" class="socials" id="google">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+
+                    <a href="#" class="socials" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="login-button-register">
+                    <h3>Ainda não tem cadastro? <a href="cadastro.html">Primeiro acesso</a></h3>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1>ComunIdeia</h1>
+                <p>O seu negócio em um só lugar!</p>
+
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://github.com/Ramon-Az/projeto_comunideia" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-copyright">
-                &#169 2023 ComunIdeia - todos os direitos reservados
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+
+                <li>
+                    <a href="tel:+5512999999999" class="footer-link">(12) 99999 - 9999</a>
+                </li>
+
+                <li>
+                    <a href="mailto:nossoemail123@gmail.com" class="footer-link">nossoemail123@gmail.com</a>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Inscreva-se!</h3>
+                <p>Insira o seu email para receber nossas atualizações!</p>
+
+                <div class="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
             </div>
 
-        </footer>
-    </body>
+        </div>
+
+        <div class="footer-copyright">
+            &#169 2023 ComunIdeia - todos os direitos reservados
+        </div>
+
+    </footer>
+</body>
+
 </html>
