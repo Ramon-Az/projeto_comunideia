@@ -29,7 +29,7 @@ a:hover {
 
 .logo {
   margin-top: -12.4rem;
-  width: 200px;
+  width: 290px;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav {
   background: linear-gradient(445deg, white, #55cdf1);
   height: 17vh;
   max-height: 20vh;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .nav-list {
@@ -96,13 +96,23 @@ nav {
   transform: translateX(0);
 }
 
+.nav-icon {
+  width: 23px;
+  height: 25px;
+  align-items: center;
+}
+
+img.nav-icon {
+  margin-bottom: -5px;
+}
+
 /*Estilizando botao entrar*/
 .btn41-43 {
   display: flex;
-  padding: 4px;
+  padding: 0 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.99rem;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -110,7 +120,7 @@ nav {
   position: relative;
   display: inline-block;
   border-radius: 0.9rem;
-  margin: -3px;
+  margin: 3px;
 }
 
 .btn-41 {
@@ -189,6 +199,8 @@ nav {
 /* Configurando estilos da nova home */
 .background {
   background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
+  width: 100%;
+  height: 100vh;
 }
 .background h2 {
   display: flex;
@@ -322,7 +334,7 @@ nav {
 /* SAQ */
 
 .rodape{
-  margin: 80% 0 0 0;
+  margin: 40% 0 0 0;
 }
 .saq-container {
   background-color: var(--color-neutral-50);
@@ -333,7 +345,7 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 15rem;
 
   display: flex;
   flex-direction: column;
