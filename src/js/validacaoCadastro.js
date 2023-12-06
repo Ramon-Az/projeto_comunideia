@@ -121,6 +121,14 @@ function validaCpf() {
         msgError5.id= 'visivel';
         
         inputCorretos.cpf = false;
+    } else if (/(\d)\1{2}/.test(inputCpf.value.replace(/\D/g, ""))) {
+        inputCpf.classList.remove('msg-correto');
+        inputCpf.classList.add('error');
+        
+        msgError5.innerText = '*CPF inválido';
+        msgError5.id= 'visivel';
+        
+        inputCorretos.cpf = false;
     } else {
         inputCpf.classList.remove('error');
         inputCpf.classList.toggle('msg-correto');
@@ -173,7 +181,15 @@ function validaTelefone() {
         msgError6.id= 'visivel';
         
         inputCorretos.phone = false;
-    } else {
+    }else if(inputTelefone.value == "(00) 00000-0000" || inputTelefone.value == "(11) 11111-1111" || inputTelefone.value == "(22) 22222-2222" || inputTelefone.value == "(33) 33333-3333" || inputTelefone.value == "(44) 44444-4444" || inputTelefone.value == "(55) 55555-5555" || inputTelefone.value == "(66) 66666-6666" || inputTelefone.value == "(77) 77777-7777" || inputTelefone.value == "(88) 88888-8888" || inputTelefone.value == "(99) 99999-9999"){
+        inputTelefone.classList.remove('msg-correto');
+        inputTelefone.classList.add('error');
+        
+        msgError6.innerText = '*Número inválido';
+        msgError6.id= 'visivel';
+        
+        inputCorretos.phone = false;
+    }else {
         inputTelefone.classList.remove('error');
         inputTelefone.classList.toggle('msg-correto');
 
