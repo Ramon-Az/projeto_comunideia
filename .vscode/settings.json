@@ -1,8 +1,11 @@
 {
-    "liveServer.settings.port": 5501,
-    "window.autoDetectColorScheme": false,
-    "window.density.editorTabHeight": "compact",
-    "editor.wordWrap": "on",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+  "liveServer.settings.port": 5501,
+  "window.autoDetectColorScheme": false,
+  "window.density.editorTabHeight": "compact",
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.wordBasedSuggestions": false,
+  "editor.trimAutoWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }

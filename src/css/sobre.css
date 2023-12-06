@@ -12,49 +12,24 @@ body {
   background: linear-gradient(435deg, white, #55cdf1);
 }
 
-/* ! texto inicial abaixo do header */
-.text-01 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  text-align: justify;
-  line-height: 100%; 
-  letter-spacing: 0.08rem;
-  margin-left: 9%;
-}
-
-.text-02 {
-  width: 69.25rem;
-  height: 7rem;
-  flex-shrink: 0;
-  color: tomato;
-  text-align: justify;
-
-  font-family: "Roboto Slab", serif;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; 
-  letter-spacing: 0.0375rem;
-  margin-top: .5%;
-  margin-left: 15.5%;
-}
-/* !fim texto inicial*/
-
 main {
   height: 210vh;
-  width: 200vh;
+  /* width: 200vh; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-wrap:  nowrap;
+  /* gap: 2rem; */
   justify-content: center;
   align-items: center;
 }
 
 .secao {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 1000px;
+  min-width: 500px;
   margin: auto;
   margin-top: 0;
   background: white;

@@ -46,7 +46,8 @@ nav {
 }
 
 nav.rolagem{
-  background-color: #171717;
+  /* background-color: #171717; */
+  background: linear-gradient(10deg, white, #55cdf1);
   position: fixed;
   margin-bottom: 0;
   top: 0;
@@ -55,11 +56,11 @@ nav.rolagem{
   transition: 0.5s;
   z-index: 1;
 }
-
+/* 
 nav.rolagem ul li a{
   color: white;
 }
-
+ */
 .nav-list {
   list-style: none;
   display: flex;
@@ -176,3 +177,56 @@ img.nav-icon {
 .btn-41:active {
   top: 2px;
 }
+
+.text{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  text-align: justify; 
+  letter-spacing: 0.08rem;
+  margin: 2% 10% 4% 10%;
+  background: white;
+  padding: 1.5%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+span{
+  font-style: italic;
+  font-size: large;
+  display: block;
+  margin-top: 1%;  
+}
+/* !Formatação das frases de chamamento */
+/* texto inicial abaixo do header
+.text-01 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  text-align: justify;
+  line-height: 100%; 
+  letter-spacing: 0.08rem;
+  margin-left: 9%;
+}
+
+.text-02 {
+  width: 69.25rem;
+  height: 7rem;
+  flex-shrink: 0;
+  color: tomato;
+  text-align: justify;
+
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; 
+  letter-spacing: 0.0375rem;
+  margin-top: .5%;
+  margin-left: 15.5%;
+}
+fim texto inicial*/
