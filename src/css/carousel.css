@@ -92,10 +92,6 @@ section.carousel-container {
     margin-left: -50%;
 }
 
-@media screen and (max-width: 900px) {
-    
-}
-
 @media screen and (max-width: 1920px) {
     .carousel-nav-manual,
         .carousel-nav-auto {
@@ -104,11 +100,11 @@ section.carousel-container {
         }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1366px) {
     .carousel-nav-manual,
         .carousel-nav-auto {
             width: 95%;
-            margin-top: 42%;
+            margin-top: 44%;
         }
 }
 

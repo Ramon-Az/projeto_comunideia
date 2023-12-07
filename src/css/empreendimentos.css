@@ -21,16 +21,17 @@ body {
   background: white;
 }
 
+/* main title */
+
+.main-title {
+  text-align: center;
+  font-style: italic;
+}
+
 /* HEADER */
 
 .header-container {
   background: linear-gradient(50deg, white, #55cdf1);
-  
-}
-
-.header-container nav {
-  height: 11vh;
-  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer-content {
@@ -311,7 +312,7 @@ body {
 
 @media screen and (max-width: 1920px) {
   .main-content {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     padding-top: 20px;
   }
@@ -331,6 +332,27 @@ body {
 
   .footer-content {
     margin-top: 520vh;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main-content {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .cards-contents {
+    width: 360px;
+  }
+
+  .more-cards-contents {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-content {
+    margin-top: 720vh;
   }
 }
 
