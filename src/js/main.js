@@ -39,7 +39,7 @@ cardsData.forEach(cards => {
 
 console.log("ta funcionando patrão");
 
-/* modal */
+/* ================ MODAL CARD ================ */
 
 function createModal(card) {
     const modalContainer = document.createElement('div');
@@ -52,16 +52,53 @@ function createModal(card) {
                     <img src="${card.photoCard}" alt="${card.title}">
                 </div>
                 <div class="modal-card-info">
-                    <h3>${card.title}</h3>
+                    <h1>${card.title}</h1>
                     <p>${card.description}</p>
                     <div class="modal-card-details">
                         <h4>
                             <i class="fa-solid fa-location-dot"></i>
                             ${card.localityRoad}
                         </h4>
-                        <p>
-                            ${card.localityDistrict}
-                        </p>
+                        <p>${card.localityDistrict}</p>
+                        
+                        <div class="modal-card-more-details">
+                            <div class="modal-card-time">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>${card.openingTime}</p>
+                                <p>${card.openingHours}</p>
+                            </div>
+                            
+                            <div class="modal-card-phone">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>${card.phone}</p>
+                            </div>
+                            
+                            <div class="modal-card-site">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <a src="${card.site}">
+                                    ${card.site}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="modal-card-socials">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                 </div>
                 
@@ -79,8 +116,8 @@ function openModal(card) {
 }
 
 const forEachCardsModal = document.querySelectorAll('.foreach-cards');
-forEachCardsModal.forEach((cardDiv, index) => {
-    cardDiv.addEventListener('click', () => {
+forEachCardsModal.forEach((cardModal, index) => {
+    cardModal.addEventListener('click', () => {
         openModal(cardsData[index]);
     });
 });
@@ -92,7 +129,7 @@ function closeModal() {
 }
 
 
-/* Button ver mais */
+/* ================ BUTTON VER MAIS ================ */
 
 loadCard.addEventListener('click', () => {
     if (cardsData) {
@@ -100,7 +137,7 @@ loadCard.addEventListener('click', () => {
     }
 });
 
-/* Carousel Contents */
+/* ================ CAROUSEL CONTENTS ================ */
 
 document.getElementById('button-1').checked = true
 

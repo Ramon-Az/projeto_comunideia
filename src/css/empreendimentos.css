@@ -281,9 +281,8 @@ body {
     margin-top: 4rem;
     width: 80%;
     height: 500px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    display: flex;
     align-items: center;
     text-align: center;
 }
@@ -306,8 +305,51 @@ body {
 }
 
 .modal-card-info {
-    margin: 0 0 0 15rem;
+    margin: 0 0 0 13rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.modal-card-info > h1 {
+    font-size: 50px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.modal-card-info > p {
+    color: var(--color-neutral-05);
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+.modal-card-more-details {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .modal-card-socials {
+    background-color: var(--color-neutral-40);
+    margin-top: 3rem;
+    margin-left: -3.20rem;
+    width: 109.7%;
+    height: 100%;
+    display: grid;
+    border-radius: 0 0 0.7rem 0;
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+/* .modal-card-socials .fa-brands {
+    margin-top: 13px;
+} */
+
+/* .fa-brands {
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 15px;
+} */
 
 /* SAQ */
 

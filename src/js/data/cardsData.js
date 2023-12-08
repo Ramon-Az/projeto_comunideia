@@ -5,7 +5,15 @@ export const cardsData = [
         "title": "Fire Bar",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
         
     },
     {   
@@ -14,7 +22,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "3",
@@ -22,7 +34,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "4",
@@ -30,7 +46,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "5",
@@ -38,8 +58,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
-        
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "6",
@@ -47,7 +70,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "7",
@@ -55,7 +82,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "8",
@@ -63,7 +94,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "9",
@@ -71,7 +106,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "10",
@@ -79,7 +118,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "11",
@@ -87,7 +130,11 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     },
     {
         "id": "12",
@@ -95,6 +142,10 @@ export const cardsData = [
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
         "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP"
+        "localityDistrict": "Cidade dos Sonhos - SP",
+        "openingTime": "seg a sex:",
+        "openingHours": "08:00 / 19:00hrs",
+        "phone": "(12) 981 9999 - 9999",
+        "site": "www.siteparateste.com.br"
     }
 ]
