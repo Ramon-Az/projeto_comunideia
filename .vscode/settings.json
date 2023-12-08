@@ -7,5 +7,6 @@
   "editor.formatOnSave": true,
   "editor.wordBasedSuggestions": false,
   "editor.trimAutoWhitespace": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.linkedEditing": true
 }
