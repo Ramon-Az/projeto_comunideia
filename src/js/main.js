@@ -39,6 +39,58 @@ cardsData.forEach(cards => {
 
 console.log("ta funcionando patrão");
 
+/* modal */
+
+function createModal(card) {
+    const modalContainer = document.createElement('div');
+    modalContainer.classList.add('modal-container');
+
+    modalContainer.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-card">
+                <div class="modal-card-image">
+                    <img src="${card.photoCard}" alt="${card.title}">
+                </div>
+                <div class="modal-card-info">
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                    <div class="modal-card-details">
+                        <h4>
+                            <i class="fa-solid fa-location-dot"></i>
+                            ${card.localityRoad}
+                        </h4>
+                        <p>
+                            ${card.localityDistrict}
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modalContainer);
+}
+
+function openModal(card) {
+    createModal(card);
+    const modal = document.querySelector('.modal-container');
+    modal.style.display = 'block';
+}
+
+const forEachCardsModal = document.querySelectorAll('.foreach-cards');
+forEachCardsModal.forEach((cardDiv, index) => {
+    cardDiv.addEventListener('click', () => {
+        openModal(cardsData[index]);
+    });
+});
+
+
+function closeModal() {
+    const modal = document.querySelector('.modal-container');
+    modal.parentNode.removeChild(modal);
+}
+
 
 /* Button ver mais */
 
