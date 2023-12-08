@@ -113,6 +113,12 @@ function openModal(card) {
     createModal(card);
     const modal = document.querySelector('.modal-container');
     modal.style.display = 'block';
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
 }
 
 const forEachCardsModal = document.querySelectorAll('.foreach-cards');
