@@ -28,8 +28,8 @@ a:hover {
 }
 
 .logo {
-  margin-top: -12.4rem;
-  width: 290px;
+  width: 300px;
+  height: 200px;
 }
 
 nav {
@@ -45,7 +45,7 @@ nav {
   font-size: 0.9rem;
 }
 
-nav.rolagem{
+nav.rolagem {
   /* background-color: #171717; */
   background: linear-gradient(10deg, white, #55cdf1);
   position: fixed;
@@ -178,13 +178,13 @@ img.nav-icon {
   top: 2px;
 }
 
-.text{
+.text {
   display: flex;
   flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   font-size: 1.3rem;
   font-style: normal;
-  text-align: justify; 
+  text-align: justify;
   letter-spacing: 0.08rem;
   margin: 2% 10% 4% 10%;
   background: white;
@@ -195,11 +195,11 @@ img.nav-icon {
   text-align: center;
 }
 
-span{
+span {
   font-style: italic;
   font-size: large;
   display: block;
-  margin-top: 1%;  
+  margin-top: 1%;
 }
 /* !Formatação das frases de chamamento */
 /* texto inicial abaixo do header
