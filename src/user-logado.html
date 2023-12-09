@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComunIdeia</title>
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/userLogado.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- Js Links -->
+    <script src="./js/efeitoMenufixado.js" defer></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header-container">
+        <nav>
+            <a class="logo" href="./index.html">
+                <img src="./assets/svg/Blue_Gray_Modern_Technology_Logo-removebg-preview 1.svg" width="300px"
+                    height="500px">
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <img class="nav-icon" src="assets/svg/home-icon-svg.svg" alt="Inicio">
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <img class="nav-icon" id="icon5" src="assets/svg/about-us-svg.svg" alt="Sobre nós">
+                    <a href="./sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <img class="nav-icon" src="assets/svg/add-profile-svg.svg" alt="Cadastre-se">
+                    <a href="./cadastro.html">Cadastro</a>
+                </li>
+                <li> <img class="nav-icon" src="assets/svg/store-icon-svg.svg">
+                    <a href="./empreendimentos.html">Empreendedores</a>
+                </li>
+                <li>
+                    <img class="nav-icon" src="assets/svg/contact-us-svg.svg" alt="Fale Conosco">
+                    <a href="./fale_conosco.html">Fale Conosco
+
+                    </a>
+                </li>
+                <li>
+                    <!--           <a class="login-btn" href="./login.html" title="Clique para fazer o login">
+                        <button class="button-login" type="menu">ENTRAR</button>
+                      </a> -->
+                    <a href="login.html" class="btn41-43 btn-41">
+                        Entrar
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- <section class="text"> -->
+    <!-- <p class="text-01">
+        Sua satisfação é nosso maior objetivo! Por isso,estamos felizes que você tenha gostado da nossa plataforma.
+    </p> -->
+    <!-- </section> -->
+
+    <!-- Área de usuário logado -->
+    <main>
+        <section class="img-camp">
+            <img src="assets/img/usuario-logado/imagem inicial da campanha.png" alt="imagem sobre campanha">
+        </section>
+        <section class="secao">
+            <section class="sumario">
+                <h1>Criar sua primeira companha com algumas etapas simples</h1>
+                <p>1. Adicionar informações comerciais <br> 2. Crie metas de campanha e orçamento <br> 3. Insira os
+                    detalhes de pagamento
+                </p>
+                <button class="button">Continuar</button>
+            </section>
+
+            <section class="info-comercial">
+                <h1>Adicionar informações comerciais</h1>
+                <p>Adicione suas informações para configurar a campanha</p>
+                <h3>Qual é o nome da empresa?</h3>
+                <input type="text" name="texto" id="texto-empresa">
+                <h3>Para onde as pessoas devem ir após clicar no seu anúncio?</h3>
+                <input type="text" name="texto" id="texto-link">
+                <button class="button">Próxima</button>
+            </section>
+
+            <section class="info-orcamento">
+                <h1>Metas de campanha e orçamento</h1>
+                <h3>Quais são suas metas para esta campanha?</h3>
+                <p>Selecione as conversões mais relevantes para sua campanha</p>
+                <div class="metas">
+                    <div class="meta">
+                        <input type="checkbox" name="meta" id="meta1">
+                        <label for="meta1">Visitas ao site</label>
+                        <p>Alguém vê uma página importante, como um artigo ou uma página de produto</p>
+                    </div>
+                    <div class="meta">
+                        <input type="checkbox" name="meta" id="meta4">
+                        <label for="meta2">Leads telefônicos</label>
+                        <p>Um cliente em potencial liga para sua empresa</p>
+                    </div>
+                    <div class="meta">
+                        <input type="checkbox" name="meta" id="meta5">
+                        <label for="meta3">Mensagens</label>
+                        <p>Um cliente faz contato por mensagem de texto ou email</p>
+                    </div>
+                    <button class="button">Próxima</button>
+                </div>
+            </section>
+            <section class="info-pagamento">
+                <h1>Detalhes de pagamento</h1>
+                <h3>Quanto você quer gastar por dia?</h3>
+                <div>
+                    <input type="radio" name="pay" id="pay1">
+                    <label for="pay1">R$ 99,99</label>
+                    <p>Orçamento diário médio</p>
+                    <p>Quantidade de semanas: 18</p>
+                </div>
+
+                <div>
+                    <input type="radio" name="pay" id="pay1">
+                    <label for="pay1">R$ 58,01</label>
+                    <p>Orçamento diário médio</p>
+                    <p>Quantidade de semanas: 10</p>
+                </div>
+
+                <div>
+                    <input type="radio" name="pay" id="pay1">
+                    <label for="pay1">R$ 24,01</label>
+                    <p>Orçamento diário médio</p>
+                    <p>Quantidade de semanas: 6</p>
+                </div>
+
+                <button>Publicar</button>
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h1>ComunIdeia</h1>
+                <p>O seu negócio em um só lugar!</p>
+
+                <div class="footer-social-media">
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://github.com/Ramon-Az/projeto_comunideia" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+
+                <li>
+                    <a href="tel:+5512999999999" class="footer-link">(12) 99999 - 9999</a>
+                </li>
+
+                <li>
+                    <a href="mailto:nossoemail123@gmail.com" class="footer-link">nossoemail123@gmail.com</a>
+                </li>
+            </ul>
+
+            <div class="footer-subscribe">
+                <h3>Inscreva-se!</h3>
+                <p>Insira o seu email para receber nossas atualizações!</p>
+
+                <div class="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            &#169 2023 ComunIdeia - todos os direitos reservados
+        </div>
+
+    </footer>
+</body>
+
+</html>

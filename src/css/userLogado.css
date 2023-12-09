@@ -1,0 +1,77 @@
+* {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(435deg, white, #55cdf1);
+}
+
+.img-camp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.img-camp img {
+    width: 200px;
+    height: 200px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 100px;
+    /* background-color: orange; */
+    margin: 3% 5% 3% 5%;
+    padding: 3%;
+}
+
+.sumario {
+    /* background-color: blueviolet; */
+    border: white 3px solid;
+    border-radius: 10px;
+    height: 14rem;
+}
+
+.info-comercial {
+    background-color: #55cdf1;
+    height: 14rem;
+}
+
+.info-orcamento {
+    background-color: green;
+    height: 16rem;
+}
+
+.info-pagamento {
+    background-color: red;
+    height: 20rem;
+}
+
+
+.button {
+    cursor: pointer;
+    background: #0d00c0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:active {
+    transition: all 0.3s ease;
+}
+
+.footer-content {
+    margin-top: 400vh;
+}
