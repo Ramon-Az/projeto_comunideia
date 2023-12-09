@@ -27,40 +27,21 @@ a:hover {
   opacity: 0.6;
 }
 
-.logo {
-  width: 300px;
-  height: 100px;
+.logo img{
+  margin-top: 1rem;
+  width: 340px;
+  height: 80px;
 }
-
 nav {
-  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  margin: 0 auto;
-  margin-bottom: 3rem;
   justify-content: space-around;
   font-family: "Roboto Slab";
-  /* background: linear-gradient(445deg, white, #55cdf1); */
-  height: 13vh;
+  background: linear-gradient(445deg, white, #55cdf1);
+  height: 17vh;
   max-height: 20vh;
   font-size: 0.9rem;
 }
 
-nav.rolagem {
-  /* background-color: #171717; */
-  background: linear-gradient(10deg, white, #55cdf1);
-  position: fixed;
-  margin-bottom: 0;
-  top: 0;
-  height: 80px;
-  width: 100%;
-  transition: 0.5s;
-  z-index: 1;
-}
-/* 
-nav.rolagem ul li a{
-  color: white;
-}
- */
 .nav-list {
   list-style: none;
   display: flex;
