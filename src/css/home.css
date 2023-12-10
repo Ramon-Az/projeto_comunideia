@@ -9,30 +9,45 @@
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #f5f5f5;
+  --margin: 3;
 }
 
 body {
   margin: 0;
   padding: 0;
 }
+
 /* Textos da home */
-.text {
-  display: block;
-  font-family: "Roboto Slab", serif;
-  color: rgba(0, 0, 0, 0.9);
-  margin: 4rem;
-  margin-bottom: 2rem;
-  padding: 0 auto;
-  text-align: justify;
+.container-banner {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  max-width: 87rem;
+  height: 28rem;
+  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 30%);
+  background-image: linear-gradient(180deg, rgba(181,236,236,0.49036411932337354) 12%, rgba(163,240,232,0.49036411932337354) 25%, rgba(0,193,252,1) 100%);
+}
+#banner-img {
+  align-items: center;
+  width: 34rem;
+  height: 33rem;
+  object-fit: cover;
 }
 
-.text-01 {
+#text {
+  width: auto;
+  height: auto;
+}
+
+#text-01 {
   font-size: 2rem;
   line-height: 190%; /* 5.04rem */
   letter-spacing: 0.06rem;
 }
 
-.text-02 {
+#text-02 {
   color: rgba(0, 0, 0, 80%);
   font-size: 1rem;
   line-height: 150%; /* 2.8125rem */
@@ -192,7 +207,7 @@ body {
 
 /* SAQ */
 
-.rodape{
+.rodape {
   margin: 40% 0 0 0;
 }
 /* SAQ */
@@ -213,12 +228,12 @@ body {
   flex-direction: column;
 }
 
-.saq-container>h1 {
+.saq-container > h1 {
   margin-top: 2.5rem;
   font-size: 35px;
 }
 
-.saq-container>p {
+.saq-container > p {
   color: var(--color-neutral-20);
   margin: 1.5rem;
   font-size: 15px;
