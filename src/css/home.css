@@ -21,13 +21,19 @@ body {
 .container-banner {
   display: flex;
   align-self: center;
+  margin-top: 2rem;
   justify-content: space-between;
   margin-left: var(--margin);
   margin-right: var(--margin);
-  max-width: 87rem;
-  height: 28rem;
-  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 30%);
-  background-image: linear-gradient(180deg, rgba(181,236,236,0.49036411932337354) 12%, rgba(163,240,232,0.49036411932337354) 25%, rgba(0,193,252,1) 100%);
+  width: 100%;
+  max-height: 28rem;
+  -webkit-mask-image: linear-gradient(to top, transparent 4%, black 30%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(181, 236, 236, 0.49036411932337354) 12%,
+    rgba(163, 240, 232, 0.49036411932337354) 25%,
+    rgba(0, 193, 252, 1) 100%
+  );
 }
 #banner-img {
   align-items: center;

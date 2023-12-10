@@ -37,7 +37,7 @@ nav {
   display: flex;
   justify-content: space-around;
   font-family: "Roboto Slab";
-  /* background: linear-gradient(445deg, white, #55cdf1); */
+  background: linear-gradient(445deg, white, #55cdf1);
   height: 17vh;
   max-height: 20vh;
   font-size: 0.9rem;
