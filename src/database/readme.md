@@ -4,6 +4,7 @@
 
 ```mermaid
 
+   erDiagram
     Cadastro ||--o{ Usuario : "usuario_id"
     Cadastro {
       string nome
