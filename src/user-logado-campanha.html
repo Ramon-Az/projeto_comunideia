@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComunIdeia</title>
+    <title>Cadastro de campanha</title>
 
     <!-- CSS links -->
     <link rel="stylesheet" href="./css/userLogadocampanha.css">
@@ -74,72 +74,175 @@
         <section class="secao">
             <section class="sumario">
                 <h1>Criar sua primeira companha com algumas etapas simples</h1>
-                <p>1. Adicionar informações comerciais <br> 2. Crie metas de campanha e orçamento <br> 3. Insira os
+                <p class="p-sumario">1. Adicionar informações comerciais <br> 2. Crie metas de campanha e orçamento <br>
+                    3. Insira os
                     detalhes de pagamento
                 </p>
-                <button class="botao1">Próxima</a></button>
+                <!-- <button class="botao1">Próxima</a></button> -->
             </section>
 
             <section class="info-comercial">
                 <h1>Adicionar informações comerciais</h1>
-                <p>Adicione suas informações para configurar a campanha</p>
-                <h3>Qual é o nome da empresa?</h3>
+                <p class="paragrafo-introdutorio">Adicione suas informações para configurar a campanha</p>
+
+                <h2>Qual é o nome da empresa?</h2>
                 <input type="text" name="texto" id="texto-empresa">
-                <h3>Para onde as pessoas devem ir após clicar no seu anúncio?</h3>
-                <input type="text" name="texto" id="texto-link">
-                <button class="botao2">Próxima</button>
+
+                <h2>Breve descrição sobre sua empresa</h2>
+                <textarea name="mensagem" id="mensagem-empresa"></textarea>
+                <h2>Qual é o endereço da empresa?</h2>
+                <div class="enderecos">
+                    <div class="enderecos1">
+                        <label for="endereco">Rua/Av</label>
+                        <input type="text" name="endereco" id="endereco">
+
+                        <label for="numero">Nº</label>
+                        <input type="number" name="numero" id="numero">
+                    </div>
+                    <div class="enderecos2">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado">
+
+                        <p class="messangem-aviso1"></p>
+                    </div>
+                </div>
+
+                <h2>Telefone para contato</h2>
+                <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="(99) 9999-9999"
+                    required>
+                <p id="msg-error6"></p>
+                <div class="imagem-empresa">
+                    <h2>Escolha algumas imagens da empresa</h2>
+                    <input name="arquivo" type="file" id="arquivo">
+                </div>
+                <h2>Escolha os dias e horário de funcionamento</h2>
+                <div class="dias-funcionamento">
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia1">
+                        <label for="dia1">Segunda</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia2">
+                        <label for="dia2">Terça</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia3">
+                        <label for="dia3">Quarta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia4">
+                        <label for="dia4">Quinta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia5">
+                        <label for="dia5">Sexta</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia6">
+                        <label for="dia6">Sábado</label>
+                    </div>
+
+                    <div class="dia">
+                        <input type="checkbox" name="dia" id="dia7">
+                        <label for="dia7">Domingo</label>
+                    </div>
+                </div>
+
+                <div class="horario-funcionamento">
+                    <p class="horario">De</p>
+                    <input type="time" name="horario-inicio" id="horario-inicio">
+                    <p class="horario">às</p>
+                    <input type="time" name="horario-fim" id="horario-fim">
+                </div>
+
+                <h2>Para onde as pessoas devem ir após clicar no seu anúncio?</h2>
+                <div class="texto-link">
+                    <input type="text" name="texto" id="texto-link">
+                </div>
+
+                <!-- <button class="botao2">Próxima</button> -->
             </section>
 
             <section class="info-orcamento">
                 <h1>Metas de campanha e orçamento</h1>
-                <h3>Quais são suas metas para esta campanha?</h3>
-                <p>Selecione as conversões mais relevantes para sua campanha</p>
-                <div class="metas">
-                    <div class="meta">
-                        <input type="checkbox" name="meta" id="meta1">
-                        <label for="meta1">Visitas ao site</label>
-                        <p>Alguém vê uma página importante, como um artigo ou uma página de produto</p>
+                <div class="texto-ilustracao">
+                    <div class="metas">
+                        <h2>Quais são suas metas para esta campanha?</h2>
+                        <p class="paragrafo-introdutorio">Selecione as conversões mais relevantes para sua empresa</p>
+                        <div class="meta">
+                            <input type="checkbox" name="meta" id="meta1">
+                            <label for="meta1">Visitas ao site</label>
+                            <p class="explicacao">Alguém vê uma página importante, como um artigo ou uma página de
+                                produto
+                            </p>
+                        </div>
+
+                        <div class="meta">
+                            <input type="checkbox" name="meta" id="meta2">
+                            <label for="meta2">Leads telefônicos</label>
+                            <p class="explicacao">Um cliente em potencial liga para sua empresa</p>
+                        </div>
+
+                        <div class="meta">
+                            <input type="checkbox" name="meta" id="meta3">
+                            <label for="meta3">Mensagens</label>
+                            <p class="explicacao">Um cliente faz contato por mensagem de texto ou email</p>
+                        </div>
+                        <!-- <button class="botao3">Próxima</button> -->
                     </div>
-                    <div class="meta">
-                        <input type="checkbox" name="meta" id="meta4">
-                        <label for="meta2">Leads telefônicos</label>
-                        <p>Um cliente em potencial liga para sua empresa</p>
+
+                    <div class="imagem-orcamento">
+                        <img src="./assets/img/usuario-logado/secção orcamento.png" alt="imagem secção orçamento">
                     </div>
-                    <div class="meta">
-                        <input type="checkbox" name="meta" id="meta5">
-                        <label for="meta3">Mensagens</label>
-                        <p>Um cliente faz contato por mensagem de texto ou email</p>
-                    </div>
-                    <button class="botao3">Próxima</button>
                 </div>
             </section>
             <section class="info-pagamento">
                 <h1>Detalhes de pagamento</h1>
-                <h3>Quanto você quer gastar por dia?</h3>
-                <div>
-                    <input type="radio" name="pay" id="pay1">
-                    <label for="pay1">R$ 99,99</label>
-                    <p>Orçamento diário médio</p>
-                    <p>Quantidade de semanas: 18</p>
-                </div>
+                <h2>Quanto você quer gastar por dia?</h2>
+                <div class="texto-ilustracao">
+                    <div class="teste">
+                        <div>
+                            <p class="explicacao-pagamento">Orçamento diário</p>
+                            <input type="radio" name="pay" id="pay1" value="pay1">
+                            <label for="pay1"><strong class="cifrao">R$</strong>99,99</label>
+                            <p class="explicacao-semana">Quantidade de semanas: <strong>18</strong></p>
+                        </div>
 
-                <div>
-                    <input type="radio" name="pay" id="pay1">
-                    <label for="pay1">R$ 58,01</label>
-                    <p>Orçamento diário médio</p>
-                    <p>Quantidade de semanas: 10</p>
-                </div>
+                        <div>
+                            <p class="explicacao-pagamento">Orçamento diário</p>
+                            <input type="radio" name="pay" id="pay2" value="pay2">
+                            <label for="pay2"> <strong class="cifrao">R$</strong> 58,01 </label>
+                            <p class="explicacao-semana">Quantidade de semanas: <strong>10</strong></p>
+                        </div>
 
-                <div>
-                    <input type="radio" name="pay" id="pay1">
-                    <label for="pay1">R$ 24,01</label>
-                    <p>Orçamento diário médio</p>
-                    <p>Quantidade de semanas: 6</p>
+                        <div>
+                            <p class="explicacao-pagamento">Orçamento diário</p>
+                            <input type="radio" name="pay" id="pay3" value="pay3">
+                            <label for="pay3"><strong class="cifrao">R$</strong> 24,01</label>
+                            <p class="explicacao-semana">Quantidade de semanas: <strong>6</strong></p>
+                        </div>
+                        <div>
+                            <p class="explicacao-pagamento">Orçamento diário</p>
+                            <input type="radio" name="pay" id="pay4" value="pay4">
+                            <label for="pay3"><strong class="cifrao">R$</strong> 14,99</label>
+                            <p class="explicacao-semana">Quantidade de semanas: <strong>4</strong></p>
+                        </div>
+                    </div>
+                    <div class="imagem-pagamento">
+                        <img src="./assets/img/usuario-logado/secção pagamento.png" alt="imagem secção pagamento">
+                    </div>
                 </div>
             </section>
             <button class="botao4">Publicar</button>
         </section>
-
     </main>
 
     <footer>

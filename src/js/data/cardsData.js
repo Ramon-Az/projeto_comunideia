@@ -26,7 +26,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "3",
@@ -38,7 +42,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "4",
@@ -50,7 +58,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "5",
@@ -62,7 +74,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "6",
@@ -74,7 +90,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "7",
@@ -86,7 +106,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "8",
@@ -98,7 +122,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "9",
@@ -110,7 +138,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "10",
@@ -122,7 +154,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "11",
@@ -134,7 +170,11 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     },
     {
         "id": "12",
@@ -146,6 +186,10 @@ export const cardsData = [
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
         "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br"
+        "site": "www.siteparateste.com.br",
+        "instagram": "",
+        "linkedin": "",
+        "facebook": "",
+        "twitter": ""
     }
 ]

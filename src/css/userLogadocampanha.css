@@ -1,92 +1,297 @@
 * {
-    font-family: "Roboto Slab", serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(435deg, white, #55cdf1);
+  background: linear-gradient(435deg, white, #55cdf1);
 }
 
 .img-camp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .img-camp img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .secao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding-bottom: 100px;
-    margin: 2% 5% 3% 5%;
-    padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-bottom: 100px;
+  margin: 2% 5% 3% 5%;
 }
 
 .sumario,
 .info-comercial,
 .info-orcamento,
 .info-pagamento {
-    border: white 3px solid;
-    border-radius: 10px;
-    height: 14rem;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-    margin: 2% 0 2% 0;
+  border-radius: 10px;
+  height: 14rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  margin: 2% 0 2% 0;
+  padding: 3%;
+  flex-wrap: wrap;
+}
+
+.sumario {
+  height: 15rem;
 }
 
 .info-comercial {
-    height: 18rem;
+  height: 73rem;
 }
 
 .info-orcamento {
-    height: 16rem;
+  height: 25rem;
 }
 
 .info-pagamento {
-    height: 16rem;
+  height: 30rem;
+}
+
+.sumario h1,
+.info-comercial h1,
+.info-orcamento h1,
+.info-pagamento h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  border-bottom: white 3px inset;
+  margin-bottom: 3%;
+}
+
+.info-comercial h2,
+.info-orcamento h2,
+.info-pagamento h2 {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-bottom: 0.8%;
+}
+
+.p-sumario {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+.paragrafo-introdutorio {
+  font-size: 1.3rem;
+  margin-bottom: 0.8%;
+}
+
+#texto-empresa {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 2%;
+}
+
+.explicacao {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0.5% 0% 0.9% 3%;
+}
+
+#mensagem-empresa {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 1%;
+  font-size: 1rem;
+  resize: none;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.enderecos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+#endereco,
+#cidade,
+#estado {
+  width: 82%;
+  padding-left: 3%;
+  height: 3em;
+  margin-bottom: 2%;
+}
+
+#numero {
+  width: 82%;
+  margin-left: 10%;
+  padding-left: 3%;
+  height: 3em;
+}
+
+#phone {
+  width: 21%;
+  height: 3em;
+  margin-bottom: 2%;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  padding: 1%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#arquivo {
+  box-shadow: none;
+  width: 100%;
+  font-style: italic;
+  color: #0d00c0;
+}
+
+.dias-funcionamento,
+.horario-funcionamento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.horario-funcionamento {
+  margin-top: 2.5%;
+}
+
+#horario-inicio,
+#horario-fim {
+  text-align: center;
+  width: 400px;
+}
+
+/* input[type="file"] {
+  cursor: pointer;
+  font-size: 1rem;
+} */
+
+.texto-ilustracao {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1%;
+  justify-content: space-between;
+}
+
+.teste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teste div {
+  width: 22rem;
+  height: 7rem;
+  border: white 2px solid;
+  background-color: goldenrod;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  padding-left: 2%;
+  margin: 1% 1% 1% 0%;
+}
+
+.imagem-orcamento img,
+.imagem-pagamento img {
+  width: 300px;
+  height: 250px;
+}
+
+#pay1,
+#pay2,
+#pay3,
+#pay4 {
+  box-shadow: none;
+}
+
+label[for="pay1"],
+label[for="pay2"],
+label[for="pay3"] {
+  color: blue;
+  font-style: oblique;
+  font-size: 1.7rem;
+}
+
+.cifrao {
+  font-size: 0.9rem;
+  margin-right: 1%;
+}
+
+.explicacao-pagamento {
+  font-size: 1.2rem;
+  margin-bottom: 2.5%;
+}
+.explicacao-semana {
+  font-size: 95%;
+  font-style: italic;
+  margin-top: 1%;
+}
+
+#meta1,
+#meta2,
+#meta3,
+#dia1,
+#dia2,
+#dia3,
+#dia4,
+#dia5,
+#dia6,
+#dia7 {
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+}
+
+.texto-link {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#texto-link {
+  width: 100%;
+  margin-top: 1%;
 }
 
 .botao1,
 .botao2,
 .botao3,
 .botao4 {
-    display: block;
-    cursor: pointer;
-    background: #0d00c0;
-    color: white;
-    border-radius: 10px;
-    border: none;
+  display: block;
+  cursor: pointer;
+  background: #0d00c0;
+  color: white;
+  border-radius: 10px;
+  border: none;
 }
 
 .botao1:hover,
 .botao2:hover,
 .botao3:hover,
 .botao4:hover {
-    background-color: #4267b3;
-    color: white;
-}
-
-.botao1,
-.botao2,
-.botao3 {
-    padding: 10px;
+  background-color: #4267b3;
+  color: white;
 }
 
 .botao4 {
-    padding: 15px;
-    width: 150px;
-    align-self: center;
+  padding: 15px;
+  width: 150px;
+  align-self: center;
 }
 
 .footer-content {
-    margin-top: 200vh;
+  margin-top: 350vh;
 }
