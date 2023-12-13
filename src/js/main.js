@@ -55,11 +55,6 @@ function createModal(card) {
                     <h1>${card.title}</h1>
                     <p>${card.description}</p>
                     <div class="modal-card-details">
-                        <h4>
-                            <i class="fa-solid fa-location-dot"></i>
-                            ${card.localityRoad}
-                        </h4>
-                        <p>${card.localityDistrict}</p>
                         
                         <div class="modal-card-more-details">
                             <div class="modal-card-time">
@@ -80,28 +75,38 @@ function createModal(card) {
                                 </a>
                             </div>
                         </div>
+                        
+                        <div class="modal-card-locality">
+                            <h4>
+                                <i class="fa-solid fa-location-dot"></i>
+                                ${card.localityRoad}
+                            </h4>
+                            <p>${card.localityDistrict}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-card-socials">
+                        <ul>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                            
+                            <li>
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            
+                            <li>
+                                <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            
+                            <li>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </ul>
                     </div>
                     
                 </div>
-                
-                <div class="modal-card-socials">
-                    <div>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                </div>
-                
+
             </div>
         </div>
     `;
