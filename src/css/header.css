@@ -28,9 +28,9 @@ a:hover {
 }
 
 .logo img {
-  margin-top: 1rem;
+  margin: 0.7rem;
   width: 340px;
-  height: 80px;
+  height: 68px;
 }
 
 nav {
@@ -125,10 +125,10 @@ img.nav-icon {
 /*Estilizando botao entrar*/
 .btn41-43 {
   display: flex;
-  padding: 0 15px;
+  padding: 0 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 0.99rem;
+  font-size: 0.92rem;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -136,7 +136,7 @@ img.nav-icon {
   position: relative;
   display: inline-block;
   border-radius: 0.9rem;
-  margin: 3px;
+  margin: 2px;
 }
 
 .btn-41 {
