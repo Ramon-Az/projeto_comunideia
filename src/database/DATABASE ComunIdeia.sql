@@ -1,4 +1,5 @@
 CREATE DATABASE comunideia;
+
 USE comunideia;
 
 -- ================= ENUMs =================
@@ -55,6 +56,16 @@ CREATE TABLE cadastro_empresa (
   social_twitter VARCHAR(100)
 );
 
+-- ================= tb_login =================
+
+CREATE TABLE login (
+  login_id SERIAL PRIMARY KEY,
+  fk_usuario_id INTEGER,
+  nome_usuario VARCHAR(50) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL CHECK (email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'),
+  senha VARCHAR(255) NOT NULL CHECK (LENGTH(senha) >= 8)
+);
+
 -- ================= tb_faq =================
 
 CREATE TABLE FAQ (
@@ -75,6 +86,8 @@ CREATE TABLE plano (
 DROP TABLE plano;
 
 ALTER TABLE cadastro_empresa ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
+
+ALTER TABLE login ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
 ALTER TABLE planos ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
