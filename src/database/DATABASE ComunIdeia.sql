@@ -62,7 +62,7 @@ CREATE TABLE login (
   login_id SERIAL PRIMARY KEY,
   fk_usuario_id INTEGER,
   nome_usuario VARCHAR(50) NOT NULL,
-  email VARCHAR(100) UNIQUE NOT NULL CHECK (email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'),
+  email VARCHAR(100) UNIQUE NOT NULL, -- CHECK (email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')
   senha VARCHAR(255) NOT NULL CHECK (LENGTH(senha) >= 8)
 );
 
@@ -83,13 +83,13 @@ CREATE TABLE plano (
   planos tipo_de_plano NOT NULL
 );
 
-DROP TABLE plano;
+DROP TABLE login;
 
 ALTER TABLE cadastro_empresa ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
 ALTER TABLE login ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
-ALTER TABLE planos ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
+ALTER TABLE plano ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
 
 -- ================= INSERINDO DADOS =================
@@ -210,10 +210,25 @@ VALUES
 SELECT * FROM cadastro_empresa;
 DROP TABLE cadastro_empresa;
 
+INSERT INTO
+	login (fk_usuario_id, nome_usuario, email, senha)
+VALUES 
+	(1, 'Minerva', 'lucaston2323@gmail.com', 'admin123'),
+    (2, 'Ramon-Az', 'ramonazevedo123@outlook.com', 'admin123'),
+    (3, 'JosuéJmuniz', 'josuemuniz123@hotmail.com', 'admin123'),
+    (4, 'anaM', 'anamacedo123@gmail.com', 'admin555'),
+    (5, 'carolS', 'carolinesilva123@outlook.com', 'adminadmin123'),
+    (6, 'joaoR', 'joaolima123@hotmail.com', 'adminadminadmin123');
+
 INSERT INTO 
 	faq (nome, email, descricao)
 VALUES 
-	('Lucas','lucaston2323@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.');
+	('Lucas','lucaston2323@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+    ('Ramon-Az','ramonazevedo123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+    ('JosuéJmuniz','josuemuniz123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+    ('anaM','anamacedo123@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+    ('carolS','carolinesilva123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+    ('joaoR','joaolima123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.');
 
 SELECT * FROM faq;
 
@@ -227,7 +242,9 @@ VALUES
     (5,'básico'),
     (6,'plus');
 
-SELECT * FROM plano;
+SELECT * FROM login;
 
+/* 
 ALTER TABLE cadastro
-ADD CONSTRAINT valida_telefone CHECK (telefone ~ '^\\d{9}$');
+ADD CONSTRAINT valida_telefone CHECK (telefone ~ '^\\d{9}$'); 
+*/
