@@ -67,13 +67,11 @@ erDiagram
 
   cadastro ||--o{ cadastro_empresa: fk_usuario_id
   cadastro ||--o{ planos: fk_usuario_id
-
 ```
 
 ## Diagrama de classe
 
 ```mermaid
-
 classDiagram
   enum dias {
     segunda-feira
