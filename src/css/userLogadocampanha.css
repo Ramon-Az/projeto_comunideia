@@ -47,7 +47,7 @@ body {
 }
 
 .info-comercial {
-  height: 73rem;
+  height: 82rem;
 }
 
 .info-orcamento {
@@ -293,5 +293,5 @@ label[for="pay3"] {
 }
 
 .footer-content {
-  margin-top: 350vh;
+  margin-top: 400vh;
 }
