@@ -229,6 +229,51 @@ body {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/* Segundo Banner "container-icons" */
+
+.container-banner2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 70vh;
+  margin: 4rem;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#container-title {
+  margin: 5rem;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+#container-icons ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  flex-shrink: 1;
+  list-style-type: none;
+  gap: 8rem;
+  width: 12rem;
+  height: 14rem;
+}
+
+#container-icons img {
+  width: 150px;
+  height: 100px;
+  aspect-ratio: 1/2;
+  object-fit: contain;
+}
+
+#container-icons p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-align: justify;
+  margin-top: 1rem;
+  overflow: hidden;
+  color: rgb(63, 63, 63);
+}
 /* SAQ */
 
 .rodape {
