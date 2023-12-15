@@ -59,8 +59,7 @@ CREATE TABLE cadastro_empresa (
 -- ================= tb_login =================
 
 CREATE TABLE login (
-	login_id SERIAL PRIMARY KEY,
-	fk_usuario_id INTEGER,
+	fk_usuario_id INTEGER REFERENCES cadastro(usuario_id) PRIMARY KEY,
 	nome_usuario VARCHAR(50) NOT NULL,
 	email VARCHAR(100) UNIQUE NOT NULL, -- CHECK (email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')
 	senha VARCHAR(255) NOT NULL CHECK (LENGTH(senha) >= 8)
@@ -87,8 +86,6 @@ DROP TABLE login;
 
 ALTER TABLE cadastro_empresa ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
-ALTER TABLE login ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
-
 ALTER TABLE plano ADD FOREIGN KEY (fk_usuario_id) REFERENCES cadastro (usuario_id);
 
 
@@ -103,8 +100,6 @@ VALUES
 	('Ana', 'Macedo', 'anaM', '20010710', '9999990000', 981999999, 'anamacedo123@gmail.com', 'admin555'),
 	('Caroline', 'Silva', 'carolS', '20021122', '99999900000', 981999999, 'carolinesilva123@outlook.com', 'adminadmin123'),
 	('João', 'Ribeiro Lima', 'joaoR', '19990101', '99999000000', 981999999, 'joaolima123@hotmail.com', 'adminadminadmin123');
-
-SELECT * FROM cadastro;
 
 INSERT INTO cadastro_empresa
 	(fk_usuario_id, photoCard, title, descriptions, localityRoad, localityDistrict, localityState, dias_funcionamento, horario_inicio, horario_termino, telefone, site_da_empresa, social_instagram, social_linkedin, social_facebook, social_twitter)
@@ -206,9 +201,6 @@ VALUES
 	'www.facebook.com.br/paodeacucar',
 	'www.x.com.br/paodeacucar');
 
-
-SELECT * FROM cadastro_empresa;
-
 INSERT INTO 
 	plano (fk_usuario_id, planos)
 VALUES 
@@ -219,10 +211,8 @@ VALUES
 	(5,'básico'),
 	(6,'plus');
 
-SELECT * FROM plano;
-
 INSERT INTO
-login (fk_usuario_id, nome_usuario, email, senha)
+	login (fk_usuario_id, nome_usuario, email, senha)
 VALUES 
 	(1, 'Minerva', 'lucaston2323@gmail.com', 'admin123'),
 	(2, 'Ramon-Az', 'ramonazevedo123@outlook.com', 'admin123'),
@@ -231,18 +221,23 @@ VALUES
 	(5, 'carolS', 'carolinesilva123@outlook.com', 'adminadmin123'),
 	(6, 'joaoR', 'joaolima123@hotmail.com', 'adminadminadmin123');
 
-SELECT * FROM login;
-
 INSERT INTO 
 	faq (nome, email, descricao)
 VALUES 
-	('Lucas','lucaston2323@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
-	('Ramon-Az','ramonazevedo123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
-	('JosuéJmuniz','josuemuniz123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
-	('anaM','anamacedo123@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
-	('carolS','carolinesilva123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
-	('joaoR','joaolima123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.');
+	('Lucas Gonçalves','lucaston2323@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+	('Ramon Azevedo','ramonazevedo123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+	('Josué Muniz','josuemuniz123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+	('Ana Macedo','anamacedo123@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+	('Carol Silva','carolinesilva123@outlook.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.'),
+	('joão Lima','joaolima123@hotmail.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a egestas sem, eget facilisis libero. Curabitur erat neque, blandit id pellentesque et, porta ut dui.');
 
+
+-- ================= CONSULTAS =================
+
+SELECT * FROM cadastro;
+SELECT * FROM login;
+SELECT * FROM cadastro_empresa;
+SELECT * FROM plano;
 SELECT * FROM faq;
 
 -- ================= CONSULTAS COM JOIN =================
@@ -253,14 +248,6 @@ INNER JOIN cadastro_empresa ON cadastro.usuario_id = cadastro_empresa.fk_usuario
 
 SELECT * FROM cadastro
 INNER JOIN login ON cadastro.usuario_id = login.fk_usuario_id;
-
-
-SELECT * FROM cadastro
-INNER JOIN plano ON cadastro.usuario_id = plano.fk_usuario_id;
-
-
-SELECT * FROM cadastro
-INNER JOIN plano ON cadastro.usuario_id = plano.fk_usuario_id;
 
 
 /* 
