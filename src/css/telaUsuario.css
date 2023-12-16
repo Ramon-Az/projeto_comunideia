@@ -52,13 +52,14 @@ body {
     background-color: var(--color-neutral-50);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 0.7rem;
+    margin: 0 auto;
+    margin-top: 3rem;
     width: 350px;
     height: 200px;
     cursor: pointer;
     transition: all 200ms ease-in;
     transform: scale(1);
-    margin: 0 auto;
-    margin-top: 3rem;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
