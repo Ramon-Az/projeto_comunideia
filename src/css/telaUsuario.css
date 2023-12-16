@@ -79,7 +79,9 @@ body {
 
 .description-content > h3 {
     color: var(--color-neutral-10);
+    border-bottom: 1px solid black;
     margin-top: 1rem;
+    margin-right: 2rem;
 }
 
 .description-content > p {
@@ -146,8 +148,57 @@ body {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 1920px) {}
+@media screen and (max-width: 1920px) {
+    .footer-content {
+        margin-top: 20vh;
+    }
 
-@media screen and (max-width: 1366px) {}
+    .section-contents {
+        width: 500px;
+        height: 200px;
+    }
+    
+    .icon-content>i {
+        background-color: #a9cffd;
+        color: var(--color-blue-40);
+        border-radius: 50%;
+        padding: 2rem;
+        font-size: 60px;
+        margin: 2rem;
+    }
+
+    .description-content {
+        margin-left: -2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    
+    .section-contents {
+        background-color: var(--color-neutral-50);
+        box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 0.7rem;
+        width: 350px;
+        height: 200px;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+        transform: scale(1);
+        margin: 0 auto;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-content>i {
+        background-color: #a9cffd;
+        color: var(--color-blue-40);
+        border-radius: 50%;
+        padding: 1.5rem;
+        font-size: 50px;
+        margin: 2rem;
+        margin-left: 1rem;
+    }
+}
 
 @media screen and (max-width: 1320px) {}
