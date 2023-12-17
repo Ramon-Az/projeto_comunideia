@@ -33,7 +33,7 @@ body {
 
 /* MAIN */
 
-.main-content > h1 {
+.main-content>h1 {
     border-bottom: 1px solid black;
 }
 
@@ -44,7 +44,7 @@ body {
     height: 750px;
     gap: 1rem;
     margin-top: 3rem;
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -107,6 +107,10 @@ body {
 
 @media screen and (max-width: 1920px) {}
 
-@media screen and (max-width: 1366px) {}
+@media screen and (max-width: 1366px) {
+    .footer-content {
+        margin-top: 70vh;
+    }
+}
 
 @media screen and (max-width: 1320px) {}
