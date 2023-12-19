@@ -8,7 +8,7 @@ export const cardsData = [
         "localityDistrict": "São Paulo - SP",
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
-        "phone": "(12) 981 9999 - 9999",
+        "phone": "(12) 9 9999 - 9999",
         "site": "www.burgerking.com.br",
         "instagram": "www.instagram.com.br/burgerking",
         "linkedin": "www.linkedin.com.br/burgerking",

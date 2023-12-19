@@ -319,13 +319,14 @@ body {
     color: var(--color-neutral-35);
     text-align: left;
     font-size: 20px;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-right: 2rem;
 }
 
 .modal-card-more-details {
     margin-top: 2rem;
-    gap: 2rem;
+    margin-right: 2rem;
+    gap: 1rem;
     display: flex;
     align-items: flex-start;
     text-align: center;
@@ -334,7 +335,7 @@ body {
 .modal-card-more-details .fa-solid {
     font-size: 30px;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #a9cffd;
     color: var(--color-blue-40);
 }
@@ -342,7 +343,7 @@ body {
 .modal-card-more-details .fa-regular {
     font-size: 30px;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #a9cffd;
     color: var(--color-blue-40);
 }
@@ -436,11 +437,11 @@ body {
     }
 
     .modal-content {
-        width: 75%;
+        width: 70%;
     }
 
     .modal-card-more-details {
-        gap: 5rem;
+        gap: 8rem;
     }
 }
 

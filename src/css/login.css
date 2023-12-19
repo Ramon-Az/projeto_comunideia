@@ -89,6 +89,30 @@ main {
   margin-bottom: 5px;
 }
 
+.login-user > input.correct {
+  background-color: #BBCCBB;
+  border: solid 1px #206620;
+  color: #206620;
+}
+
+.login-password > input.correct {
+  background-color: #BBCCBB;
+  border: solid 1px #206620;
+  color: #206620;
+}
+
+.login-user > input.error {
+  border: solid 1px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+.login-password > input.error {
+  border: solid 1px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
 .login-enter-buttom > input {
   background-color: var(--color-blue-10);
   border-radius: 10px;
