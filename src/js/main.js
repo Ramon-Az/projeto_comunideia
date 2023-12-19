@@ -85,6 +85,12 @@ function createModal(card) {
                         </div>
                     </div>
                     
+                    <div class="modal-social-title">
+                        <h2>Nossas redes sociais</h2>
+                        <hr>
+                    </div>
+                    
+                    
                     <div class="modal-card-socials">
                         <ul>
                             <li>

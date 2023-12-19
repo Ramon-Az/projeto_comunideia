@@ -279,7 +279,7 @@ body {
     border-radius: 0.7rem;
     margin: 0 auto;
     margin-top: 7%;
-    width: 80%;
+    width: 90%;
     height: 600px;
     
     display: flex;
@@ -312,18 +312,20 @@ body {
     border-bottom: 1px solid black;
     text-align: left;
     margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 .modal-card-info > p {
-    color: var(--color-neutral-05);
+    color: var(--color-neutral-35);
     text-align: left;
     font-size: 20px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-right: 2rem;
 }
 
 .modal-card-more-details {
     margin-top: 2rem;
+    gap: 2rem;
     display: flex;
     align-items: flex-start;
     text-align: center;
@@ -331,14 +333,31 @@ body {
 
 .modal-card-more-details .fa-solid {
     font-size: 30px;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #a9cffd;
+    color: var(--color-blue-40);
 }
 
 .modal-card-more-details .fa-regular {
     font-size: 30px;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #a9cffd;
+    color: var(--color-blue-40);
+}
+
+.modal-card-locality {
+    margin: 2rem;
+}
+
+.modal-social-title {
+    margin-right: 2rem;
 }
 
 .modal-card-socials {
-    margin: 11rem 0 0 0;
+    margin: 0 auto;
+    margin-left: -2rem;
     display: flex;  
     justify-content: center;
 }
@@ -410,11 +429,19 @@ body {
 /*  Responsive contents */
 
 @media screen and (max-width: 1920px) {
-  .main-content {
+    .main-content {
         width: 70%;
         margin: 0 auto;
         padding-top: 20px;
-  }
+    }
+
+    .modal-content {
+        width: 75%;
+    }
+
+    .modal-card-more-details {
+        gap: 5rem;
+    }
 }
 
 @media screen and (max-width: 1440px) {
@@ -449,6 +476,10 @@ body {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
   }
+  
+  .modal-content {
+        width: 90%;
+  }
 
   .footer-content {
         margin-top: 520vh;
@@ -469,6 +500,10 @@ body {
   .more-cards-contents {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+  }
+  
+  .modal-content {
+        width: 95%;
   }
 
   .footer-content {
