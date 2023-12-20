@@ -95,8 +95,8 @@ section.carousel-container {
 @media screen and (max-width: 1920px) {
     .carousel-nav-manual,
         .carousel-nav-auto {
-            width: 75%;
-            margin-top: 31%;
+            width: 70%;
+            margin-top: 31.2%;
         }
 }
 
