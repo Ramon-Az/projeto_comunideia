@@ -41,6 +41,7 @@ nav {
   height: 12vh;
   max-height: 20vh;
   font-size: 0.9rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 nav.rolagem {
@@ -51,7 +52,7 @@ nav.rolagem {
   top: 0;
   height: 80px;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.8s;
   z-index: 1;
 }
 

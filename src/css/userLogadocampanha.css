@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-body {
-  background: linear-gradient(435deg, white, #55cdf1);
-}
+/* body {
+  background: linear-gradient(445deg, white, #55cdf1);
+} */
 
 .img-camp {
   display: flex;
@@ -16,28 +16,29 @@ body {
   flex-direction: column;
 }
 
-.navigation-container>ul {
+.navigation-container > ul {
   list-style: none;
   gap: 1rem;
   display: flex;
   font-weight: lighter;
+  margin-left: 2rem;
 }
 
 .list-item {
   text-decoration: none;
-  color: #d1d1d0;
+  color: black;
   font-style: normal;
 }
 
-#home>a {
+#home > a {
   color: var(--color-neutral-05);
 }
 
-.list-item>a {
+.list-item > a {
   color: #d1d1d0;
 }
 
-.list-item>a:hover {
+.list-item > a:hover {
   color: var(--color-neutral-0);
   opacity: 0.5;
 }
@@ -53,7 +54,10 @@ body {
   justify-content: center;
   flex-wrap: nowrap;
   padding-bottom: 100px;
-  margin: 2% 5% 3% 5%;
+  margin: 2% auto 3% auto;
+  max-width: 1100px;
+  min-width: 800px;
+  min-height: 728px;
 }
 
 .sumario,
@@ -69,19 +73,23 @@ body {
 }
 
 .sumario {
-  height: 15rem;
+  height: 18rem;
+  background: linear-gradient(435deg, white, #55cdf1);
 }
 
 .info-comercial {
-  height: 88rem;
+  height: 83rem;
+  background: linear-gradient(435deg, white, #55cdf1);
 }
 
 .info-orcamento {
-  height: 25rem;
+  height: 28rem;
+  background: linear-gradient(435deg, white, #55cdf1);
 }
 
 .info-pagamento {
-  height: 30rem;
+  height: 32rem;
+  background: linear-gradient(435deg, white, #55cdf1);
 }
 
 .sumario h1,
@@ -212,23 +220,29 @@ input {
 .texto-ilustracao {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1%;
+  /* gap: 1%; */
   justify-content: space-between;
 }
 
 .teste {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* flex-direction: column; */
+  justify-content: space-between;
 }
 
-.teste div {
+.teste1 {
+  width: 370px;
+}
+
+.teste1 div {
   width: 20rem;
   height: 7rem;
   border: white 2px solid;
   background-color: blue;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   padding-left: 2%;
-  margin: 1% 1% 1% 0%;
+  margin: 10% 5% 10% 1%;
   color: white;
 }
 
@@ -238,6 +252,9 @@ input {
   height: 250px;
 }
 
+.imagem-pagamento {
+  margin-left: 3%;
+}
 #pay1,
 #pay2,
 #pay3,
@@ -258,6 +275,10 @@ label[for="pay3"] {
   margin-right: 1%;
 }
 
+.promocao {
+  text-decoration: line-through;
+  color: yellow;
+}
 .explicacao-pagamento {
   font-size: 1.2rem;
   margin-bottom: 2.5%;
@@ -331,10 +352,63 @@ label[for="pay3"] {
 
 .botao4 {
   padding: 15px;
-  width: 150px;
+  width: 200px;
+  /* align-self: center; */
+}
+.botao4-1 {
   align-self: center;
 }
 
 .footer-content {
   margin-top: 350vh;
+}
+
+@media screen and (max-width: 1366px) {
+  /* .main-content {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .cards-contents {
+    width: 360px;
+  }
+
+  .more-cards-contents {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  } */
+
+  .footer-content {
+    margin-top: 350vh;
+  }
+}
+
+@media screen and (max-height: 1444px) {
+  /* .main-content {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .cards-contents {
+    width: 360px;
+  }
+
+  .more-cards-contents {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  } */
+
+  .footer-content {
+    margin-top: 330vh;
+  }
 }
