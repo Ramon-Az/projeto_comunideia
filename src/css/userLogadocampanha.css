@@ -4,10 +4,12 @@
   padding: 0;
 }
 
-/* body {
-  background: linear-gradient(445deg, white, #55cdf1);
-} */
-
+h1 {
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
 
 .img-camp {
   display: flex;
@@ -22,7 +24,7 @@
   gap: 1rem;
   display: flex;
   font-weight: lighter;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .list-item {
