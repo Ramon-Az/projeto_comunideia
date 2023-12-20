@@ -1,19 +1,19 @@
 export const cardsData = [
     {
         "id": "1",
-        "photoCard": "././assets/img/pexels/pexels-frank-cone.jpg",
-        "title": "Fire Bar",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor risus, pharetra eu diam id, luctus condimentum mi.",
-        "localityRoad": "Rua Fictícia, 123",
-        "localityDistrict": "Cidade dos Sonhos - SP",
+        "photoCard": "././assets/img/pexels/fachada/burger-king.jpg",
+        "title": "Burger King",
+        "description": "Conheça a melhor comida rápida da região! Servimos hambúrgueres deliciosos e batatas fritas crocantes.",
+        "localityRoad": "Rua Exemplo 456, Bairro Popular",
+        "localityDistrict": "São Paulo - SP",
         "openingTime": "seg a sex:",
         "openingHours": "08:00 / 19:00hrs",
-        "phone": "(12) 981 9999 - 9999",
-        "site": "www.siteparateste.com.br",
-        "instagram": "",
-        "linkedin": "",
-        "facebook": "",
-        "twitter": ""
+        "phone": "(12) 9 9999 - 9999",
+        "site": "www.burgerking.com.br",
+        "instagram": "www.instagram.com.br/burgerking",
+        "linkedin": "www.linkedin.com.br/burgerking",
+        "facebook": "www.facebook.com.br/burgerking",
+        "twitter": "www.x.com.br/burgerking"
         
     },
     {   

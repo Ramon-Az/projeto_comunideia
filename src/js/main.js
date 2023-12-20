@@ -70,8 +70,8 @@ function createModal(card) {
                             
                             <div class="modal-card-site">
                                 <i class="fa-solid fa-earth-americas"></i>
-                                <a src="${card.site}">
-                                    ${card.site}
+                                <a src="${card.site}" target="_blank">
+                                    Visite o nosso site
                                 </a>
                             </div>
                         </div>
@@ -84,6 +84,12 @@ function createModal(card) {
                             <p>${card.localityDistrict}</p>
                         </div>
                     </div>
+                    
+                    <div class="modal-social-title">
+                        <h2>Nossas redes sociais</h2>
+                        <hr>
+                    </div>
+                    
                     
                     <div class="modal-card-socials">
                         <ul>
@@ -118,6 +124,7 @@ function openModal(card) {
     createModal(card);
     const modal = document.querySelector('.modal-container');
     modal.style.display = 'block';
+    
 
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
@@ -138,7 +145,6 @@ function closeModal() {
     const modal = document.querySelector('.modal-container');
     modal.parentNode.removeChild(modal);
 }
-
 
 /* ================ BUTTON VER MAIS ================ */
 
