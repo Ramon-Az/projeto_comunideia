@@ -140,9 +140,11 @@ body {
 
 /* Configurando estilos da nova home */
 .background {
-  background: url("https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1");
-  width: 100%;
-  height: 170vh;
+  background: url(https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1);
+  width: 80%;
+  margin: 0 auto;
+  height: 92vh;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,6 +155,7 @@ body {
   align-items: center;
   margin-bottom: 5rem;
   font-size: 2.6rem;
+  margin-top: 3rem;
 }
 .slides {
   width: 300%;
@@ -275,7 +278,6 @@ body {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-
 /* SAQ */
 
 .rodape {
@@ -288,12 +290,12 @@ body {
   padding: 3rem;
   border-radius: 0.5rem;
   width: 80%;
-  height: 300px;
+  height: 330px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 30rem 13rem 4rem 8rem;
-
+  margin: 0 auto;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
 }
