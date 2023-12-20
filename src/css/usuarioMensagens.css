@@ -152,15 +152,23 @@ body {
     transition: all 0.4s;
 }
 
-.messages-button>input:hover {
+.messages-button > input:hover {
     opacity: 0.6;
     transition: all 200ms ease-in;
     transform: scale(1.02);
 }
 
 .more-message-button {
-    background-color: var(--color-neutral-35);
+    background-color: var(--color-blue-20);
     border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.more-message-button:hover {
+    opacity: 0.8;
 }
 
 /* FAQ */
