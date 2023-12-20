@@ -16,6 +16,32 @@ body {
   flex-direction: column;
 }
 
+.navigation-container>ul {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  font-weight: lighter;
+}
+
+.list-item {
+  text-decoration: none;
+  color: #d1d1d0;
+  font-style: normal;
+}
+
+#home>a {
+  color: var(--color-neutral-05);
+}
+
+.list-item>a {
+  color: #d1d1d0;
+}
+
+.list-item>a:hover {
+  color: var(--color-neutral-0);
+  opacity: 0.5;
+}
+
 .img-camp img {
   width: 200px;
   height: 200px;

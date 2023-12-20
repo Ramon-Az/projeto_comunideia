@@ -35,7 +35,7 @@ body {
 }
 
 .footer-content {
-    margin-top: 400vh;
+    margin-top: 470vh;
 }
 
 .main-content {
@@ -201,7 +201,7 @@ body {
     text-align: center;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .foreach-cards {
@@ -429,6 +429,12 @@ body {
 
 /*  Responsive contents */
 
+@media screen and (max-width: 2400px) {
+    .footer-content {
+        margin-top: 620vh;
+    }
+}
+
 @media screen and (max-width: 1920px) {
     .main-content {
         width: 70%;
@@ -442,6 +448,9 @@ body {
 
     .modal-card-more-details {
         gap: 8rem;
+    }
+    .footer-content {
+        margin-top: 490vh;
     }
 }
 

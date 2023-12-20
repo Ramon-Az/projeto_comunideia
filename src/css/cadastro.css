@@ -21,6 +21,7 @@ body {
 .main-content {
   height: 145vh;
   margin-bottom: 5rem;
+  width: 90%;
 }
 
 .registro-container {
@@ -36,6 +37,7 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
 
+  font-size: 19px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
