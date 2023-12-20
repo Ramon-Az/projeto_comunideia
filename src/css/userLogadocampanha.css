@@ -220,7 +220,7 @@ input {
 .texto-ilustracao {
   display: flex;
   flex-wrap: nowrap;
-  /* gap: 1%; */
+  gap: 1%;
   justify-content: space-between;
 }
 
@@ -279,10 +279,12 @@ label[for="pay3"] {
   text-decoration: line-through;
   color: yellow;
 }
+
 .explicacao-pagamento {
   font-size: 1.2rem;
   margin-bottom: 2.5%;
 }
+
 .explicacao-semana {
   font-size: 95%;
   font-style: italic;
