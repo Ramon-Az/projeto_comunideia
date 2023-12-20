@@ -64,15 +64,46 @@ body {
 }
 
 .message-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.message-center {
+    width: 250px;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.message-center-contents {
+    border: 1px solid red;
+    width: 220px;
+    height: 50px;
+}
+
+
+.central-message-container {
     background-color: var(--color-neutral-40);
     border-radius: 0.5rem;
     width: 100%;
     height: 750px;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     
     display: flex;
     flex-direction: column;
+}
+
+.central-message-container > ul {
+    background-color: white;
+    border-bottom: 1px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.central-message-container > ul > li {
+    margin: 1rem 1rem 0;
+    color: var(--color-neutral-05);
 }
 
 .message-contents {
