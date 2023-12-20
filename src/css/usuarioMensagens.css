@@ -33,7 +33,7 @@ body {
 
 /* MAIN */
 
-.main-content > h1 {
+.main-content>h1 {
     border-bottom: 1px solid black;
 }
 
@@ -75,11 +75,25 @@ body {
 }
 
 .message-center-contents {
-    border: 1px solid red;
-    width: 220px;
+    width: 230px;
     height: 50px;
+    cursor: pointer;
 }
 
+.common-class-alternative {
+    background-color: var(--color-neutral-40);
+    color: var(--color-blue-40);
+}
+
+.message-center-contents>h3 {
+    padding: 10px;
+    text-align: justify;
+}
+
+#inbox {
+    background-color: var(--color-neutral-40);
+    color: var(--color-blue-40);
+}
 
 .central-message-container {
     background-color: var(--color-neutral-40);
@@ -88,12 +102,12 @@ body {
     height: 750px;
     gap: 1rem;
     margin-top: 1rem;
-    
+
     display: flex;
     flex-direction: column;
 }
 
-.central-message-container > ul {
+.central-message-container>ul {
     background-color: white;
     border-bottom: 1px solid black;
     list-style: none;
@@ -101,7 +115,7 @@ body {
     justify-content: space-between;
 }
 
-.central-message-container > ul > li {
+.central-message-container>ul>li {
     margin: 1rem 1rem 0;
     color: var(--color-neutral-05);
 }
@@ -110,6 +124,13 @@ body {
     border: 1px solid red;
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-button {
+    background-color: var(--color-neutral-35);
+    border: none;
 }
 
 /* FAQ */
