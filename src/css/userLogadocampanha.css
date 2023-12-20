@@ -47,7 +47,7 @@ body {
 }
 
 .info-comercial {
-  height: 82rem;
+  height: 88rem;
 }
 
 .info-orcamento {
@@ -196,13 +196,14 @@ input {
 }
 
 .teste div {
-  width: 22rem;
+  width: 20rem;
   height: 7rem;
   border: white 2px solid;
-  background-color: goldenrod;
+  background-color: blue;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   padding-left: 2%;
   margin: 1% 1% 1% 0%;
+  color: white;
 }
 
 .imagem-orcamento img,
@@ -221,7 +222,7 @@ input {
 label[for="pay1"],
 label[for="pay2"],
 label[for="pay3"] {
-  color: blue;
+  color: whitesmoke;
   font-style: oblique;
   font-size: 1.7rem;
 }
@@ -256,13 +257,29 @@ label[for="pay3"] {
   box-shadow: none;
 }
 
+.social-midia {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+
 .texto-link {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #texto-link {
   width: 100%;
+  margin-top: 1%;
+}
+
+.fa-brands {
+  font-size: 1.7rem;
+  margin-right: 0.8%;
   margin-top: 1%;
 }
 
@@ -293,5 +310,5 @@ label[for="pay3"] {
 }
 
 .footer-content {
-  margin-top: 400vh;
+  margin-top: 350vh;
 }
