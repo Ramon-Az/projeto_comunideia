@@ -176,6 +176,13 @@ img.nav-icon {
   top: 2px;
 }
 
+.user-logado {
+  border: none;
+  color: blue;
+  width: 150px;
+  /* font-weight: bolder; */
+}
+
 .text {
   display: flex;
   flex-wrap: wrap;
