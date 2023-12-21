@@ -21,12 +21,13 @@ body {
 .container-banner {
   display: flex;
   align-self: center;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 5rem;
   justify-content: space-between;
-  margin-left: var(--margin);
-  margin-right: var(--margin);
-  width: 100%;
-  height: 100vh;
+  /* margin-left: 10rem; */
+  /* margin-right: var(--margin); */
+  width: 90%;
+  height: 60vh;
   -webkit-mask-image: linear-gradient(to top, transparent 4%, black 30%);
   background-image: linear-gradient(
     180deg,
@@ -37,17 +38,18 @@ body {
 }
 .banner-img {
   flex-direction: column;
-  top: 5rem;
-  left: 40rem;
-  bottom: 5rem;
+  /* top: 8rem; */
+  /* left: 40rem; */
+  /* bottom: 5rem; */
   position: absolute;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 #banner-img1 {
-  margin: 5rem;
-  width: 380px;
-  height: 190px;
+  margin: 8rem 0 0 73rem;
+  /* margin-left: 10rem; */
+  width: 480px;
+  height: 290px;
   border-radius: 50%;
 }
 
@@ -60,24 +62,25 @@ body {
 } */
 
 #text {
-  width: 30rem;
-  height: 40rem;
+  width: 72rem;
+  /* height: 40rem; */
   margin: 5rem;
 }
 
 #text-01 {
-  font-size: 1.7rem;
-  line-height: 190%; /* 5.04rem */
+  font-size: 3.7rem;
+  line-height: 130%; /* 5.04rem */
   letter-spacing: 0.06rem;
 }
 
 #text-02 {
   color: rgba(0, 0, 0, 80%);
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 150%; /* 2.8125rem */
-  letter-spacing: 0.0375rem;
-  margin-top: 7%;
+  letter-spacing: 0.04rem;
+  margin-top: 4%;
   margin-left: 1.7%;
+  font-style: italic;
 }
 
 /* Segundo Banner "container-icons" */
@@ -87,8 +90,8 @@ body {
   align-items: center;
   flex-direction: column;
   width: 90%;
-  height: 75vh;
-  margin: 5rem;
+  height: 50vh;
+  margin: 0rem 5rem 2rem 5rem;
   text-decoration: none;
   overflow: hidden;
 }
@@ -110,8 +113,14 @@ body {
   height: 14rem;
 }
 
+#container-icons ul p {
+  font-size: 0.8rem;
+  text-align: justify;
+  width: 180px;
+}
+
 #container-icons img {
-  width: 150px;
+  width: 180px;
   height: 100px;
   aspect-ratio: 1/2;
   object-fit: contain;
@@ -130,9 +139,9 @@ body {
 
 .slider {
   display: flex;
-  width: 50rem;
-  height: 44rem;
-  margin: 14rem;
+  width: 80rem;
+  /* height: 44rem; */
+  margin: 0;
   border-radius: 8px;
   margin-top: 6rem;
   overflow: hidden;
@@ -143,23 +152,25 @@ body {
   background: url(https://lh3.googleusercontent.com/jrhKjPqi9_mrtj6GCAKFvDmZ-9PQ1tmf_-NycyfJSGj2UD025oITT_-FHXjxoZO2wLmEtS73wA14mVzQiI2cWd5Rb7hlc8f-janqABinW_u9k2EJ9PhS=w1);
   width: 80%;
   margin: 0 auto;
-  height: 92vh;
+  height: 74vh;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .background h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   font-size: 2.6rem;
   margin-top: 3rem;
 }
+
 .slides {
   width: 300%;
-  height: 300%;
+  height: 200%;
   display: flex;
 }
 
@@ -168,22 +179,24 @@ body {
 }
 
 .slide {
-  width: 39%;
+  width: 38%;
+  height: 100%;
   position: relative;
   transition: 0.9s;
 }
 
 .slide img {
-  width: 48rem;
-  height: 24rem;
-  margin-right: 6rem;
+  width: 80rem;
+  height: 35%;
+  /* margin-right: 6rem; */
   border-radius: 8px;
 }
 
 .manual-navigation {
   position: absolute;
   width: 24.7rem;
-  margin: 26rem 13rem;
+  margin: 0 auto;
+  /* margin: 26rem 13rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +243,7 @@ body {
   position: absolute;
   cursor: pointer;
   width: 24.7rem;
-  margin: 26rem 13rem;
+  margin: 26rem 27rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +294,7 @@ body {
 /* SAQ */
 
 .rodape {
-  margin: 40% 0 0 0;
+  margin: 20% 0 0 0;
 }
 /* SAQ */
 
@@ -295,7 +308,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 20rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
