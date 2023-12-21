@@ -230,6 +230,12 @@ input {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.imagem-orcamento img {
+  width: 300px;
+  height: 250px;
+  margin-left: 11rem;
+}
+
 /* .teste {
   display: flex;
   flex-wrap: nowrap;
