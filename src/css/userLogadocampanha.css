@@ -7,8 +7,8 @@
 h1 {
   border-bottom: 1px solid black;
   width: 90%;
-  margin-left: 4rem;
-  margin-top: 2rem;
+  /* margin-left: 4rem; */
+  margin-top: 0rem;
 }
 
 .img-camp {
@@ -24,7 +24,7 @@ h1 {
   gap: 1rem;
   display: flex;
   font-weight: lighter;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .list-item {
@@ -221,31 +221,43 @@ input {
 } */
 
 .texto-ilustracao {
-  display: flex;
+  /* display: flex;
   flex-wrap: nowrap;
   gap: 1%;
-  justify-content: space-between;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.teste {
+/* .teste {
   display: flex;
   flex-wrap: nowrap;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
+} */
+
+.teste {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
 }
 
-.teste1 {
+/* .teste1 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   width: 370px;
-}
+} */
 
-.teste1 div {
+.teste div {
   width: 20rem;
   height: 7rem;
   border: white 2px solid;
   background-color: blue;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   padding-left: 2%;
-  margin: 10% 5% 10% 1%;
+  margin: 10% 0% 0% 0%;
   color: white;
 }
 
@@ -256,8 +268,9 @@ input {
 }
 
 .imagem-pagamento {
-  margin-left: 3%;
+  margin-left: 13%;
 }
+
 #pay1,
 #pay2,
 #pay3,
@@ -392,27 +405,48 @@ label[for="pay3"] {
     margin-top: 350vh;
   }
 }
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .footer-content {
+    margin-top: 200vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-content {
+    margin-top: 250vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-content {
+    margin-top: 300vh;
+  }
+} */
 
 @media screen and (max-height: 1444px) {
-  /* .main-content {
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-
-  .cards-contents {
-    width: 360px;
-  }
-
-  .more-cards-contents {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .modal-content {
-    width: 90%;
-  } */
-
   .footer-content {
     margin-top: 330vh;
   }
