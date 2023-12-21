@@ -143,7 +143,8 @@ body {
   /* height: 44rem; */
   margin: 0;
   border-radius: 8px;
-  margin-top: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   overflow: hidden;
 }
 
@@ -187,7 +188,7 @@ body {
 
 .slide img {
   width: 80rem;
-  height: 35%;
+  height: 50%;
   /* margin-right: 6rem; */
   border-radius: 8px;
 }
@@ -195,7 +196,7 @@ body {
 .manual-navigation {
   position: absolute;
   width: 24.7rem;
-  margin: 26rem 27rem;
+  margin: 30rem 27rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,7 +243,7 @@ body {
   position: absolute;
   cursor: pointer;
   width: 24.7rem;
-  margin: 26rem 27rem;
+  margin: 30rem 27rem;
   display: flex;
   justify-content: center;
   align-items: center;
