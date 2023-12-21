@@ -124,12 +124,51 @@ body {
     width: 100%;
     height: 400px;
     display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    margin: 1rem;
+    gap: 10rem;
+    display: flex;
     justify-content: space-between;
 }
 
-.message-button {
-    background-color: var(--color-neutral-35);
+.messages-button {
+    border-bottom: 1px solid #cac8c6;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.messages-button > input {
+    background-color: var(--color-blue-40);
+    border-radius: 0.5rem;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.messages-button > input:hover {
+    opacity: 0.6;
+    transition: all 200ms ease-in;
+    transform: scale(1.02);
+}
+
+.more-message-button {
+    background-color: var(--color-blue-20);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.more-message-button:hover {
+    opacity: 0.8;
 }
 
 /* FAQ */
@@ -178,6 +217,8 @@ body {
 
 .faq-button:hover {
     opacity: 0.6;
+    transition: all 200ms ease-in;
+    transform: scale(1.02);
 }
 
 /* RESPONSIVIDADE */
